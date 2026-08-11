@@ -5,9 +5,4 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
   output: 'static',
-  vite: {
-    ssr: {
-      external: ['astro'],
-    },
-  },
 });
