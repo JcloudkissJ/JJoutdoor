@@ -19,6 +19,12 @@ describe('resolveText', () => {
     expect(r.isFallback).toBe(true);
   });
 
+  it('요청한 언어가 영어면 isFallback은 false다', () => {
+    const r = resolveText(text, 'en');
+    expect(r.value.summary).toBe('A short city ridge walk.');
+    expect(r.isFallback).toBe(false);
+  });
+
   it('영어조차 없으면 실패시킨다 — 조용히 빈 화면을 내지 않는다', () => {
     expect(() => resolveText({ ko: text.ko }, 'ja')).toThrow(/fallback/i);
   });
