@@ -5,9 +5,7 @@ describe('fontHrefFor', () => {
   it('모든 언어에 공통 서체(디스플레이·본문·모노)를 싣는다', () => {
     const href = fontHrefFor('en');
     for (const family of BASE_FAMILIES) {
-      const familyName = family.split(':')[0];
-      if (!familyName) throw new Error('Family name not found');
-      expect(href).toContain(familyName.replace(/ /g, '+'));
+      expect(href).toContain(family.split(':')[0].replace(/ /g, '+'));
     }
   });
 
