@@ -1,0 +1,25 @@
+{
+  "name": "korea-outdoor",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Multilingual Korean hiking guide for foreigners",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "astro": "^5.2.3"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "latest",
+    "@astrojs/tailwind": "latest",
+    "@vitest/coverage-v8": "latest",
+    "typescript": "^5",
+    "tailwindcss": "latest",
+    "vitest": "latest"
+  }
+}
