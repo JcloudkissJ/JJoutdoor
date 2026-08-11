@@ -18,7 +18,7 @@ export const LANGUAGES: readonly Language[] = [
   { code: 'ms', label: 'Melayu',  script: 'latin',    dir: 'ltr', status: 'planned' },
   { code: 'si', label: 'සිංහල',   script: 'sinhala',  dir: 'ltr', status: 'planned' },
   { code: 'ru', label: 'Русский', script: 'cyrillic', dir: 'ltr', status: 'planned' },
-] as const;
+];
 
 /** 미번역 필드가 폴백하는 언어. */
 export const FALLBACK_LANG = 'en';
@@ -29,6 +29,7 @@ export function isLive(code: string): boolean {
   return LIVE_LANGUAGES.some((l) => l.code === code);
 }
 
+/** 언어 코드에 해당하는 스크립트를 반환한다. 등록되지 않은 코드면 throw — 조용히 폴백하지 않는다. */
 export function scriptFor(code: string): Script {
   const lang = LANGUAGES.find((l) => l.code === code);
   if (!lang) throw new Error(`Unknown language: ${code}`);
