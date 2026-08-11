@@ -34,8 +34,8 @@ export function reconcile(readings: SourceReading[]): ReconcileResult {
     throw new Error('reconcile requires at least one reading');
   }
   for (const r of readings) {
-    if (!(r.value > 0)) {
-      throw new Error(`reconcile requires positive values, got ${r.value} from ${r.org}`);
+    if (!(Number.isFinite(r.value) && r.value > 0)) {
+      throw new Error(`reconcile requires positive finite values, got ${r.value} from ${r.org}`);
     }
   }
 

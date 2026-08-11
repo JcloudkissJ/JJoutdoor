@@ -67,6 +67,19 @@ describe('reconcile', () => {
     expect(() => reconcile([{ org: 'a', value: 0 }])).toThrow(/positive/i);
   });
 
+  it('허용 오차 경계선에서는 verified로 판정한다', () => {
+    const r = reconcile([
+      { org: 'a', value: 10.0 },
+      { org: 'b', value: 11.0 },
+    ]);
+    expect(r.verification.status).toBe('verified');
+    expect(r.verification.spread).toBeCloseTo(0.1, 10);
+  });
+
+  it('무한값은 측정 오류이므로 거부한다', () => {
+    expect(() => reconcile([{ org: 'a', value: Infinity }])).toThrow(/positive finite/i);
+  });
+
   it('허용 오차는 10%이다', () => {
     expect(TOLERANCE).toBe(0.1);
   });
