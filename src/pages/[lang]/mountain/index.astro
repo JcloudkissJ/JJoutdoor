@@ -123,7 +123,7 @@ const description = `Mountain hiking routes in Korea`;
       ))}
     </div>
 
-    <p id="empty" hidden>{t('empty.results')}</p>
+    <p id="empty" hidden aria-live="polite">{t('empty.results')}</p>
   </div>
 </Base>
 
@@ -148,10 +148,21 @@ const description = `Mountain hiking routes in Korea`;
     // Get all cards
     const cards = resultsDiv.querySelectorAll('.card');
     cards.forEach((card) => {
+      const durationStr = card.getAttribute('data-duration');
+      if (!durationStr) {
+        console.error('Missing data-duration on card:', card);
+        return; // Skip card with missing attribute
+      }
+      const durationNum = parseInt(durationStr, 10);
+      if (isNaN(durationNum)) {
+        console.error('Invalid data-duration on card:', durationStr, card);
+        return; // Skip card with invalid attribute
+      }
+
       const cardData: CardData = {
         region: card.getAttribute('data-region') || '',
         difficulty: (parseInt(card.getAttribute('data-difficulty') || '0') || 1) as 1 | 2 | 3,
-        durationMin: parseInt(card.getAttribute('data-duration') || '0') || 0,
+        durationMin: durationNum,
         signageEn: decodeState(card.getAttribute('data-signage-en')),
         restroom: decodeState(card.getAttribute('data-restroom')),
       };

@@ -18,13 +18,6 @@ const { href, name, summary, difficultyLabel, difficulty, region, durationMin, s
 // Encode data attributes: null becomes 'unknown', boolean becomes 'true'/'false'
 const encodeState = (val: boolean | null): string => (val === null ? 'unknown' : val ? 'true' : 'false');
 
-// Determine duration bucket: short (≤120min), mid (>120 and ≤180), long (>180)
-const getDurationBucket = (mins: number): string => {
-  if (mins <= 120) return 'short';
-  if (mins <= 180) return 'mid';
-  return 'long';
-};
-
 const colorClass = {
   1: 'difficulty-1',
   2: 'difficulty-2',
@@ -36,13 +29,13 @@ const colorClass = {
   class="card"
   data-region={region}
   data-difficulty={difficulty}
-  data-duration={getDurationBucket(durationMin)}
+  data-duration={durationMin}
   data-signage-en={encodeState(signageEn)}
   data-restroom={encodeState(restroom)}
 >
   <a href={href} class="card-link">
     <div class="card-header">
-      <h3>{name}</h3>
+      <h2>{name}</h2>
       <div class={`difficulty-badge ${colorClass}`}>
         <span class="dot"></span>
         <span class="label">{difficultyLabel}</span>
@@ -87,7 +80,7 @@ const colorClass = {
     gap: calc(var(--unit) * 2);
   }
 
-  h3 {
+  h2 {
     margin: 0;
     font-size: 1.125rem;
     font-weight: 600;
