@@ -11,7 +11,15 @@ const { id, lang } = Astro.props;
 
 const all = await getCollection('safety');
 const doc = all.find((d) => d.data.id === id);
-const resolved = doc ? resolveText(doc.data.text, lang) : null;
+
+if (!doc) {
+  throw new Error(
+    `Unknown hazard id "${id}" — no document in the safety collection has that id. ` +
+    `Fix the place's safety.hazards entry or add the document.`
+  );
+}
+
+const resolved = resolveText(doc.data.text, lang);
 ---
 
 {resolved && (
