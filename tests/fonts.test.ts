@@ -27,4 +27,8 @@ describe('fontHrefFor', () => {
   it('FOIT를 피하려면 display=swap이어야 한다', () => {
     expect(fontHrefFor('en')).toContain('display=swap');
   });
+
+  it('등록되지 않은 언어 코드는 throw한다', () => {
+    expect(() => fontHrefFor('xx')).toThrow(/unknown language/i);
+  });
 });

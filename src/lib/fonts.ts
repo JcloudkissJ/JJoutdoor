@@ -7,8 +7,10 @@ export const BASE_FAMILIES = [
   'IBM Plex Mono:wght@400;600',
 ] as const;
 
-/** 공통 서체가 덮지 못하는 스크립트만 추가한다. latin/cyrillic은 공통 서체가 덮는다. */
-const SCRIPT_EXTRA: Partial<Record<Script, string>> = {
+/** 스크립트별 추가 서체. latin과 cyrillic은 공통 서체(Source Serif 4, Inter, IBM Plex Mono)가 충분하므로 null. */
+const SCRIPT_EXTRA: Record<Script, string | null> = {
+  latin: null,      // 공통 서체가 덮는다
+  cyrillic: null,   // 공통 서체가 덮는다
   hangul: 'Noto Sans KR:wght@400;500;700',
   jp: 'Noto Sans JP:wght@400;500;700',
   sc: 'Noto Sans SC:wght@400;500;700',
