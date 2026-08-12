@@ -1,0 +1,62 @@
+:root {
+  --c-bg: #fafaf7;
+  --c-surface: #ffffff;
+  --c-fg: #111311;
+  --c-fg-muted: #5a625a;
+  --c-line: #e2e5e0;
+  --c-accent: #166534;
+  --c-warn: #c2410c;
+  --c-danger: #b91c1c;
+
+  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-body: Inter, 'Noto Sans KR', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans Sinhala', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --unit: 8px;
+  --measure: 68ch;
+
+  --dur: 200ms;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background: var(--c-bg);
+  color: var(--c-fg);
+  font-family: var(--font-body);
+}
+
+/* 수치는 항상 tabular — 값이 바뀌어도 열이 흔들리지 않는다 */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  clip: auto;
+  padding: var(--unit);
+}
+
+:focus-visible {
+  outline: 3px solid var(--c-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

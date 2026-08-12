@@ -1,0 +1,47 @@
+---
+import { LIVE_LANGUAGES } from '../config/languages';
+import { fontHrefFor } from '../lib/fonts';
+import { makeTranslator } from '../lib/i18n';
+import en from '../i18n/en.json';
+import '../styles/tokens.css';
+
+interface Props {
+  lang: string;
+  title: string;
+  description?: string;
+  path: string;
+}
+
+const { lang, title, description = '', path } = Astro.props;
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+
+// Load language-specific dictionary and create translator
+const dict = await import(`../i18n/${lang}.json`).then((m) => m.default);
+const t = makeTranslator(en, dict);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={fontHrefFor(lang)} />
+    {LIVE_LANGUAGES.map((l) => (
+      <link rel="alternate" hreflang={l.code} href={`${site}/${l.code}${path}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${site}/en${path}`} />
+  </head>
+  <body>
+    <a href="#main" class="sr-only">{t('a11y.skip')}</a>
+    <nav aria-label="Language">
+      {LIVE_LANGUAGES.map((l) => (
+        <a href={`/${l.code}${path}`} lang={l.code} aria-current={l.code === lang ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <main id="main"><slot /></main>
+  </body>
+</html>
