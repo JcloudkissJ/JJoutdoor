@@ -1,0 +1,57 @@
+---
+import type { VerificationStatus } from '../lib/reconcile';
+
+interface Props {
+  sources: { org: string; dataset: string; fetched_at: string }[];
+  status: VerificationStatus;
+  t: (key: string) => string;
+}
+
+const { sources, status, t } = Astro.props;
+---
+
+<section class={`prov prov--${status}`}>
+  <h2>{t('provenance.title')}</h2>
+  <p>{t(`provenance.${status}`)}</p>
+  <ul>
+    {sources.map((s) => (
+      <li>
+        <span>{s.dataset}</span>
+        <span class="num">{t('provenance.checked_on')} {s.fetched_at}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .prov {
+    border-top: 1px solid var(--c-line);
+    padding-top: calc(var(--unit) * 2);
+    font-size: 0.875rem;
+  }
+
+  .prov h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-fg-muted);
+  }
+
+  /* conflict는 숨기지 않고 눈에 띄게 한다 */
+  .prov--conflict p {
+    color: var(--c-warn);
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--unit);
+    padding: 4px 0;
+  }
+</style>
