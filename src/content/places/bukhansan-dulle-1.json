@@ -1,0 +1,36 @@
+{
+  "id": "bukhansan-dulle-1",
+  "type": "mountain",
+  "name_i18n": { "en": "Bukhansan Dulle-gil Section 1", "ko": "북한산 둘레길 1구간" },
+  "region": { "sido": "11", "sigungu": "11305" },
+  "coords": { "lat": 37.6605, "lng": 127.0107 },
+  "metrics": { "elevation_m": 180, "distance_km": 4.5, "duration_min": 120, "difficulty": 1 },
+  "access": {
+    "transit": { "subway": true, "station_i18n": { "en": "Gupabal", "ko": "구파발" }, "walk_min": 15 },
+    "signage_langs": null,
+    "restroom": true,
+    "water_refill": true,
+    "entry_fee_krw": 0,
+    "cell_coverage": "partial"
+  },
+  "safety": { "hazards": [], "sunset_caution": false },
+  "text": {
+    "en": {
+      "summary": "A scenic circular trail in the Bukhansan area with forest canopy and periodic rest facilities.",
+      "caution1": "This is the first of several dulle-gil (circular) sections; sections may be linked or separate.",
+      "caution2": "The trail is well-marked but signage languages have not been verified. Bring a map or offline route data."
+    },
+    "ko": {
+      "summary": "북한산 둘레길 첫 구간. 숲 터널과 주기적 쉼터를 갖춘 순환로다.",
+      "caution1": "여러 구간이 있는 둘레길의 첫 번째 섹션이다. 구간별로 연결되거나 독립적일 수 있다.",
+      "caution2": "길이 잘 표지되어 있으나 표지판 언어는 현지 확인이 필요하다. 지도나 오프라인 경로 데이터를 준비할 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      { "org": "knps", "dataset": "국립공원 등산로 데이터", "fetched_at": "2026-08-09" },
+      { "org": "forest_service", "dataset": "산림청 둘레길 정보", "fetched_at": "2026-08-08" }
+    ],
+    "verification": { "status": "verified", "checked_fields": ["distance_km", "elevation_m", "duration_min"] }
+  }
+}

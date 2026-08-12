@@ -1,0 +1,25 @@
+{
+  "id": "emergency-call-119",
+  "category": "emergency",
+  "season": null,
+  "text": {
+    "en": {
+      "title": "Calling 119 from a trail",
+      "body": [
+        "119 is the emergency number for fire, rescue and ambulance in Korea. It is free from any phone.",
+        "Interpretation support is available. Say your language in English and wait to be connected.",
+        "Korean trails have numbered location markers on posts. Read that number to the operator: it locates you faster than any address.",
+        "If you cannot speak, stay on the line. The call is still traced."
+      ]
+    },
+    "ko": {
+      "title": "산에서 119에 신고하기",
+      "body": [
+        "119는 화재·구조·구급 통합 신고번호이며 통화료가 없다.",
+        "다국어 통역 연결이 가능하다. 영어로 필요한 언어를 말한 뒤 연결을 기다린다.",
+        "등산로 기둥의 국가지점번호 또는 산악위치표지판 번호를 읽어주면 주소보다 빠르게 위치가 특정된다.",
+        "말을 할 수 없는 상황이어도 통화를 끊지 않는다."
+      ]
+    }
+  }
+}

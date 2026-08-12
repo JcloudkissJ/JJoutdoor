@@ -1,0 +1,33 @@
+{
+  "id": "achasan",
+  "type": "mountain",
+  "name_i18n": { "en": "Achasan", "ko": "아차산" },
+  "region": { "sido": "11", "sigungu": "11215" },
+  "coords": { "lat": 37.5556, "lng": 127.1017 },
+  "metrics": { "elevation_m": 295, "distance_km": 2.8, "duration_min": 80, "difficulty": 1 },
+  "access": {
+    "transit": { "subway": true, "station_i18n": { "en": "Achasan", "ko": "아차산" }, "walk_min": 5 },
+    "signage_langs": ["ko", "en"],
+    "restroom": true,
+    "water_refill": false,
+    "entry_fee_krw": 0,
+    "cell_coverage": "good"
+  },
+  "safety": { "hazards": [], "sunset_caution": true },
+  "text": {
+    "en": {
+      "summary": "A gentle hill walk in eastern Seoul with panoramic views of the Han River and city skyline.",
+      "caution1": "The summit is exposed, with little shelter from sun. Bring sun protection and water.",
+      "caution2": "The western descent toward sunset viewing is steep and loose in places; use caution, especially when wet."
+    },
+    "ko": {
+      "summary": "서울 동쪽 한강 전망을 갖춘 부드러운 언덕길. 맑은 날씨에 도심 스카이라인이 파노라마로 펼쳐진다.",
+      "caution1": "정상이 노출되어 햇빛 차단 시설이 적다. 자외선 차단제와 충분한 물을 준비할 것.",
+      "caution2": "일몰 관광을 위한 서쪽 하강 구간이 가파르고 자갈이 많다. 특히 습한 날씨에는 주의가 필요하다."
+    }
+  },
+  "provenance": {
+    "sources": [{ "org": "seoul", "dataset": "서울시 등산로 정보", "fetched_at": "2026-08-10" }],
+    "verification": { "status": "single_source", "checked_fields": ["distance_km", "duration_min"] }
+  }
+}

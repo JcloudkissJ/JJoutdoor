@@ -1,0 +1,25 @@
+{
+  "id": "steep_stair",
+  "category": "hazard",
+  "season": null,
+  "text": {
+    "en": {
+      "title": "Steep stone stairs",
+      "body": [
+        "Steep stairs are a fixture on many Korean mountain trails, especially near summits and dense urban approaches.",
+        "A fall on steep stairs can cause serious injury. The risk increases when tired, carrying a heavy pack, or during wet or icy conditions.",
+        "Slow down on steep descents. Use a walking pole or grab the rock face if available to reduce the load on your knees.",
+        "Footwear with grip matters: avoid worn-out soles or smooth-soled shoes."
+      ]
+    },
+    "ko": {
+      "title": "가파른 돌계단",
+      "body": [
+        "가파른 돌계단은 한국 산 코스에서 흔하며, 특히 정상 근처나 도시 진입로에서 자주 만난다.",
+        "가파른 계단에서 넘어지면 중상을 입을 수 있다. 피로가 누적되었을 때, 무거운 배낭을 쓸 때, 젖거나 얼음이 낀 조건에서 위험성이 증가한다.",
+        "하강할 때는 속도를 줄인다. 지팡이를 쓰거나 암면을 잡아 무릎에 가해지는 부하를 줄인다.",
+        "발바닥 마찰력 있는 신발이 중요하다. 닳은 밑창이나 매끈한 신발은 피한다."
+      ]
+    }
+  }
+}
