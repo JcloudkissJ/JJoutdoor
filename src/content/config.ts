@@ -29,9 +29,9 @@ export const placeSchema = z.object({
       station_i18n: z.record(z.string()).optional(),
       walk_min: z.number().nonnegative(),
     }),
-    // null = 미확인. 추측해서 채우지 않는다.
+    // 다음 필드들은 null = 미확인. 추측해서 채우지 않는다:
+    // signage_langs, restroom, water_refill, cell_coverage
     signage_langs: z.array(z.string()).nullable(),
-    // null = field-verified되지 않음. 추측해서 채우지 않는다.
     restroom: z.boolean().nullable(),
     water_refill: z.boolean().nullable(),
     entry_fee_krw: z.number().nonnegative(),

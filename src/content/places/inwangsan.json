@@ -18,12 +18,12 @@
     "en": {
       "summary": "A short ridge walk along the old city wall, ten minutes from a subway station.",
       "caution1": "The final stretch is continuous stone steps with no shade.",
-      "caution2": "There is no drinking water on the route. Carry at least one litre."
+      "caution2": "Do not rely on finding water on the route. Carry at least one litre."
     },
     "ko": {
       "summary": "한양도성 성곽을 따라 걷는 짧은 능선길. 지하철역에서 도보 10분.",
       "caution1": "정상 직전 구간이 그늘 없는 돌계단으로 이어진다.",
-      "caution2": "코스 내 식수가 없다. 최소 1리터를 준비할 것."
+      "caution2": "코스 내에 물 공급이 없을 수 있으니 최소 1리터를 준비할 것."
     }
   },
   "provenance": {
