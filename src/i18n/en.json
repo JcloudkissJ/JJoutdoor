@@ -21,5 +21,7 @@
   "signage.unknown": "Signage languages not confirmed",
   "fallback.notice": "Not yet translated. Showing English.",
   "empty.results": "No routes match these filters.",
-  "disclaimer": "Trail information is for reference. Check official notices before you go."
+  "disclaimer": "Trail information is for reference. Check official notices before you go.",
+  "time.h": "{h}h",
+  "time.hm": "{h}h {m}m"
 }

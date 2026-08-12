@@ -24,6 +24,8 @@ const name = place.name_i18n[lang!] ?? place.name_i18n.en;
 const { value: text, isFallback } = resolveText(place.text, lang!);
 const hours = Math.floor(place.metrics.duration_min / 60);
 const mins = place.metrics.duration_min % 60;
+const timeFormatKey = mins === 0 ? 'time.h' : 'time.hm';
+const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m}', String(mins));
 ---
 
 <Base lang={lang!} title={name} description={text.summary} path={`/mountain/${slug}`}>
@@ -36,7 +38,7 @@ const mins = place.metrics.duration_min % 60;
       items={[
         { label: t('metric.elevation'), value: `${place.metrics.elevation_m} m` },
         { label: t('metric.distance'), value: `${place.metrics.distance_km} km` },
-        { label: t('metric.duration'), value: `${hours}h ${mins}m` },
+        { label: t('metric.duration'), value: durationValue },
       ]}
     />
 
