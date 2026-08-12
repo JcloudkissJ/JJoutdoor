@@ -1,3 +1,5 @@
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md`
+
 # Phase 1 설계 — 다국어 아웃도어 장소 플랫폼
 
 - 작성일: 2026-08-10

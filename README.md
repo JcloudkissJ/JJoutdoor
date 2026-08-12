@@ -24,15 +24,28 @@
 
 ## 현재 상태
 
-Phase 1 설계 완료 대기. 구현 시작 전.
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: [docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md](docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md)
+
+Phase 1 구현 14/15 완료 (브랜치 `phase-1`). 영어·한국어 출시분이 동작한다.
+
+```
+npm run build     23 pages
+npm test          54 passed
+npm run test:e2e  31 passed  (WCAG 2A/2AA 위반 0)
+```
+
+남은 것: Task 13(장소 15건 확장) — **공공데이터 연동 전까지 보류.** 현재 `provenance`는
+실제 조회 기록이 아니라 손으로 적은 자리표시자이며, 지금 12건을 더 만들면 데이터가
+붙는 순간 전부 다시 써야 한다. 배경은 지식 베이스 §4-2 참조.
 
 - 설계: [docs/superpowers/specs/2026-08-10-phase1-multilingual-place-platform-design.md](docs/superpowers/specs/2026-08-10-phase1-multilingual-place-platform-design.md)
+- 구현 계획: [docs/superpowers/plans/2026-08-10-phase1-implementation.md](docs/superpowers/plans/2026-08-10-phase1-implementation.md)
 
 ## 로드맵
 
 | Phase | 내용 | 상태 |
 |---|---|---|
-| 1 | 다국어 장소 정보 기반 (산 15개, 8개 언어, 안전 콘텐츠) | 설계 중 |
+| 1 | 다국어 장소 정보 기반 (산 15개, 8개 언어, 안전 콘텐츠) | 14/15 (en·ko 출시분 동작) |
 | 2 | 인증 + 장소별 댓글 (Google OAuth, 원문/번역 토글) | 미착수 |
 | 3 | 수익화 (교통 중개, 장비 렌탈 제휴, 지역 상권 리스팅) | 미착수 |
 | 4 | 도메인 확장 (섬 → 낚시) | 미착수 |

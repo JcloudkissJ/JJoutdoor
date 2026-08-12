@@ -1,3 +1,9 @@
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md`
+>
+> ⚠️ 이 계획서에는 실행 중 발견된 버그 2건이 **아직 정정되지 않았습니다.** 지식 베이스 §2-6 참조 —
+> `vitest.config.ts`의 `new URL(...).pathname` → `fileURLToPath(...)`, 스텁의 `from 'zod'` → `from 'astro/zod'`.
+> 구현된 코드는 이미 올바르며, 계획서 본문만 옛 형태로 남아 있습니다.
+
 # Phase 1 Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

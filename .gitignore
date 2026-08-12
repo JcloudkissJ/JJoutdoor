@@ -15,3 +15,6 @@ npm-debug.log*
 # Playwright
 test-results/
 playwright-report/
+
+# NotebookLM PDF (md만 커밋)
+docs/notebooklm/*.pdf
