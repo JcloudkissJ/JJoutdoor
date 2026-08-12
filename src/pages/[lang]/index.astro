@@ -1,0 +1,126 @@
+---
+import { LIVE_LANGUAGES } from '../../config/languages';
+import { makeTranslator } from '../../lib/i18n';
+import Base from '../../layouts/Base.astro';
+import en from '../../i18n/en.json';
+
+export async function getStaticPaths() {
+  return LIVE_LANGUAGES.map((l) => ({
+    params: { lang: l.code },
+  }));
+}
+
+const { lang } = Astro.params;
+
+const dict = (await import(`../../i18n/${lang}.json`)).default;
+const t = makeTranslator(en, dict);
+
+const title = t('home.title');
+---
+
+<Base lang={lang!} title={title} description={title} path="/">
+  <div class="hero">
+    <h1 class="headline">{t('home.headline')}</h1>
+    <p class="tagline">Discover mountain trails across Korea with detailed route information and safety guidance.</p>
+  </div>
+
+  <nav class="entry-points">
+    <a href={`/${lang}/half-day-from-seoul`} class="entry-card">
+      <h2>{t('home.cta_tourist')}</h2>
+      <p>Short escapes from Seoul, reachable by transit</p>
+    </a>
+
+    <a href={`/${lang}/near/11`} class="entry-card">
+      <h2>{t('home.cta_resident')}</h2>
+      <p>Routes organized by region for regular visitors</p>
+    </a>
+  </nav>
+
+  <nav class="utilities">
+    <a href={`/${lang}/mountain`}>{t('nav.mountains')}</a>
+    <a href={`/${lang}/safety`}>{t('nav.safety')}</a>
+  </nav>
+</Base>
+
+<style>
+  .hero {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 8) calc(var(--unit) * 2) calc(var(--unit) * 6);
+    text-align: center;
+  }
+
+  .headline {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1.1;
+    margin: 0 0 calc(var(--unit) * 2) 0;
+    letter-spacing: -0.02em;
+  }
+
+  .tagline {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--c-fg-muted);
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+
+  .entry-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: calc(var(--unit) * 4);
+    max-width: var(--measure);
+    margin: 0 auto calc(var(--unit) * 8);
+    padding: 0 calc(var(--unit) * 2);
+  }
+
+  .entry-card {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 1.5);
+    padding: calc(var(--unit) * 4);
+    border: 1px solid var(--c-line);
+    border-radius: 4px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 150ms;
+  }
+
+  .entry-card:hover {
+    border-color: var(--c-fg);
+  }
+
+  .entry-card h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+  }
+
+  .entry-card p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--c-fg-muted);
+  }
+
+  .utilities {
+    display: flex;
+    gap: calc(var(--unit) * 3);
+    justify-content: center;
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 calc(var(--unit) * 2) calc(var(--unit) * 4);
+  }
+
+  .utilities a {
+    font-size: 0.9375rem;
+    color: var(--c-accent);
+    text-decoration: none;
+  }
+
+  .utilities a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import { LIVE_LANGUAGES } from '../../../config/languages';
+import { resolveText, makeTranslator } from '../../../lib/i18n';
+import Base from '../../../layouts/Base.astro';
+import PlaceCard from '../../../components/PlaceCard.astro';
+import en from '../../../i18n/en.json';
+
+export async function getStaticPaths() {
+  const places = await getCollection('places');
+  const regions = [...new Set(places.map((p) => p.data.region.sido))];
+  // Derive regions from content; no hardcoded list
+  return LIVE_LANGUAGES.flatMap((l) =>
+    regions.map((r) => ({
+      params: { lang: l.code, region: r },
+      props: { places: places.filter((p) => p.data.region.sido === r) },
+    })),
+  );
+}
+
+const { lang, region } = Astro.params;
+const { places: regionPlaces } = Astro.props;
+
+const dict = (await import(`../../../i18n/${lang}.json`)).default;
+const t = makeTranslator(en, dict);
+
+// Map place data to CardData format
+const placeCards = regionPlaces.map((place: any) => {
+  const name = place.data.name_i18n[lang!] ?? place.data.name_i18n.en;
+  const { value: text } = resolveText(place.data.text, lang!);
+
+  // Format duration
+  const hours = Math.floor(place.data.metrics.duration_min / 60);
+  const mins = place.data.metrics.duration_min % 60;
+  const timeFormatKey = mins === 0 ? 'time.h' : 'time.hm';
+  const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m}', String(mins));
+
+  // Determine if signage has English
+  const hasEnglishSignage = place.data.access.signage_langs?.includes('en') ?? null;
+
+  return {
+    place,
+    name,
+    summary: text.summary,
+    href: `/mountain/${place.data.id}`,
+    difficulty: place.data.metrics.difficulty,
+    difficultyLabel: t(`difficulty.${place.data.metrics.difficulty}`),
+    region: place.data.region.sido,
+    durationMin: place.data.metrics.duration_min,
+    signageEn: hasEnglishSignage,
+    restroom: place.data.access.restroom,
+    metrics: [
+      { label: t('metric.distance'), value: `${place.data.metrics.distance_km} km` },
+      { label: t('metric.elevation'), value: `${place.data.metrics.elevation_m} m` },
+      { label: t('metric.duration'), value: durationValue },
+    ],
+  };
+});
+
+// Title includes the region code; for region "11" we render "11"
+// (See task note: "render the code and note the gap" rather than inventing region names)
+const regionDisplay = region === '11' ? 'Seoul' : region;
+const title = lang === 'ko' ? `${regionDisplay} 인근 트레일` : `Trails in ${regionDisplay}`;
+const description = `Mountain trails in ${regionDisplay}`;
+---
+
+<Base lang={lang!} title={title} description={description} path={`/near/${region}/`}>
+  <div class="container">
+    <h1>{title}</h1>
+
+    <div id="results">
+      {placeCards.map((pc) => (
+        <PlaceCard
+          href={pc.href}
+          name={pc.name}
+          summary={pc.summary}
+          difficultyLabel={pc.difficultyLabel}
+          difficulty={pc.difficulty}
+          region={pc.region}
+          durationMin={pc.durationMin}
+          signageEn={pc.signageEn}
+          restroom={pc.restroom}
+          metrics={pc.metrics}
+        />
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .container {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 calc(var(--unit) * 4) 0;
+  }
+</style>
