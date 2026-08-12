@@ -1,0 +1,164 @@
+---
+interface Props {
+  href: string;
+  name: string;
+  summary: string;
+  difficultyLabel: string;
+  difficulty: 1 | 2 | 3;
+  region: string;
+  durationMin: number;
+  signageEn: boolean | null;
+  restroom: boolean | null;
+  metrics: { label: string; value: string }[];
+}
+
+const { href, name, summary, difficultyLabel, difficulty, region, durationMin, signageEn, restroom, metrics } =
+  Astro.props;
+
+// Encode data attributes: null becomes 'unknown', boolean becomes 'true'/'false'
+const encodeState = (val: boolean | null): string => (val === null ? 'unknown' : val ? 'true' : 'false');
+
+// Determine duration bucket: short (≤120min), mid (>120 and ≤180), long (>180)
+const getDurationBucket = (mins: number): string => {
+  if (mins <= 120) return 'short';
+  if (mins <= 180) return 'mid';
+  return 'long';
+};
+
+const colorClass = {
+  1: 'difficulty-1',
+  2: 'difficulty-2',
+  3: 'difficulty-3',
+}[difficulty];
+---
+
+<article
+  class="card"
+  data-region={region}
+  data-difficulty={difficulty}
+  data-duration={getDurationBucket(durationMin)}
+  data-signage-en={encodeState(signageEn)}
+  data-restroom={encodeState(restroom)}
+>
+  <a href={href} class="card-link">
+    <div class="card-header">
+      <h3>{name}</h3>
+      <div class={`difficulty-badge ${colorClass}`}>
+        <span class="dot"></span>
+        <span class="label">{difficultyLabel}</span>
+      </div>
+    </div>
+    <p class="summary">{summary}</p>
+  </a>
+
+  <dl class="metrics">
+    {metrics.map((m) => (
+      <div>
+        <dt>{m.label}</dt>
+        <dd class="num">{m.value}</dd>
+      </div>
+    ))}
+  </dl>
+</article>
+
+<style scoped>
+  .card {
+    border-top: 1px solid var(--c-line);
+    padding: calc(var(--unit) * 3) 0;
+  }
+
+  .card.hidden {
+    display: none;
+  }
+
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: calc(var(--unit) * 2);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+  }
+
+  .difficulty-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 0.625em;
+    height: 0.625em;
+    border-radius: 50%;
+  }
+
+  .difficulty-1 .dot {
+    background-color: var(--c-accent);
+  }
+
+  .difficulty-2 .dot {
+    background-color: var(--c-warn);
+  }
+
+  .difficulty-3 .dot {
+    background-color: var(--c-danger);
+  }
+
+  .summary {
+    margin: calc(var(--unit) * 1.5) 0 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--c-fg-muted);
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin: calc(var(--unit) * 2) 0 0;
+    padding: 0;
+    font-size: 0.75rem;
+  }
+
+  .metrics > div {
+    padding: calc(var(--unit) * 1) 0;
+    padding-right: var(--unit);
+  }
+
+  .metrics > div:nth-child(2) {
+    padding-left: var(--unit);
+  }
+
+  .metrics > div:nth-child(3) {
+    padding-left: var(--unit);
+  }
+
+  dt {
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-fg-muted);
+  }
+
+  dd {
+    margin: 4px 0 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+</style>

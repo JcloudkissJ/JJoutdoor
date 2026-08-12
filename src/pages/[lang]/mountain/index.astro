@@ -1,0 +1,252 @@
+---
+import { getCollection } from 'astro:content';
+import { LIVE_LANGUAGES } from '../../../config/languages';
+import { resolveText, makeTranslator } from '../../../lib/i18n';
+import Base from '../../../layouts/Base.astro';
+import PlaceCard from '../../../components/PlaceCard.astro';
+import en from '../../../i18n/en.json';
+
+export async function getStaticPaths() {
+  return LIVE_LANGUAGES.map((l) => ({
+    params: { lang: l.code },
+  }));
+}
+
+const { lang } = Astro.params;
+
+const dict = (await import(`../../../i18n/${lang}.json`)).default;
+const t = makeTranslator(en, dict);
+
+// Load all mountain places
+const places = await getCollection('places', (p) => p.data.type === 'mountain');
+
+// Derive regions from content (no hardcoded list)
+const regions = [...new Set(places.map((p) => p.data.region.sido))].sort();
+
+// Map place data to CardData format for client-side filtering
+const placeCards = places.map((place) => {
+  const name = place.data.name_i18n[lang!] ?? place.data.name_i18n.en;
+  const { value: text } = resolveText(place.data.text, lang!);
+
+  // Format duration
+  const hours = Math.floor(place.data.metrics.duration_min / 60);
+  const mins = place.data.metrics.duration_min % 60;
+  const timeFormatKey = mins === 0 ? 'time.h' : 'time.hm';
+  const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m}', String(mins));
+
+  // Determine if signage has English
+  const hasEnglishSignage = place.data.access.signage_langs?.includes('en') ?? null;
+
+  return {
+    place,
+    name,
+    summary: text.summary,
+    href: `/mountain/${place.data.id}`,
+    difficulty: place.data.metrics.difficulty,
+    difficultyLabel: t(`difficulty.${place.data.metrics.difficulty}`),
+    region: place.data.region.sido,
+    durationMin: place.data.metrics.duration_min,
+    signageEn: hasEnglishSignage,
+    restroom: place.data.access.restroom,
+    metrics: [
+      { label: t('metric.distance'), value: `${place.data.metrics.distance_km} km` },
+      { label: t('metric.elevation'), value: `${place.data.metrics.elevation_m} m` },
+      { label: t('metric.duration'), value: durationValue },
+    ],
+  };
+});
+
+const title = t('nav.mountains');
+const description = `Mountain hiking routes in Korea`;
+---
+
+<Base lang={lang!} title={title} description={description} path="/mountain/">
+  <div class="container">
+    <h1>{title}</h1>
+
+    <form id="filters" class="filter-form">
+      <div class="filter-group">
+        <label for="region-select">{t('filter.region')}</label>
+        <select id="region-select" name="region">
+          <option value="all">All</option>
+          {regions.map((r) => (
+            <option value={r}>{r}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="difficulty-select">{t('filter.difficulty')}</label>
+        <select id="difficulty-select" name="difficulty">
+          <option value="all">All</option>
+          <option value="1">{t('difficulty.1')}</option>
+          <option value="2">{t('difficulty.2')}</option>
+          <option value="3">{t('difficulty.3')}</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="duration-select">{t('filter.duration')}</label>
+        <select id="duration-select" name="duration">
+          <option value="all">All</option>
+          <option value="short">≤ 2h</option>
+          <option value="mid">2h – 3h</option>
+          <option value="long">&gt; 3h</option>
+        </select>
+      </div>
+
+      <div class="filter-group checkbox">
+        <input type="checkbox" id="signage-en" name="signageEn" />
+        <label for="signage-en">{t('filter.signage')}</label>
+      </div>
+
+      <div class="filter-group checkbox">
+        <input type="checkbox" id="restroom" name="restroom" />
+        <label for="restroom">{t('filter.restroom')}</label>
+      </div>
+    </form>
+
+    <div id="results">
+      {placeCards.map((pc) => (
+        <PlaceCard
+          href={pc.href}
+          name={pc.name}
+          summary={pc.summary}
+          difficultyLabel={pc.difficultyLabel}
+          difficulty={pc.difficulty}
+          region={pc.region}
+          durationMin={pc.durationMin}
+          signageEn={pc.signageEn}
+          restroom={pc.restroom}
+          metrics={pc.metrics}
+        />
+      ))}
+    </div>
+
+    <p id="empty" hidden>{t('empty.results')}</p>
+  </div>
+</Base>
+
+<script>
+  import { matches, type CardData } from '../../../lib/filter';
+
+  const form = document.getElementById('filters') as HTMLFormElement;
+  const resultsDiv = document.getElementById('results') as HTMLDivElement;
+  const emptyMsg = document.getElementById('empty') as HTMLParagraphElement;
+
+  function updateFilters() {
+    const region = (form.querySelector('[name="region"]') as HTMLSelectElement).value;
+    const difficulty = (form.querySelector('[name="difficulty"]') as HTMLSelectElement).value;
+    const duration = (form.querySelector('[name="duration"]') as HTMLSelectElement).value;
+    const signageEn = (form.querySelector('[name="signageEn"]') as HTMLInputElement).checked;
+    const restroom = (form.querySelector('[name="restroom"]') as HTMLInputElement).checked;
+
+    const filterState = { region, difficulty: difficulty as 'all' | '1' | '2' | '3', duration: duration as 'all' | 'short' | 'mid' | 'long', signageEn, restroom };
+
+    let visibleCount = 0;
+
+    // Get all cards
+    const cards = resultsDiv.querySelectorAll('.card');
+    cards.forEach((card) => {
+      const cardData: CardData = {
+        region: card.getAttribute('data-region') || '',
+        difficulty: (parseInt(card.getAttribute('data-difficulty') || '0') || 1) as 1 | 2 | 3,
+        durationMin: parseInt(card.getAttribute('data-duration') || '0') || 0,
+        signageEn: decodeState(card.getAttribute('data-signage-en')),
+        restroom: decodeState(card.getAttribute('data-restroom')),
+      };
+
+      const isVisible = matches(cardData, filterState);
+      card.classList.toggle('hidden', !isVisible);
+      if (isVisible) visibleCount++;
+    });
+
+    // Show/hide empty message
+    emptyMsg.hidden = visibleCount > 0;
+  }
+
+  function decodeState(val: string | null): boolean | null {
+    if (val === 'unknown') return null;
+    if (val === 'true') return true;
+    if (val === 'false') return false;
+    return null;
+  }
+
+  form.addEventListener('change', updateFilters);
+</script>
+
+<style>
+  .container {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 calc(var(--unit) * 4) 0;
+  }
+
+  .filter-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: calc(var(--unit) * 3);
+    margin-bottom: calc(var(--unit) * 6);
+    padding: calc(var(--unit) * 3);
+    background-color: var(--c-surface);
+    border-radius: 4px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 0.5);
+  }
+
+  .filter-group.checkbox {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  label {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-fg-muted);
+  }
+
+  .filter-group.checkbox label {
+    font-size: 0.9375rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  select,
+  input[type='checkbox'] {
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--c-fg);
+  }
+
+  select {
+    padding: calc(var(--unit) * 0.75) calc(var(--unit) * 1);
+    border: 1px solid var(--c-line);
+    border-radius: 2px;
+    background-color: var(--c-bg);
+  }
+
+  input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5em;
+  }
+
+  #empty {
+    text-align: center;
+    padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+    color: var(--c-fg-muted);
+    font-style: italic;
+  }
+</style>
