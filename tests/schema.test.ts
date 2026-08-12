@@ -54,6 +54,19 @@ describe('placeSchema', () => {
     expect(placeSchema.safeParse(unknown).success).toBe(true);
   });
 
+  it('미확인 편의시설은 null로 둘 수 있다 — restroom, water_refill, cell_coverage 모두', () => {
+    const unverified = {
+      ...valid,
+      access: {
+        ...valid.access,
+        restroom: null,
+        water_refill: null,
+        cell_coverage: null,
+      },
+    };
+    expect(placeSchema.safeParse(unverified).success).toBe(true);
+  });
+
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {
     expect(placeSchema.safeParse({ ...valid, type: 'island' }).success).toBe(true);
   });

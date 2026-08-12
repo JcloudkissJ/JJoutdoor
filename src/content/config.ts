@@ -31,11 +31,12 @@ export const placeSchema = z.object({
     }),
     // null = 미확인. 추측해서 채우지 않는다.
     signage_langs: z.array(z.string()).nullable(),
-    restroom: z.boolean(),
-    water_refill: z.boolean(),
+    // null = field-verified되지 않음. 추측해서 채우지 않는다.
+    restroom: z.boolean().nullable(),
+    water_refill: z.boolean().nullable(),
     entry_fee_krw: z.number().nonnegative(),
     open_hours: z.object({ type: z.string(), detail: z.string() }).optional(),
-    cell_coverage: z.enum(['good', 'partial', 'none']),
+    cell_coverage: z.enum(['good', 'partial', 'none']).nullable(),
   }),
   safety: z.object({
     hazards: z.array(z.string()),

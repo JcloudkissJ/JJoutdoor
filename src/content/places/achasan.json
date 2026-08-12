@@ -8,10 +8,10 @@
   "access": {
     "transit": { "subway": true, "station_i18n": { "en": "Achasan", "ko": "아차산" }, "walk_min": 5 },
     "signage_langs": ["ko", "en"],
-    "restroom": true,
-    "water_refill": false,
+    "restroom": null,
+    "water_refill": null,
     "entry_fee_krw": 0,
-    "cell_coverage": "good"
+    "cell_coverage": null
   },
   "safety": { "hazards": [], "sunset_caution": true },
   "text": {

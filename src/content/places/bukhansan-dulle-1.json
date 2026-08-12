@@ -8,20 +8,20 @@
   "access": {
     "transit": { "subway": true, "station_i18n": { "en": "Gupabal", "ko": "구파발" }, "walk_min": 15 },
     "signage_langs": null,
-    "restroom": true,
-    "water_refill": true,
+    "restroom": null,
+    "water_refill": null,
     "entry_fee_krw": 0,
-    "cell_coverage": "partial"
+    "cell_coverage": null
   },
   "safety": { "hazards": [], "sunset_caution": false },
   "text": {
     "en": {
-      "summary": "A scenic circular trail in the Bukhansan area with forest canopy and periodic rest facilities.",
+      "summary": "A scenic circular trail in the Bukhansan area with forest canopy.",
       "caution1": "This is the first of several dulle-gil (circular) sections; sections may be linked or separate.",
       "caution2": "The trail is well-marked but signage languages have not been verified. Bring a map or offline route data."
     },
     "ko": {
-      "summary": "북한산 둘레길 첫 구간. 숲 터널과 주기적 쉼터를 갖춘 순환로다.",
+      "summary": "북한산 둘레길 첫 구간. 숲 터널을 통과하는 순환로다.",
       "caution1": "여러 구간이 있는 둘레길의 첫 번째 섹션이다. 구간별로 연결되거나 독립적일 수 있다.",
       "caution2": "길이 잘 표지되어 있으나 표지판 언어는 현지 확인이 필요하다. 지도나 오프라인 경로 데이터를 준비할 것."
     }
