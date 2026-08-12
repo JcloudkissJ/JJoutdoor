@@ -5,6 +5,7 @@ import { resolveText, makeTranslator } from '../../../lib/i18n';
 import Base from '../../../layouts/Base.astro';
 import MetricRow from '../../../components/MetricRow.astro';
 import ProvenanceBlock from '../../../components/ProvenanceBlock.astro';
+import HazardCard from '../../../components/HazardCard.astro';
 import en from '../../../i18n/en.json';
 
 export async function getStaticPaths() {
@@ -46,6 +47,8 @@ const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m
       <li>{text.caution1}</li>
       <li>{text.caution2}</li>
     </ul>
+
+    {place.safety.hazards.map((h) => <HazardCard id={h} lang={lang!} />)}
 
     {place.access.signage_langs === null && <p class="warn">{t('signage.unknown')}</p>}
 

@@ -34,5 +34,10 @@
   "empty.results": "필터 조건에 맞는 코스가 없습니다.",
   "disclaimer": "등산로 정보는 참고용입니다. 출발 전 공식 공지를 확인하세요.",
   "time.h": "{h}시간",
-  "time.hm": "{h}시간 {m}분"
+  "time.hm": "{h}시간 {m}분",
+  "safety.hub.title": "안전 가이드",
+  "safety.hub.description": "한국 산악 트레일의 위험요소 인식, 계절별 주의사항, 응급 정보.",
+  "safety.category.hazard": "위험요소",
+  "safety.category.seasonal": "계절별 주의",
+  "safety.category.emergency": "응급 절차"
 }

@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import { LIVE_LANGUAGES } from '../../../config/languages';
+import { resolveText, makeTranslator } from '../../../lib/i18n';
+import Base from '../../../layouts/Base.astro';
+import en from '../../../i18n/en.json';
+
+export async function getStaticPaths() {
+  const docs = await getCollection('safety');
+  return LIVE_LANGUAGES.flatMap((l) =>
+    docs.map((d) => ({ params: { lang: l.code, slug: d.data.id }, props: { doc: d.data } })),
+  );
+}
+
+const { lang, slug } = Astro.params;
+const { doc } = Astro.props;
+
+const dict = (await import(`../../../i18n/${lang}.json`)).default;
+const t = makeTranslator(en, dict);
+
+const { value: text, isFallback } = resolveText(doc.text, lang!);
+---
+
+<Base lang={lang!} title={text.title} description={text.body[0]} path={`/safety/${slug}`}>
+  <article class="wrap">
+    <h1>{text.title}</h1>
+    {isFallback && <p class="fallback">{t('fallback.notice')}</p>}
+
+    {text.body.map((para) => (
+      <p>{para}</p>
+    ))}
+
+    <p class="disclaimer">{t('disclaimer')}</p>
+  </article>
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 calc(var(--unit) * 2) 0;
+  }
+
+  p {
+    line-height: 1.7;
+    margin: 0 0 calc(var(--unit) * 2) 0;
+  }
+
+  .fallback {
+    font-size: 0.8125rem;
+    color: var(--c-warn);
+  }
+
+  .disclaimer {
+    font-size: 0.75rem;
+    color: var(--c-fg-muted);
+    margin-top: calc(var(--unit) * 4);
+  }
+</style>

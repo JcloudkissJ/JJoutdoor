@@ -1,0 +1,127 @@
+---
+import { getCollection } from 'astro:content';
+import { LIVE_LANGUAGES } from '../../../config/languages';
+import { resolveText, makeTranslator } from '../../../lib/i18n';
+import Base from '../../../layouts/Base.astro';
+import en from '../../../i18n/en.json';
+
+export async function getStaticPaths() {
+  return LIVE_LANGUAGES.map((l) => ({ params: { lang: l.code } }));
+}
+
+const { lang } = Astro.params;
+
+const dict = (await import(`../../../i18n/${lang}.json`)).default;
+const t = makeTranslator(en, dict);
+
+const docs = await getCollection('safety');
+
+// Group by category
+const grouped = docs.reduce(
+  (acc, d) => {
+    const category = d.data.category;
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(d);
+    return acc;
+  },
+  {} as Record<string, typeof docs>,
+);
+
+// Resolve text for each doc per language
+const resolved = Object.entries(grouped).reduce(
+  (acc, [cat, list]) => {
+    acc[cat] = list.map((d) => ({
+      id: d.data.id,
+      ...resolveText(d.data.text, lang!),
+    }));
+    return acc;
+  },
+  {} as Record<string, Array<{ id: string; value: { title: string; body: string[] }; isFallback: boolean }>>,
+);
+
+const categories = ['hazard', 'seasonal', 'emergency'] as const;
+---
+
+<Base lang={lang!} title={t('safety.hub.title')} description={t('safety.hub.description')} path={'/safety'}>
+  <article class="wrap">
+    <h1>{t('safety.hub.title')}</h1>
+
+    {categories
+      .filter((cat) => resolved[cat] && resolved[cat].length > 0)
+      .map((cat) => (
+        <section class="category">
+          <h2>{t(`safety.category.${cat}`)}</h2>
+          <ul>
+            {resolved[cat]!.map((item) => (
+              <li>
+                <a href={`/${lang}/safety/${item.id}`}>
+                  <strong>{item.value.title}</strong>
+                  {item.isFallback && <span class="fallback">({t('fallback.notice')})</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+  </article>
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 calc(var(--unit) * 4) 0;
+  }
+
+  .category {
+    margin-bottom: calc(var(--unit) * 6);
+  }
+
+  .category h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 2) 0;
+    color: var(--c-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: var(--unit) 0;
+  }
+
+  a {
+    display: block;
+    padding: calc(var(--unit) * 1.5) calc(var(--unit) * 2);
+    border-left: 3px solid var(--c-line);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-left-color: var(--c-warn);
+    background: var(--c-surface);
+  }
+
+  strong {
+    display: block;
+  }
+
+  .fallback {
+    font-size: 0.75rem;
+    color: var(--c-warn);
+  }
+</style>

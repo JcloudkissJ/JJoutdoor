@@ -34,5 +34,10 @@
   "empty.results": "No routes match these filters.",
   "disclaimer": "Trail information is for reference. Check official notices before you go.",
   "time.h": "{h}h",
-  "time.hm": "{h}h {m}m"
+  "time.hm": "{h}h {m}m",
+  "safety.hub.title": "Safety guides",
+  "safety.hub.description": "Hazard awareness, seasonal alerts, and emergency information for Korean mountain trails.",
+  "safety.category.hazard": "Hazards",
+  "safety.category.seasonal": "Seasonal alerts",
+  "safety.category.emergency": "Emergency procedures"
 }

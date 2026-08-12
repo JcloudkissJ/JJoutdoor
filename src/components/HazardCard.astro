@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import { resolveText } from '../lib/i18n';
+
+interface Props {
+  id: string;
+  lang: string;
+}
+
+const { id, lang } = Astro.props;
+
+const all = await getCollection('safety');
+const doc = all.find((d) => d.data.id === id);
+const resolved = doc ? resolveText(doc.data.text, lang) : null;
+---
+
+{resolved && (
+  <a class="hazard" href={`/${lang}/safety/${id}`}>
+    <strong>{resolved.value.title}</strong>
+    <span>{resolved.value.body[0]}</span>
+  </a>
+)}
+
+<style>
+  .hazard {
+    display: block;
+    border-left: 3px solid var(--c-warn);
+    padding: var(--unit) calc(var(--unit) * 2);
+    margin: var(--unit) 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hazard:hover {
+    background: var(--c-surface);
+  }
+
+  strong {
+    display: block;
+  }
+
+  span {
+    font-size: 0.875rem;
+    color: var(--c-fg-muted);
+  }
+</style>
