@@ -57,9 +57,9 @@ const placeCards = regionPlaces.map((place: any) => {
   };
 });
 
-// Title includes the region code; for region "11" we render "11"
-// (See task note: "render the code and note the gap" rather than inventing region names)
-const regionDisplay = region === '11' ? 'Seoul' : region;
+// Look up region display name; if not in dictionary, makeTranslator returns the code itself
+const regionKey = `region.${region}`;
+const regionDisplay = t(regionKey);
 const title = lang === 'ko' ? `${regionDisplay} 인근 트레일` : `Trails in ${regionDisplay}`;
 const description = `Mountain trails in ${regionDisplay}`;
 ---

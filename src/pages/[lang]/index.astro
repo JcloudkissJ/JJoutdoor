@@ -21,18 +21,18 @@ const title = t('home.title');
 <Base lang={lang!} title={title} description={title} path="/">
   <div class="hero">
     <h1 class="headline">{t('home.headline')}</h1>
-    <p class="tagline">Discover mountain trails across Korea with detailed route information and safety guidance.</p>
+    <p class="tagline">{t('home.tagline')}</p>
   </div>
 
   <nav class="entry-points">
     <a href={`/${lang}/half-day-from-seoul`} class="entry-card">
       <h2>{t('home.cta_tourist')}</h2>
-      <p>Short escapes from Seoul, reachable by transit</p>
+      <p>{t('home.cta_tourist_desc')}</p>
     </a>
 
     <a href={`/${lang}/near/11`} class="entry-card">
       <h2>{t('home.cta_resident')}</h2>
-      <p>Routes organized by region for regular visitors</p>
+      <p>{t('home.cta_resident_desc')}</p>
     </a>
   </nav>
 
