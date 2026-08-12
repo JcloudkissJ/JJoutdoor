@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { placeSchema } from '../src/content/config';
+import { placeSchema, safetySchema } from '../src/content/config';
 
 const valid = {
   id: 'inwangsan',
@@ -31,6 +31,11 @@ describe('placeSchema', () => {
 
   it('영어 텍스트는 필수다 — 폴백 언어이기 때문', () => {
     const noEn = { ...valid, text: { ko: { summary: 's', caution1: 'c', caution2: 'c' } } };
+    expect(placeSchema.safeParse(noEn).success).toBe(false);
+  });
+
+  it('영어 이름은 필수다 — 폴백 언어이기 때문', () => {
+    const noEn = { ...valid, name_i18n: { ko: '인왕산' } };
     expect(placeSchema.safeParse(noEn).success).toBe(false);
   });
 
@@ -67,5 +72,27 @@ describe('placeSchema', () => {
       },
     };
     expect(placeSchema.safeParse(bad).success).toBe(false);
+  });
+});
+
+describe('safetySchema', () => {
+  it('유효한 안전 문서를 통과시킨다', () => {
+    const validSafety = {
+      id: 'summer_heat',
+      category: 'seasonal',
+      season: 'summer',
+      text: { en: { title: 'Heat Risk', body: ['Stay hydrated'] } },
+    };
+    expect(safetySchema.safeParse(validSafety).success).toBe(true);
+  });
+
+  it('영어 안전 텍스트는 필수다', () => {
+    const noEn = {
+      id: 'summer_heat',
+      category: 'seasonal',
+      season: 'summer',
+      text: { ko: { title: '더위', body: ['수분 섭취'] } },
+    };
+    expect(safetySchema.safeParse(noEn).success).toBe(false);
   });
 });

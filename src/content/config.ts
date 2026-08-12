@@ -1,3 +1,4 @@
+import type { VerificationStatus } from '../lib/reconcile';
 import { defineCollection, z } from 'astro:content';
 
 const localizedText = z.object({
@@ -54,7 +55,7 @@ export const placeSchema = z.object({
       )
       .min(1, 'at least one source required'),
     verification: z.object({
-      status: z.enum(['verified', 'single_source', 'conflict']),
+      status: z.enum(['verified', 'single_source', 'conflict'] as const satisfies readonly VerificationStatus[]),
       checked_fields: z.array(z.string()),
       note: z.string().optional(),
     }),
@@ -67,7 +68,7 @@ export const safetySchema = z.object({
   season: z.enum(['spring', 'summer', 'autumn', 'winter']).nullable(),
   text: z
     .record(z.object({ title: z.string().min(1), body: z.array(z.string().min(1)).min(1) }))
-    .refine((v) => 'en' in v, { message: 'English text required' }),
+    .refine((v) => 'en' in v, { message: 'English safety text required' }),
 });
 
 export const collections = {
