@@ -1,0 +1,23 @@
+# data/ 는 기본적으로 전부 무시한다.
+#
+# 이유: 여기에는 (1) 수백 MB 원본 아카이브와 (2) API 키가 적힌 파일이 섞여 들어온다.
+# 확장자를 하나씩 나열하는 방식은 새 형식이 생길 때마다 구멍이 난다.
+# 키가 관련된 디렉터리에서는 거부를 기본값으로 두고 필요한 것만 되살린다.
+#
+# 커밋되는 것은 정책 문서와 "검증의 증거"뿐이다:
+#   - README.md            보존 정책
+#   - raw/*/manifest.json  출처 URL·조회일·sha256 (재현성)
+#   - extracted/*.json     출처별 원시 판독값 (교차검증 주장의 근거)
+
+*
+
+!.gitignore
+!README.md
+
+!raw/
+!raw/.gitignore
+!raw/*/
+!raw/*/manifest.json
+
+!extracted/
+!extracted/*.json
