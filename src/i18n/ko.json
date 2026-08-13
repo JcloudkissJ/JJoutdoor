@@ -41,5 +41,7 @@
   "safety.category.seasonal": "계절별 주의",
   "safety.category.emergency": "응급 절차",
   "metric.estimated": "실측이 아닌 계산값",
-  "metric.unverified": "검증되지 않음"
+  "metric.unverified": "검증되지 않음",
+  "duration.minimum": "표시된 시간은 최소치다. 거리와 상승만으로 계산한 값이라 실제 오르내림·휴식·하산 시간이 빠져 있다. 반드시 여유를 두고 계획할 것.",
+  "region.41": "경기도"
 }

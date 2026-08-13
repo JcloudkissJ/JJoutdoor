@@ -7,7 +7,7 @@ const valid = {
   name_i18n: { en: 'Inwangsan', ko: '인왕산' },
   region: { sido: '11', sigungu: '11110' },
   coords: { lat: 37.58, lng: 126.9585 },
-  metrics: { elevation_m: 338, distance_km: 3.2, duration_min: 90, difficulty: 1 },
+  metrics: { elevation_m: 338, distance_km: 3.2, duration_min: 90, difficulty: 1, ascent_m: 200 },
   access: {
     transit: { subway: true, walk_min: 10 },
     signage_langs: ['ko', 'en'],
@@ -21,6 +21,7 @@ const valid = {
     distance_km: { kind: 'sourced', org: 'forest_service' },
     duration_min: { kind: 'estimated', method: 'naismith_v1' },
     difficulty: { kind: 'manual' },
+    ascent_m: { kind: 'estimated', method: 'srtm30m_net_v1' },
   },
   safety: { hazards: ['steep_stair'], sunset_caution: true },
   text: { en: { summary: 's', caution1: 'c1', caution2: 'c2' } },
@@ -92,6 +93,46 @@ describe('placeSchema', () => {
   it('네 지표의 출처를 모두 명시해야 한다', () => {
     const { difficulty: _omitted, ...partial } = valid.metrics_origin;
     expect(placeSchema.safeParse({ ...valid, metrics_origin: partial }).success).toBe(false);
+  });
+
+  it('상승값이 있는데 출처가 없으면 거부한다', () => {
+    const orphanValue = {
+      ...valid,
+      metrics_origin: { ...valid.metrics_origin, ascent_m: null },
+    };
+    expect(placeSchema.safeParse(orphanValue).success).toBe(false);
+  });
+
+  it('상승값이 없는데 출처만 있으면 거부한다', () => {
+    const orphanOrigin = {
+      ...valid,
+      metrics: { ...valid.metrics, ascent_m: null },
+      metrics_origin: { ...valid.metrics_origin, duration_min: { kind: 'manual' } },
+    };
+    expect(placeSchema.safeParse(orphanOrigin).success).toBe(false);
+  });
+
+  it('상승을 모르는 장소는 값과 출처를 함께 null 로 둘 수 있다', () => {
+    const unknownAscent = {
+      ...valid,
+      metrics: { ...valid.metrics, ascent_m: null },
+      metrics_origin: {
+        ...valid.metrics_origin,
+        // 추정이 아니어야 한다 — 추정에는 입력이 필요하다
+        duration_min: { kind: 'sourced', org: 'knps' },
+        ascent_m: null,
+      },
+    };
+    expect(placeSchema.safeParse(unknownAscent).success).toBe(true);
+  });
+
+  it('추정한 소요시간에 상승값이 없으면 거부한다 — 입력 없이는 재현할 수 없다', () => {
+    const noInput = {
+      ...valid,
+      metrics: { ...valid.metrics, ascent_m: null },
+      metrics_origin: { ...valid.metrics_origin, ascent_m: null },
+    };
+    expect(placeSchema.safeParse(noInput).success).toBe(false);
   });
 
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {

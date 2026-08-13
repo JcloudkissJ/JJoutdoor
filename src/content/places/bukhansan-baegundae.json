@@ -1,0 +1,95 @@
+{
+  "id": "bukhansan-baegundae",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Bukhansan Baegundae Course",
+    "ko": "북한산 백운대코스"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11305"
+  },
+  "coords": {
+    "lat": 37.658657,
+    "lng": 126.978056
+  },
+  "metrics": {
+    "elevation_m": 837,
+    "distance_km": 1.9,
+    "duration_min": 90,
+    "difficulty": 2,
+    "ascent_m": null
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "duration_min": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "ascent_m": null
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": 0
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The national park's own route from Baegundae Trailhead Centre over Harujae to Baegundae, the main peak of Bukhansan. Every figure on this page is the park service's published figure, not our estimate.",
+      "caution1": "Short distance, slow pace: the park allows 90 minutes for 1.9 km one way. That is roughly 1.3 km per hour, which reflects climbing rather than walking. Plan the return as well.",
+      "caution2": "The upper section is bare granite with steel stairs and handrails. Avoid it in rain, ice, or strong wind, and turn back rather than push on."
+    },
+    "ko": {
+      "summary": "국립공원공단이 안내하는 백운대탐방지원센터~하루재~백운대 구간. 이 페이지의 수치는 전부 공단이 공개한 값이며 우리가 계산한 값이 아니다.",
+      "caution1": "거리는 짧지만 속도가 느리다. 편도 1.9km에 공식 소요시간이 90분으로, 시속 1.3km다. 걷는 속도가 아니라 오르는 속도이며 하산 시간은 별도로 잡아야 한다.",
+      "caution2": "정상부는 철계단과 난간이 놓인 암릉이다. 비·결빙·강풍에는 오르지 말고, 무리해서 진행하지 말고 되돌아설 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "knps",
+        "dataset": "국립공원공단 북한산 탐방로 — 백운대코스",
+        "url": "https://www.knps.or.kr/front/portal/trails/search.do?menuNo=8000754&searchParkId=121500",
+        "fetched_at": "2026-08-13"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 북한산 표고·좌표",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "distance_km",
+        "duration_min",
+        "difficulty"
+      ],
+      "note": "거리·소요시간·난이도는 국립공원공단 한 곳, 표고·좌표는 100대명산 API 한 곳에서 왔다. 같은 수치를 두 출처가 확인한 것이 아니므로 verified 로 올리지 않는다."
+    }
+  }
+}

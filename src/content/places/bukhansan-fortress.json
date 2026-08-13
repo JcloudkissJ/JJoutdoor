@@ -1,0 +1,95 @@
+{
+  "id": "bukhansan-fortress",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Bukhansanseong Course",
+    "ko": "북한산성코스"
+  },
+  "region": {
+    "sido": "41",
+    "sigungu": "41281"
+  },
+  "coords": {
+    "lat": 37.658657,
+    "lng": 126.978056
+  },
+  "metrics": {
+    "elevation_m": 837,
+    "distance_km": 3.4,
+    "duration_min": 160,
+    "difficulty": 2,
+    "ascent_m": null
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "duration_min": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "knps"
+    },
+    "ascent_m": null
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": 0
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The national park's route from Bukhansanseong Trailhead Centre through Daeseomun gate up to Baegundae. Longer than the Baegundae course, with the same rocky finish.",
+      "caution1": "The park allows 160 minutes for 3.4 km one way. Treat that as one direction only and add the descent before deciding your turnaround time.",
+      "caution2": "The final approach to Baegundae is bare granite with steel stairs and handrails. Avoid it in rain, ice, or strong wind."
+    },
+    "ko": {
+      "summary": "국립공원공단이 안내하는 북한산성탐방지원센터~대서문~백운대 구간. 백운대코스보다 길며 마지막 암릉 구간은 같다.",
+      "caution1": "편도 3.4km에 공식 소요시간이 160분이다. 편도 기준이므로 하산 시간을 더해 회차 시각을 정할 것.",
+      "caution2": "백운대 직전은 철계단과 난간이 놓인 암릉이다. 비·결빙·강풍에는 오르지 말 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "knps",
+        "dataset": "국립공원공단 북한산 탐방로 — 북한산성코스",
+        "url": "https://www.knps.or.kr/front/portal/trails/search.do?menuNo=8000754&searchParkId=121500",
+        "fetched_at": "2026-08-13"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 북한산 표고·좌표",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "distance_km",
+        "duration_min",
+        "difficulty"
+      ],
+      "note": "거리·소요시간·난이도는 국립공원공단 한 곳, 표고·좌표는 100대명산 API 한 곳에서 왔다. 좌표는 코스 들머리가 아니라 두 코스가 함께 오르는 백운대(북한산) 지점이다."
+    }
+  }
+}

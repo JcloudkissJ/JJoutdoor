@@ -1,0 +1,32 @@
+{
+  "org": "knps",
+  "park": "북한산국립공원",
+  "park_id": "121500",
+  "source_url": "https://www.knps.or.kr/front/portal/trails/search.do?menuNo=8000754&searchParkId=121500",
+  "fetched_at": "2026-08-13",
+  "collection_note": "이 사이트는 스크립트 fetch 를 차단한다('정상적인 접근방법이 아닙니다'). 일반 브라우저 이동은 허용되므로 13개 코스를 자동 순회하지 않고 사람이 직접 연다. 코스 상세는 visitCourseSubMain.do?parkId=121500&vcursId=... 에 있고 거리와 소요시간이 함께 표시된다. 수집한 코스는 distance_km/duration_min 을 채우고 place_id 를 연결한다.",
+  "confirmed_count": 2,
+  "total_count": 13,
+  "courses": [
+    {
+      "name_ko": "백운대코스",
+      "section_ko": "백운대탐방지원센터~하루재~백운대",
+      "distance_km": 1.9,
+      "duration_min": 90,
+      "difficulty_ko": "중",
+      "place_id": "bukhansan-baegundae"
+    },
+    {
+      "name_ko": "북한산성코스",
+      "section_ko": "북한산성탐방지원센터~대서문~백운대",
+      "distance_km": 3.4,
+      "duration_min": 160,
+      "difficulty_ko": "중",
+      "place_id": "bukhansan-fortress"
+    }
+  ],
+  "not_provided": [
+    "누적고도 — 국립공원공단도 주지 않는다. 그래서 이 코스들은 순 상승 추정을 하지 않고 공식 소요시간을 그대로 인용한다(ascent_m: null).",
+    "들머리 좌표 — 코스 목록에 없다. 두 코스가 함께 오르는 백운대 지점 좌표는 100대명산 API 에서 가져왔다."
+  ]
+}

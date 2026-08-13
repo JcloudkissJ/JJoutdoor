@@ -41,5 +41,7 @@
   "safety.category.seasonal": "Seasonal alerts",
   "safety.category.emergency": "Emergency procedures",
   "metric.estimated": "Estimated, not measured",
-  "metric.unverified": "Not verified"
+  "metric.unverified": "Not verified",
+  "duration.minimum": "This time is a minimum. It is calculated from distance and elevation gain alone, and leaves out the route's ups and downs, breaks, and the descent. Allow more time than shown.",
+  "region.41": "Gyeonggi"
 }

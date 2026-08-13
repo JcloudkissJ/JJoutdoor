@@ -112,7 +112,9 @@ test('미확인 편의시설 - restroom 필터 적용 시 결과 없음', async 
 });
 
 // Duration filter test
-test('기간 필터 — 2시간 이하 선택 시 3개 카드 표시', async ({ page }) => {
+// 기대 개수는 콘텐츠에서 온다: 아차산 60분 · 인왕산 65분 · 백운대코스 90분 ·
+// 둘레길 1구간 120분 · 북한산성코스 160분. 장소를 추가하면 여기도 함께 고친다.
+test('기간 필터 — 2시간 이하 선택 시 4개 카드 표시', async ({ page }) => {
   await page.goto('/en/mountain/');
 
   // ≤2h 필터 선택 (value="short")
@@ -122,10 +124,10 @@ test('기간 필터 — 2시간 이하 선택 시 3개 카드 표시', async ({ 
 
   const cards = page.locator('article.card:not(.hidden)');
   const count = await cards.count();
-  expect(count).toBe(3);
+  expect(count).toBe(4);
 });
 
-test('기간 필터 — 2-3시간 선택 시 0개 카드 표시', async ({ page }) => {
+test('기간 필터 — 2-3시간 선택 시 1개 카드 표시', async ({ page }) => {
   await page.goto('/en/mountain/');
 
   // 2-3h 필터 선택 (value="mid")
@@ -135,7 +137,7 @@ test('기간 필터 — 2-3시간 선택 시 0개 카드 표시', async ({ page 
 
   const cards = page.locator('article.card:not(.hidden)');
   const count = await cards.count();
-  expect(count).toBe(0);
+  expect(count).toBe(1);
 });
 
 test('기간 필터 — 3시간 이상 선택 시 0개 카드 표시', async ({ page }) => {

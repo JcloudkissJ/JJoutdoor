@@ -48,6 +48,14 @@ export const placeSchema = z.object({
     distance_km: z.number().positive(),
     duration_min: z.number().positive(),
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+    // 소요시간 추정에 들어간 상승값(m). null = 상승을 모른다.
+    //
+    // 값이 데이터에 남아야 추정을 재현할 수 있다. duration_min 만 남기면
+    // "무엇을 넣어 그 숫자가 나왔는지"를 확인할 수 없다.
+    //
+    // 0 을 허용하는 이유: 평지 코스는 상승이 실제로 0 이다. 모르는 것(null)과
+    // 0 인 것은 다르다.
+    ascent_m: z.number().nonnegative().nullable(),
   }),
   // 각 수치가 어디서 왔는지. 값과 출처를 나란히 두지 않으면 화면에서
   // "확인된 값"과 "계산한 값"을 구분할 수 없다.
@@ -59,6 +67,8 @@ export const placeSchema = z.object({
     distance_km: metricOrigin,
     duration_min: metricOrigin,
     difficulty: metricOrigin,
+    // 값이 null 이면 출처도 null 이다. 아래 refine 이 둘을 묶는다.
+    ascent_m: metricOrigin.nullable(),
   }),
   access: z.object({
     transit: z.object({
@@ -98,7 +108,18 @@ export const placeSchema = z.object({
       note: z.string().optional(),
     }),
   }),
-});
+})
+  // 값과 출처는 함께 있거나 함께 없어야 한다. 값만 있으면 어디서 왔는지 알 수 없고,
+  // 출처만 있으면 무엇의 출처인지 알 수 없다.
+  .refine((d) => (d.metrics.ascent_m === null) === (d.metrics_origin.ascent_m === null), {
+    message: 'ascent_m 은 값과 출처가 함께 있거나 함께 없어야 한다',
+    path: ['metrics_origin', 'ascent_m'],
+  })
+  // 상승을 넣어 계산한 소요시간인데 그 상승값이 데이터에 없으면 재현할 수 없다.
+  .refine((d) => d.metrics_origin.duration_min.kind !== 'estimated' || d.metrics.ascent_m !== null, {
+    message: '추정한 소요시간에는 ascent_m 이 필요하다 — 입력이 없으면 재현할 수 없다',
+    path: ['metrics', 'ascent_m'],
+  });
 
 export const safetySchema = z.object({
   id: z.string().min(1),

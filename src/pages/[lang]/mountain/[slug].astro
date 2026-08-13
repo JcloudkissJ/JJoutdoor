@@ -53,6 +53,15 @@ const originNote = (key: MetricKey): string | undefined => {
       ]}
     />
 
+    {/*
+      추정한 시간은 반드시 "최소치"임을 말한다. 순 상승은 실제 누적고도보다 작고
+      휴식·하산도 빠져 있어 계산값이 실제보다 짧게 나온다. 등산에서 짧게 나오는 것은
+      위험한 방향이므로, 근거 없는 보정 계수를 곱하는 대신 문구로 여유를 전달한다.
+    */}
+    {place.metrics_origin.duration_min.kind === 'estimated' && (
+      <p class="warn">{t('duration.minimum')}</p>
+    )}
+
     <ul class="cautions">
       <li>{text.caution1}</li>
       <li>{text.caution2}</li>

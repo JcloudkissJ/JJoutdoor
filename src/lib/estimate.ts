@@ -12,6 +12,22 @@
 /** `metrics_origin.method` 에 기록할 식별자. 데이터와 코드가 어긋나지 않도록 여기서만 정의한다. */
 export const NAISMITH_V1 = 'naismith_v1';
 
+/**
+ * 상승값을 SRTM30m **순 상승**으로 채웠을 때의 식별자.
+ *
+ * Naismith 계산 자체는 `naismith_v1` 과 같다. 다른 것은 입력이다 — 누적고도가 아니라
+ * 등산로 최고점과 최저점의 표고 **차이**를 넣었다. 계산식이 아니라 입력의 출처가
+ * 다르므로 method 를 나눈다. 같은 이름을 쓰면 나중에 두 값을 구분할 수 없다.
+ *
+ * ⚠️ 순 상승은 실제 누적고도보다 작다. 능선을 오르내리는 코스일수록 차이가 커지고,
+ *    그만큼 시간이 **짧게** 나온다. 등산에서 짧게 나오는 것은 위험한 방향이므로
+ *    이 method 로 계산한 시간에는 "최소치"라는 안내를 화면에 반드시 함께 낸다.
+ */
+export const NAISMITH_NET_ASCENT_SRTM30M_V1 = 'naismith_net_ascent_srtm30m_v1';
+
+/** `ascent_m` 자체의 출처 표기. 산출 기록은 `data/extracted/srtm30m-net-ascent.json`. */
+export const SRTM30M_NET_V1 = 'srtm30m_net_v1';
+
 /** 평지 이동 속도. Naismith 규칙의 첫 항. */
 const FLAT_KM_PER_HOUR = 5;
 
