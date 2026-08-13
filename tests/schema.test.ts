@@ -16,6 +16,12 @@ const valid = {
     entry_fee_krw: 0,
     cell_coverage: 'good',
   },
+  metrics_origin: {
+    elevation_m: { kind: 'sourced', org: 'forest_service' },
+    distance_km: { kind: 'sourced', org: 'forest_service' },
+    duration_min: { kind: 'estimated', method: 'naismith_v1' },
+    difficulty: { kind: 'manual' },
+  },
   safety: { hazards: ['steep_stair'], sunset_caution: true },
   text: { en: { summary: 's', caution1: 'c1', caution2: 'c2' } },
   provenance: {
@@ -65,6 +71,27 @@ describe('placeSchema', () => {
       },
     };
     expect(placeSchema.safeParse(unverified).success).toBe(true);
+  });
+
+  it('추정값에 method가 없으면 거부한다 — 재현 불가능한 추정은 검증할 수 없다', () => {
+    const noMethod = {
+      ...valid,
+      metrics_origin: { ...valid.metrics_origin, duration_min: { kind: 'estimated' } },
+    };
+    expect(placeSchema.safeParse(noMethod).success).toBe(false);
+  });
+
+  it('출처값에 org가 없으면 거부한다 — 출처 없는 인용은 출처가 아니다', () => {
+    const noOrg = {
+      ...valid,
+      metrics_origin: { ...valid.metrics_origin, elevation_m: { kind: 'sourced' } },
+    };
+    expect(placeSchema.safeParse(noOrg).success).toBe(false);
+  });
+
+  it('네 지표의 출처를 모두 명시해야 한다', () => {
+    const { difficulty: _omitted, ...partial } = valid.metrics_origin;
+    expect(placeSchema.safeParse({ ...valid, metrics_origin: partial }).success).toBe(false);
   });
 
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {

@@ -39,5 +39,7 @@
   "safety.hub.description": "한국 산악 트레일의 위험요소 인식, 계절별 주의사항, 응급 정보.",
   "safety.category.hazard": "위험요소",
   "safety.category.seasonal": "계절별 주의",
-  "safety.category.emergency": "응급 절차"
+  "safety.category.emergency": "응급 절차",
+  "metric.estimated": "실측이 아닌 계산값",
+  "metric.unverified": "검증되지 않음"
 }

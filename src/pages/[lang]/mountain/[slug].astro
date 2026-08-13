@@ -27,6 +27,16 @@ const hours = Math.floor(place.metrics.duration_min / 60);
 const mins = place.metrics.duration_min % 60;
 const timeFormatKey = mins === 0 ? 'time.h' : 'time.hm';
 const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m}', String(mins));
+
+// 확인된 값에는 아무것도 붙이지 않고, 계산했거나 검증되지 않은 값에만 표시한다.
+// sourced 는 기관 데이터라 별도 표시가 필요 없다 — 출처는 아래 ProvenanceBlock 이 밝힌다.
+type MetricKey = keyof typeof place.metrics_origin;
+const originNote = (key: MetricKey): string | undefined => {
+  const kind = place.metrics_origin[key].kind;
+  if (kind === 'estimated') return t('metric.estimated');
+  if (kind === 'manual') return t('metric.unverified');
+  return undefined;
+};
 ---
 
 <Base lang={lang!} title={name} description={text.summary} path={`/mountain/${slug}`}>
@@ -37,9 +47,9 @@ const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m
 
     <MetricRow
       items={[
-        { label: t('metric.elevation'), value: `${place.metrics.elevation_m} m` },
-        { label: t('metric.distance'), value: `${place.metrics.distance_km} km` },
-        { label: t('metric.duration'), value: durationValue },
+        { label: t('metric.elevation'), value: `${place.metrics.elevation_m} m`, note: originNote('elevation_m') },
+        { label: t('metric.distance'), value: `${place.metrics.distance_km} km`, note: originNote('distance_km') },
+        { label: t('metric.duration'), value: durationValue, note: originNote('duration_min') },
       ]}
     />
 

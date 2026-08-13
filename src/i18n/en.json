@@ -39,5 +39,7 @@
   "safety.hub.description": "Hazard awareness, seasonal alerts, and emergency information for Korean mountain trails.",
   "safety.category.hazard": "Hazards",
   "safety.category.seasonal": "Seasonal alerts",
-  "safety.category.emergency": "Emergency procedures"
+  "safety.category.emergency": "Emergency procedures",
+  "metric.estimated": "Estimated, not measured",
+  "metric.unverified": "Not verified"
 }

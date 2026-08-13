@@ -7,6 +7,32 @@ const localizedText = z.object({
   caution2: z.string().min(1),
 });
 
+/**
+ * 수치 하나의 출처.
+ *
+ * 공공데이터로 채울 수 있는 것은 고도·좌표·거리뿐이다. 소요시간은 어느
+ * 출처에도 없고 난이도 코드는 97% 이상이 한 값이라 쓸 수 없다. 그래서
+ * 일부 수치는 계산해야 하는데, 계산한 값을 확인된 값처럼 보여주면
+ * 이 프로젝트가 지켜온 규칙이 무너진다.
+ *
+ * estimated 인데 method 가 없으면 빌드가 실패한다. "추정했다"만 적고
+ * "어떻게"를 빠뜨리면 재현할 수 없고, 재현할 수 없는 값은 검증할 수 없다.
+ */
+const metricOrigin = z
+  .object({
+    kind: z.enum(['sourced', 'estimated', 'manual']),
+    /** estimated 일 때 필수. 예: 'naismith_v1' */
+    method: z.string().min(1).optional(),
+    /** sourced 일 때 어느 기관인지. 예: 'forest_service' */
+    org: z.string().min(1).optional(),
+  })
+  .refine((o) => o.kind !== 'estimated' || !!o.method, {
+    message: 'estimated 수치에는 method 가 필요하다 — 재현할 수 없는 추정은 검증할 수 없다',
+  })
+  .refine((o) => o.kind !== 'sourced' || !!o.org, {
+    message: 'sourced 수치에는 org 가 필요하다 — 출처 없는 인용은 출처가 아니다',
+  });
+
 export const placeSchema = z.object({
   id: z.string().min(1),
   type: z.enum(['mountain', 'island', 'fishing']),
@@ -22,6 +48,17 @@ export const placeSchema = z.object({
     distance_km: z.number().positive(),
     duration_min: z.number().positive(),
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+  }),
+  // 각 수치가 어디서 왔는지. 값과 출처를 나란히 두지 않으면 화면에서
+  // "확인된 값"과 "계산한 값"을 구분할 수 없다.
+  //
+  // 네 지표를 모두 명시해야 한다. 지표를 추가하면 여기서 검증이 깨져
+  // 출처를 정하지 않은 채 넘어갈 수 없다.
+  metrics_origin: z.object({
+    elevation_m: metricOrigin,
+    distance_km: metricOrigin,
+    duration_min: metricOrigin,
+    difficulty: metricOrigin,
   }),
   access: z.object({
     transit: z.object({

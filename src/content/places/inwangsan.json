@@ -1,19 +1,62 @@
 {
   "id": "inwangsan",
   "type": "mountain",
-  "name_i18n": { "en": "Inwangsan", "ko": "인왕산" },
-  "region": { "sido": "11", "sigungu": "11110" },
-  "coords": { "lat": 37.58, "lng": 126.9585 },
-  "metrics": { "elevation_m": 338, "distance_km": 3.2, "duration_min": 90, "difficulty": 1 },
+  "name_i18n": {
+    "en": "Inwangsan",
+    "ko": "인왕산"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11110"
+  },
+  "coords": {
+    "lat": 37.58,
+    "lng": 126.9585
+  },
+  "metrics": {
+    "elevation_m": 338,
+    "distance_km": 3.2,
+    "duration_min": 90,
+    "difficulty": 1
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "manual"
+    },
+    "distance_km": {
+      "kind": "manual"
+    },
+    "duration_min": {
+      "kind": "manual"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
   "access": {
-    "transit": { "subway": true, "station_i18n": { "en": "Dongnimmun", "ko": "독립문" }, "walk_min": 10 },
-    "signage_langs": ["ko", "en"],
+    "transit": {
+      "subway": true,
+      "station_i18n": {
+        "en": "Dongnimmun",
+        "ko": "독립문"
+      },
+      "walk_min": 10
+    },
+    "signage_langs": [
+      "ko",
+      "en"
+    ],
     "restroom": null,
     "water_refill": null,
     "entry_fee_krw": 0,
     "cell_coverage": null
   },
-  "safety": { "hazards": ["steep_stair"], "sunset_caution": true },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
   "text": {
     "en": {
       "summary": "A short ridge walk along the old city wall, ten minutes from a subway station.",
@@ -27,7 +70,19 @@
     }
   },
   "provenance": {
-    "sources": [{ "org": "seoul", "dataset": "서울시 등산로 정보", "fetched_at": "2026-08-10" }],
-    "verification": { "status": "single_source", "checked_fields": ["distance_km", "duration_min"] }
+    "sources": [
+      {
+        "org": "seoul",
+        "dataset": "서울시 등산로 정보",
+        "fetched_at": "2026-08-10"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "distance_km",
+        "duration_min"
+      ]
+    }
   }
 }

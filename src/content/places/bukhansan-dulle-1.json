@@ -1,19 +1,57 @@
 {
   "id": "bukhansan-dulle-1",
   "type": "mountain",
-  "name_i18n": { "en": "Bukhansan Dulle-gil Section 1", "ko": "북한산 둘레길 1구간" },
-  "region": { "sido": "11", "sigungu": "11305" },
-  "coords": { "lat": 37.6605, "lng": 127.0107 },
-  "metrics": { "elevation_m": 180, "distance_km": 4.5, "duration_min": 120, "difficulty": 1 },
+  "name_i18n": {
+    "en": "Bukhansan Dulle-gil Section 1",
+    "ko": "북한산 둘레길 1구간"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11305"
+  },
+  "coords": {
+    "lat": 37.6605,
+    "lng": 127.0107
+  },
+  "metrics": {
+    "elevation_m": 180,
+    "distance_km": 4.5,
+    "duration_min": 120,
+    "difficulty": 1
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "manual"
+    },
+    "distance_km": {
+      "kind": "manual"
+    },
+    "duration_min": {
+      "kind": "manual"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
   "access": {
-    "transit": { "subway": true, "station_i18n": { "en": "Gupabal", "ko": "구파발" }, "walk_min": 15 },
+    "transit": {
+      "subway": true,
+      "station_i18n": {
+        "en": "Gupabal",
+        "ko": "구파발"
+      },
+      "walk_min": 15
+    },
     "signage_langs": null,
     "restroom": null,
     "water_refill": null,
     "entry_fee_krw": 0,
     "cell_coverage": null
   },
-  "safety": { "hazards": [], "sunset_caution": false },
+  "safety": {
+    "hazards": [],
+    "sunset_caution": false
+  },
   "text": {
     "en": {
       "summary": "A scenic circular trail in the Bukhansan area with forest canopy.",
@@ -28,9 +66,24 @@
   },
   "provenance": {
     "sources": [
-      { "org": "knps", "dataset": "국립공원 등산로 데이터", "fetched_at": "2026-08-09" },
-      { "org": "forest_service", "dataset": "산림청 둘레길 정보", "fetched_at": "2026-08-08" }
+      {
+        "org": "knps",
+        "dataset": "국립공원 등산로 데이터",
+        "fetched_at": "2026-08-09"
+      },
+      {
+        "org": "forest_service",
+        "dataset": "산림청 둘레길 정보",
+        "fetched_at": "2026-08-08"
+      }
     ],
-    "verification": { "status": "verified", "checked_fields": ["distance_km", "elevation_m", "duration_min"] }
+    "verification": {
+      "status": "verified",
+      "checked_fields": [
+        "distance_km",
+        "elevation_m",
+        "duration_min"
+      ]
+    }
   }
 }
