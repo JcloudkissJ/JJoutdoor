@@ -1,0 +1,31 @@
+# 공공데이터 원본은 커밋하지 않는다.
+#
+# 이유: 등산로 지오메트리는 파일당 수 MB이고 Phase 1은 지도를 렌더링하지 않는다.
+# 실제로 쓰는 값은 장소당 대여섯 개뿐이다.
+#
+# 재현성은 다음으로 보장한다:
+#   - manifest.json      출처 URL·다운로드 일시·sha256·바이트 수 (커밋함)
+#   - data/extracted/    출처별 원시 판독값 (커밋함, diff 가능)
+#
+# sha256이 바뀌면 상류 데이터가 바뀐 것이다. 그때 다시 받아 비교한다.
+
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+
+*.gpx
+*.geojson
+*.csv
+*.xlsx
+
+*.json
+!manifest.json
