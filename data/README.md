@@ -1,4 +1,4 @@
-> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md`
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-13-korea-outdoor-knowledge-base.md`
 
 # data/ — 공공데이터 원본과 판독값
 

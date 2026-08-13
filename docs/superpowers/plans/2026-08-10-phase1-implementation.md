@@ -1,4 +1,4 @@
-> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-12-korea-outdoor-knowledge-base.md`
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-13-korea-outdoor-knowledge-base.md`
 >
 > ⚠️ 이 계획서에는 실행 중 발견된 버그 2건이 **아직 정정되지 않았습니다.** 지식 베이스 §2-6 참조 —
 > `vitest.config.ts`의 `new URL(...).pathname` → `fileURLToPath(...)`, 스텁의 `from 'zod'` → `from 'astro/zod'`.
