@@ -1,0 +1,88 @@
+{
+  "id": "gwanaksan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Gwanaksan",
+    "ko": "관악산"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11620"
+  },
+  "coords": {
+    "lat": 37.443789,
+    "lng": 126.961045
+  },
+  "metrics": {
+    "elevation_m": 629,
+    "distance_km": null,
+    "duration_min": 210,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": 0
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The Forest Service's recommended route up Gwanaksan: the Seoul National University ticket office, Plaza 1, Campsite 4, the Kkalttak Pass, the summit, then down through Yeonjuam to Gwacheon Hyanggyo. The published time is 3 hours 30 minutes.",
+      "caution1": "The Kkalttak Pass is the hard part — the source allows a full hour for that single stretch. Pace the first two hours with that in mind rather than pushing early.",
+      "caution2": "You come down on the Gwacheon side, not back to Seoul National University. Decide how you are getting home before you start."
+    },
+    "ko": {
+      "summary": "산림청이 안내하는 관악산 추천코스. 서울대입구 방면 매표소–제1광장–제4야영장–깔딱고개–정상–연주암을 거쳐 과천향교로 내려온다. 공식 소요시간은 3시간 30분이다.",
+      "caution1": "깔딱고개가 고비다. 출처가 이 한 구간에만 1시간을 잡아 두었으니 초반에 힘을 쏟지 말고 속도를 그에 맞춰 배분할 것.",
+      "caution2": "서울대 쪽으로 되돌아오지 않고 과천으로 내려온다. 출발 전에 돌아올 방법을 정해 둘 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 관악산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 관악산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 두 기관이 629m(한국등산·트레킹지원센터)와 632.2m(산림청)로 0.51% 차이 안에서 일치한다. 소요시간은 산림청 한 곳뿐이므로 장소 단위 상태는 약한 쪽에 맞춰 single_source 로 둔다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

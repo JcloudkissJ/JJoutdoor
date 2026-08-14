@@ -1,0 +1,3336 @@
+{
+  "org": "forest_service",
+  "dataset": "산림청 국립자연휴양림관리소 · 숲나들e 숲길 100대명산 정보",
+  "source_url": "https://www.data.go.kr/data/15112801/fileData.do",
+  "source_file": "산림청 국립자연휴양림관리소_숲나들e 숲길 100대명산 정보_20250421.csv",
+  "license": "이용허락범위 제한 없음",
+  "fetched_at": "2026-08-14",
+  "note": "소요시간은 기관이 적어둔 값을 분으로만 바꾼 것이며 구간 시간을 합산하지 않았다. 이 자료에는 거리(km)가 100건 전부 없다.",
+  "counts": {
+    "mountains": 100,
+    "with_recommended_course": 99,
+    "with_difficulty": 29
+  },
+  "mountains": [
+    {
+      "name_ko": "가리산",
+      "location_ko": "강원도 홍천군 두촌면ㆍ화촌면, 춘천시 북산면ㆍ동면",
+      "elevation_m_forest": 1050.9,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.874149,
+        "lng": 127.960749
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "가리산자연휴양림 관리사무소 ① - 삼거리 ② - 가삽고개·북동능선 ③ - 정상 ④ - 샘터·남릉 등산안내도 ⑤ - 무쇠말재 ⑥ - 삼거리 ② - 휴양림 주차장 ①",
+          "duration_text": "약 3시간 35분",
+          "duration_min": 215
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "가리산자연휴양림 ① - 삼거리 ② - 가삽고개 ③ - 소양호 물로리 ⑦",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "가리산자연휴양림 ① - 가삽고개 ③ - 정상 ④ - 가리산교 - 철정리 ⑧",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "가리왕산",
+      "location_ko": "강원도 정선군 북평면ㆍ정선읍 회동리, 평창군 진부면",
+      "elevation_m_forest": 1561.9,
+      "hike_time_range": null,
+      "height_range": "1500m 이상",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.462881,
+        "lng": 128.563134
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "하안미 5리 백일동 ① - 30분 - 상수도 취수원 ② - 1시간 30분 - 안부(1160m) ③ - 30분 - 중왕산 ④ - 50분- 마항치 ⑤ - 1시간 20분 - 1450봉 ⑥ - 50분 - 상봉(정상) ⑧ - 1시간 - 중봉 ⑨ - 2시간 - 회동리 얼음굴 매표소 ⑩",
+          "duration_text": "약 2시간 10분",
+          "duration_min": 130
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "가리왕산자연휴양림 ⑫ - 안부 전 갈림길 ⑪ - 안부 ⑦ - 상봉(정상) ⑧",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "가야산",
+      "location_ko": "경상남도 합천군ㆍ거창군, 경상북도 성주군",
+      "elevation_m_forest": 1432.6,
+      "hike_time_range": null,
+      "height_range": "1400m ~ 1500m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 35.82276,
+        "lng": 128.11785
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "백운리 ① - 35분 - 용기골 대피소 ② - 40분 - 서성재 ③ - 1시간 10분 - 상왕봉정상 ④ - 50분 - 토신골 삼거리 ⑤ - 20분 - 마애불 ⑥ - 40분 - 용탑선원 ⑦ - 30분 - 치인리 ⑧",
+          "duration_text": "약 4시간 45분",
+          "duration_min": 285
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "치인리 ⑧ - 용탑선원 ⑦ - 마애불 ⑥ - 토신골 삼거리 ⑤ - 상왕봉정상 ④ - 서장대 ⑬ - 심원골 매표소 ⑭",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "청량동 ⑫ - 청량사 ⑪ - 능선삼거리 ⑩ - 남산제일봉 ⑨ - 치인리 ⑧",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "가지산",
+      "location_ko": "울산광역시 울주군, 경상북도 청도군, 경상남도 밀양시",
+      "elevation_m_forest": 1240.9,
+      "hike_time_range": null,
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.62194743,
+        "lng": 129.0030131
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "석남사 주차장 ① - 1시간 35분 - 석남령 ② - 1시간 40분 - 정상 ③ - 30분 - 쌀바위 대피소 ④ - 30분 - 귀바위 ⑤ - 25분 - 능선 삼거리 ⑥ - 1시간 - 석남사 주차장 ⑦",
+          "duration_text": "약 5시간 35분",
+          "duration_min": 335
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "석남사 ⑦ - 석남계곡 ⑧ - 쌀바위 ④ - 정상 ③ - ( 서남릉 ) - 1080봉 ⑨ - 능선 삼거리 ⑥ - 812봉 ⑩ - 백연폭포 - 매표소 ⑪",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "운문재 ⑫ - 귀바위 ⑤ - 상운산 - 쌀바위 ④ - 정상 ③ - 밀양고개 - 호박소계곡 ⑬ - 매표소 ⑪",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "불당마을 ⑦ - 동북릉 - 귀바위 ⑤ - 상운산 - 쌀바위 ④ - 정상 ③ - 석남령 ② - ( 쇠점골 ) - ( 호박소 ) - 매표소 ⑪",
+          "duration_text": "약 6시간 5분",
+          "duration_min": 365
+        }
+      ]
+    },
+    {
+      "name_ko": "감악산",
+      "location_ko": "경기도 파주시 적성면, 양주시 남면, 연천군 전곡읍",
+      "elevation_m_forest": 674.9,
+      "hike_time_range": null,
+      "height_range": "600m ~ 700m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.94255,
+        "lng": 126.969003
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "운계폭포 입구 주차장 ① - 20분 - 범륜사 ② - 20분 - 만남의 숲 ③ - 10분 - 까치봉 능선 삼거리 ④ - 25분 - 까치봉 ⑤ - 15분 - 정상 - 10분 - 임꺽정봉 ⑥ - 35분 - 만남의 숲 ③ - 20분 - 범륜사 ② - 20분 - 운계폭포 입구 주차장①",
+          "duration_text": "약 2시간 55분",
+          "duration_min": 175
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "설마리 ⑦ - 범륜사 ② - ( 정상 ) - 임꺽정봉 ⑥ - 신암리 ⑨",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "신암리 ⑨ - 신암저수지 ⑧ - ( 정상 ) - 범륜사 ② - 운계폭포 ① - 설마리 ⑦",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "강천산",
+      "location_ko": "전라북도 순창군 팔덕면, 전라남도 담양군 용면",
+      "elevation_m_forest": 585.8,
+      "hike_time_range": null,
+      "height_range": "500m ~ 600m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 35.40500569,
+        "lng": 127.0490606
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 45분 - 강천사 ② - 30분 - 신선봉 ③ - 20분 - 구름다리 ④ - 50분 - 정상(왕자봉) ⑤ - 20분 - 깃대봉 ⑥ - 50분 - 매표소 ①",
+          "duration_text": "약 3시간 35분",
+          "duration_min": 215
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소 ① - 강천사 ② - 구름다리 ④ - 왕자봉(정상) ⑤ - ( 도계 종주 ) - ( 연대봉 ) - ( 연대암지 ) - 강천사 ②",
+          "duration_text": "약 5시간 15분",
+          "duration_min": 315
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "매표소 ① - 강천사 ② - 구름다리 ④ - 왕자봉(정상) ⑤ - 530봉 ⑩ - ( 서북릉 ) - 분통마을 ⑪",
+          "duration_text": "약 2시간 45분",
+          "duration_min": 165
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "매표소 ① - 강천사 ② - 구름다리 ④ - 왕자봉(정상) ⑤ - 강천호 ⑫ - 송낙바위 - 연대봉 ⑦ - 산성산 - 연대암지 ⑧ - 구름다리 ④ - 강천사 ② - 매표소 ①",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "계룡산",
+      "location_ko": "대전광역시, 충청남도 공주시 계룡면, 논산시 상월면, 계룡시 신도안면",
+      "elevation_m_forest": 846.5,
+      "hike_time_range": null,
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.343363,
+        "lng": 127.205747
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "주차장 ① - 40분 - 동학사 ② - 1시간 20분 - 남매탑 ③ - 25분 - ( 금잔디고개 ) - 40분 - 용문폭포 ⑤ - 20분- 갑사 ⑥ - 25분 - 주차장 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "갑사 ⑦ - 연천봉 ⑧ - 관음봉 ⑨ - 삼불봉 ⑩ - 남매탑 ③ - 큰배재 ⑪ - 상신리 ⑫",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "동학사 ⑬ - 은선폭포 ⑭ - 관음봉 ⑨ - 삼불봉 ⑩ - 신선봉 ⑪ - 장군봉 ⑮ - 박정자 삼거리 ⑯",
+          "duration_text": "약 9시간 40분",
+          "duration_min": 580
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "신원사 ⑰ - 고왕암 ⑱ - 연천봉 ⑧ - 삼불봉 ⑩ - 남매탑 ③ - 동학사 ⑬",
+          "duration_text": "약 3시간 10분",
+          "duration_min": 190
+        }
+      ]
+    },
+    {
+      "name_ko": "계방산",
+      "location_ko": "강원도 홍천군 내면, 평창군 용편면ㆍ진부면",
+      "elevation_m_forest": 1579.1,
+      "hike_time_range": null,
+      "height_range": "1500m 이상",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.72928849,
+        "lng": 128.4649996
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "운두령 ① - 20분 - 1166봉 ② - 45분 - 1492봉 ③ - 40분 - 정상 ④ - 1시간 - 1276봉 ⑤ - 1시간 - 계방산장 삼거리 ⑥",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "운두령 ① - 1166봉 ② - 1492봉(헬기장) ③ - 정상 ④ - 안부 ⑨ - 이승복생가터 ⑦ - 방아다리약수 ⑧",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "아랫삼거리(혹은 방아다리 약수) ⑧ - 이승복생가터 ⑦ - 주목군락지 ⑨ - 안부 - 정상 ④ - 아랫삼거리 ⑥",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        }
+      ]
+    },
+    {
+      "name_ko": "공작산",
+      "location_ko": "강원도 홍천군 동면, 화촌면",
+      "elevation_m_forest": 887.4,
+      "hike_time_range": null,
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.71634329,
+        "lng": 128.0102308
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "수타사 입구 ① - 25분 - 와동고개 ② - 30분 - 514봉 ③ - 30분 - 약수봉 ④ - 45분 - 맛바위골 삼거리 ⑤ - 35분 - 수리봉 ⑥ - 50분 - 안공작재 ⑦ - 50분 - 정상 ⑧ - 15분 - 동릉삼거리 ⑨ - 30분 - 휴양림 삼거리 ⑩ - 30분 - 공작골가든 ⑪",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "공작골가든 ⑪ - 문바위골 ⑫ - 735봉 ⑬ - 정상 ⑧ - 안공작재 ⑦ - 790봉 - ( 신봉리 )- 신봉교 ⑯",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "수타사 ① - 와동고개 ② - 약수봉 ④ - 수리봉 ⑥ - 안공작재 ⑦ - 정상 ⑧ - 공작산자연휴양림 ⑰ - 공작골가든 ⑪",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "신봉교 ⑯ - 동봉사 ⑱ - 수리봉 ⑥ - 790봉 - 안공작재 ⑦ - 정상 ⑧ - 735봉 - 문바위골 ⑫ - 공작골가든 ⑪",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        }
+      ]
+    },
+    {
+      "name_ko": "관악산",
+      "location_ko": "서울특별시 관악구, 경기도 안양시, 과천시",
+      "elevation_m_forest": 632.2,
+      "hike_time_range": null,
+      "height_range": "600m ~ 700m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.443789,
+        "lng": 126.961045
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "서울대입구 방면 매표소 ① - 20분 - 제1광장 ② - 40분 - 제4야영장 ③ - 1시간 - ( 깔딱고개 ) - 10분 - 정상 ④ - 10분 - 연주암 ⑤ - 1시간 10분 - 과천향교 ⑥",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "사당동 대학촌 ⑦ - 333봉 ⑧ - 414봉 ⑨ - 559봉 ⑩ - 연주암 ⑤ - 정상 ④ - 장군바위 ⑪ - 장군바위골 ⑫ - 과천 공업진흥청 ⑬",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "안양유원지 ⑭ - 소공원 ⑮ - 불성사 ⑳ - 정상 ④ - 연주암 - 제4야영장 ③ - 제1광장 ② - 서울대 입구 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "호암사 ⑯ - 장군봉 ⑰ - 삼성산 - 삼막사 ⑱ - 망월암 ⑲ - 소공원 ⑮ - 불성사 ⑳ - 과천 공업진흥청 ⑬",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "구병산",
+      "location_ko": "경상북도 상주신 화북면, 충청북도 보은군 마로면ㆍ속리산면",
+      "elevation_m_forest": 876.3,
+      "hike_time_range": null,
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.470386,
+        "lng": 127.861637
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "적암휴게소, 사기막마을 다리 ① - 25분 - 계곡갈림길 ② - 25분 - 정수암터(옹달샘) ③ - 40분 - 안부삼거리 ④ - 1시간 - 정상 ⑤ - 35분 - 철계단 ⑥ - 1시간 10분 - 적암휴게소 ①",
+          "duration_text": "약 4시간 15분",
+          "duration_min": 255
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "삼가리 수성초교삼가분교 ⑦ - 구병리 ⑧ - 853봉 ④ - 정상 ⑤ - 송현리 ⑨",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "금산",
+      "location_ko": "경상남도 남해군 상주면, 이동면, 삼동면",
+      "elevation_m_forest": 704.9,
+      "hike_time_range": null,
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.745349,
+        "lng": 127.985406
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "상주리 금산매표소 ① - 20분 - 약수터 ② - 1시간 - 쌍홍문 ③ - 5분 - 보리암 ④ - 10분 - 정상 ⑤ - 1시간 - 상주리 ⑥",
+          "duration_text": "약 2시간 35분",
+          "duration_min": 155
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "복곡매표소 ⑦ - 보리암 ④ - 정상 ⑤ - 상주리 ⑥",
+          "duration_text": "약 2시간 30분",
+          "duration_min": 150
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "남해편백자연휴양림 ⑧ - 금산제초소 ⑨ - 정상 ⑤ - 쌍홍문 ③ - 금산매표소 ①",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "금수산",
+      "location_ko": "충청북도 제천시 수산면, 단양군 적성면",
+      "elevation_m_forest": 1015.8,
+      "hike_time_range": null,
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.984549,
+        "lng": 128.256539
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "백운동매표소, 보문정사 ① - 20분 - 용담폭포 삼거리 ② - 1시간 30분 - 망덕봉 ③ - 40분 - 살바위고개 ⑤ - 15분 - 정상 ⑥ - 10분 - 상학마을삼거리 ⑥ - 1시간 30분 - 용담폭포삼거리 ② - 20분 - 백운동매표소 ①",
+          "duration_text": "약 4시간 45분",
+          "duration_min": 285
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "능강리 ⑦ - 얼음골 ⑧ - 얼음골재 ⑨ - 정상 ⑥ - 백운동매표소 ①",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "상학리 ⑩ - 절골, 살바위고개 ④ - 정상 ⑥ - 용담폭포삼거리 ② - 백운동매표소 ①",
+          "duration_text": "약 2시간 50분",
+          "duration_min": 170
+        }
+      ]
+    },
+    {
+      "name_ko": "금오산",
+      "location_ko": "경상북도 구미시 칠곡군 북삼읍, 김천시 남면",
+      "elevation_m_forest": 976.5,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.08925,
+        "lng": 128.305343
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 20분 - 해운사 ② - 20분 - 할딱고개 ③ - 35분 - 마애불 갈림길 ④ - 25분 - 정상 - 1시간 - 법성사 ⑤",
+          "duration_text": "약 2시간 40분",
+          "duration_min": 160
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "야영장 ⑥ - 등산로 교차점 ⑦ - 칼다봉 ⑧ - 서문 ⑨ - 정상 ⑨ - 할딱고개 ③ - 매표소 ①",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "금오동천 ⑩ - 남문 ⑪ - 성안 사거리 - 정상 ⑨ - 약사암 ④ - ( 계곡길 ) - 법성사 ⑤",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "우장 ⑫ - 서문 ⑨ - 성안 사거리 - 정상 ⑨ - 도수령 ⑬ - ( 능선 사거리 )- 상모동 ⑭",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "금정산",
+      "location_ko": "부산광역시 금정구ㆍ북구, 경상남도 양산시",
+      "elevation_m_forest": 800.8,
+      "hike_time_range": null,
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 35.28398695,
+        "lng": 129.0555168
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "금강공원 ① - 1시간 40분 - 이정표 사거리 ② - 1시간 20분 - 동문 ③ - 35분 - 회룡암 사거리 ④ - 35분 - 북문 ⑤ - 25분 - 고당봉 ⑥ - 1시간 - 범어사 ⑦",
+          "duration_text": "약 5시간 35분",
+          "duration_min": 335
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "호포 ⑧ - 고당봉 ⑥ - 북문 ⑤ - 정수암 ⑨ - 금성동 ⑩",
+          "duration_text": "약 3시간 5분",
+          "duration_min": 185
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "양산 외송리 ⑪ - ( 장군봉 ) - 고당봉 ⑥ - 북문 ⑤ - 범어사 ⑦",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "두실역 ⑫ - 회룡암 ⑬ - 의상봉 ⑭ - 원효봉 ⑮ - 고당봉 ⑥ - ( 미륵불 표지석 ) - 범어사 ⑦",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        }
+      ]
+    },
+    {
+      "name_ko": "깃대봉",
+      "location_ko": "전라남도 신안군 흑산면 홍도",
+      "elevation_m_forest": 367.8,
+      "hike_time_range": null,
+      "height_range": "300m ~ 400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.706407,
+        "lng": 125.201462
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "흑산초교 홍도분교 ① - 20분 - 347봉 ② - 30분 - 정상 ③ - 10분 - ( 원추리군락지 ) - 20분 - 진흥초교 ④ - 10분 - 등대 ⑤ - 10분 - 석촌마을 ④",
+          "duration_text": "약 1시간 40분",
+          "duration_min": 100
+        }
+      ]
+    },
+    {
+      "name_ko": "남산",
+      "location_ko": "경상북도 경주시 남산동, 내남면",
+      "elevation_m_forest": 495.1,
+      "hike_time_range": null,
+      "height_range": "400m ~ 500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.76885606,
+        "lng": 129.2256847
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "삼릉주차장 ① - 5분 - ( 삼릉 ) - 10분 - 선각육존불 ② - 10분 - 상선암 ③ - 25분 - 금오산(정상) ④ - 10분 - 삼화령 ⑤ - 10분 - 용장사곡 삼층석탑 ⑥ - 15분 - 설잠교 ⑦ - 20분 - 징검다리 ⑧- 10분 - 용장리 ⑨",
+          "duration_text": "약 1시간 55분",
+          "duration_min": 115
+        }
+      ]
+    },
+    {
+      "name_ko": "내연산",
+      "location_ko": "경상북도 포항시 송라면ㆍ청하면ㆍ죽장면, 영덕군 남정면",
+      "elevation_m_forest": 711.3,
+      "hike_time_range": null,
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.27967398,
+        "lng": 129.2834317
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "하옥리 향로교 ① - 1시간 40분 - 향로봉 ② - 40분 - 시명리 ③ - 1시간 40분 - 연산폭포 ④ - 1시간 20분 - 보경사 ⑤",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "보경사 ⑤ - ( 문수산 갈림길 ) - ( 은폭 ) - ( 시명리 ) - ( 향로봉 ) - 삼지봉 ⑥ - 문수산 ⑦ - 보경사 ⑤",
+          "duration_text": "약 7시간 30분",
+          "duration_min": 450
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "보경사 ⑤ - ( 문수산 갈림길 ) - ( 은폭 ) - 삼지봉 ⑥ - 문수산 ⑦ - 보경사 ⑤",
+          "duration_text": "약 5시간 30분",
+          "duration_min": 330
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "샘재 ⑧ - 삼거리 ⑨ - 천령산 ⑩ - 연산폭 ④ - 보경사 ⑤",
+          "duration_text": "약 6시간",
+          "duration_min": 360
+        }
+      ]
+    },
+    {
+      "name_ko": "내장산",
+      "location_ko": "전라북도 정읍시 내장동, 순창군 쌍치면ㆍ복흥면",
+      "elevation_m_forest": 763.5,
+      "hike_time_range": null,
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.480575,
+        "lng": 126.887979
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "내장사 ① - 1시간 - 연자봉 ② - 40분 - 신선봉 ③ - 40분 - 까치봉 ④ - 1시간 10분 - 내장사 ①",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "내장사 ① - 벽련암 ⑤ - 서래봉 ⑥ - 불출봉 ⑦ - 원적암 ⑧ - 내장사 ①",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "내장사 ① - 원적암 ⑧ - 망해봉 ⑨ - 연지봉 ⑩ - 까치봉 ④ - 신선봉(정상) ③ - 내장사 ①",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "일주문 ⑪ - 벽련암 ⑤ - 서래봉 ⑥ - 불출봉 ⑦ - 망해봉 ⑨ - 연지봉 ⑩ - 까치봉 ④ - 신선봉(정상) ③ - 연자봉 ② - 장군봉 ⑫ - 유군치 ⑬ - 내장사 진입도로 ⑭",
+          "duration_text": "약 7시간 30분",
+          "duration_min": 450
+        }
+      ]
+    },
+    {
+      "name_ko": "대둔산",
+      "location_ko": "충청남도 논산시 벌곡면ㆍ금산군 진산면, 전라북도 완주군 운주면",
+      "elevation_m_forest": 879.1,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.120811,
+        "lng": 127.323266
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "수락리 버스종점 ① - 30분 - 제1폭포 ② - 20분 - ( 군지골 초입 ) - 10분 - 화랑폭포 ③ - 1시간 - 장군절터 ④ - 30분 - 마천대 ⑤ - 1시간 - 산북리 관광단지 ⑥",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "산북리 관광단지 ⑥ - 케이블카 ⑦ - 장군바위 ⑧ - 용문굴 ⑨ - 마천대 ⑤ - 금강구름다리 ⑩ - 케이블카 ⑦ - 산북리 관광단지 ⑥",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "산북리 관광단지 ⑥ - 케이블카 ⑦ - 금강구름다리 ⑩ - 마천대 ⑤ - 낙조대 ⑪ - 태고사 ⑫",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "대암산",
+      "location_ko": "강원도 양구군 동면, 인제군 서화면",
+      "elevation_m_forest": 1312.6,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "1300m ~ 1400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 38.212008,
+        "lng": 128.135045
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "생태식물원 ① - 1시간 10분 - 1122봉 ② - 1시간 50분 - 후곡약수터 ③",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "대야산",
+      "location_ko": "경상북도 문경시 가은읍, 충청북도 괴산군 청천면",
+      "elevation_m_forest": 931,
+      "hike_time_range": "5시간이상",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.671561,
+        "lng": 127.932373
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "벌바위마을 ① - 15분 - 용추 ② - 20분 - 월영대 ③ - 1시간 - 밀재 ④ - 1시간 - 정상 ⑤ - 20분 - 건폭 ⑥ - 1시간- 월영대 ③ - 20분 - 용추 ②- 15분 - 벌바위마을 ①",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "벌바위마을 ① - 용추 ② - 월영대 ③ - 밀재 ④ - 정상 ⑤ - 촛대봉 ⑦ - 벌바위마을 ①",
+          "duration_text": "약 5시간 소요",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "농바위 ⑧ - 밀재 ④ - 정상 ⑤ - 중대봉 ⑨ - 곰바위 ⑩ - 농바위 ⑧",
+          "duration_text": "약 5시간 소요",
+          "duration_min": 300
+        }
+      ]
+    },
+    {
+      "name_ko": "덕숭산",
+      "location_ko": "충청남도 예산군 덕산면",
+      "elevation_m_forest": 495.2,
+      "hike_time_range": null,
+      "height_range": "400m ~ 500m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 36.67346929,
+        "lng": 126.6189934
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "수덕사 ① - 5분 - 견성암 ② - 10분 - ( 공터 ) - 10분 - ( 계단길 합류점 ) - 25분 - 정상 ⑤ - 55분 - 둔리 ⑥",
+          "duration_text": "약 1시간 45분",
+          "duration_min": 105
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "나본들고개 ⑦ - 정상 ⑤ - 육괴정 ⑧",
+          "duration_text": "약 1시간 30분",
+          "duration_min": 90
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "노루목 ⑨ - 정상 ⑤ - 계단길 ⑤ - 수덕사 ①",
+          "duration_text": "약 1시간 20분",
+          "duration_min": 80
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "주차장① - 동남릉 - 정상 ⑤ - 150봉 ⑩ - 삼승리 ⑪",
+          "duration_text": "약 1시간 40분",
+          "duration_min": 100
+        }
+      ]
+    },
+    {
+      "name_ko": "덕유산",
+      "location_ko": "전라북도 무주군ㆍ장수군, 경상남도 거창군ㆍ함양군",
+      "elevation_m_forest": 1614.2,
+      "hike_time_range": null,
+      "height_range": "1500m 이상",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.86139,
+        "lng": 127.746346
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "삼공리 ① - 40분 - 신대휴게소 ② - 30분 - 백련사 ③ - 1시간 30분 - 향적봉 ④ - 40분 - 백암봉 ⑤ - 1시간 10분 - 동엽령 ⑥ - 1시간 - 돌탑 ⑦ - 1시간 15분 - 무룡산 ⑧ - 50분 - 삿갓골재 ⑨ - 1시간 15분 - 월성재 ⑩ - 1시간 10분 - 남덕유산 ⑮ - 1시간 - 영각사 ⑪",
+          "duration_text": "약 5시간 45분",
+          "duration_min": 345
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "송계사 ⑫ - 귀봉 ⑬ - 백암봉 ⑤ - 중봉 - 향적봉 ④ - 백련사 ③ - 삼공리 ①",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "명천리 ⑭ - 삿갓골재 ⑨ - 월성재 ⑩ - 남덕유산 ⑮ - 영각사 ⑪",
+          "duration_text": "약 5시간 45분",
+          "duration_min": 345
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "삼공리 ① - 칠봉 ⑯ - 향적봉 ④ - 중봉 ⑰ - 오수자굴 ⑱ - 백련사 ③ - 삼공리 ①",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        }
+      ]
+    },
+    {
+      "name_ko": "덕항산",
+      "location_ko": "강원도 삼척시 신기면, 태백시 하사미동",
+      "elevation_m_forest": 1072.9,
+      "hike_time_range": "5시간이상",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.309775,
+        "lng": 129.011796
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "골말 ① - 30분 - 전망바위 ② - 1시간 15분 - 사거리 안부 ③ - 10분 - 정상 ⑩ - 10분 - 사거리 안부 ③ - 1시간- 환선봉 ④ - 1시간 - 자암재 ⑤ - 45분 - 환선굴 입구 ⑥ - 10분 - 골말 ①",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "점촌 ⑦ - 외나무골 ⑧ - 구부시령 ⑨ - 정상 ⑩ - 사거리 안부 ③ - 1048봉 - 큰가래골 ⑪ - 무사동 ⑫",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "골말 ① - 자암목이능선 ② - ( 전망바위 ) - 사거리 안부 ③ - 정상 ⑩ - 구부시령 ⑨ - 외나무골 ⑧ - 점촌 ⑦",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "도락산",
+      "location_ko": "충청북도 단양군  단성면, 대강면",
+      "elevation_m_forest": 965.3,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.857018,
+        "lng": 128.311608
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "상선교 ① - 선바위 ② - 채운봉 ③ - 2시간 - 삼거리 ④ - 40분 - 정상 ⑨ - 30분 - 삼거리 ④ - 30분 - 제봉(상선상봉) ⑤ - 1시간 30분 - 상선교 ①",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "궁텃골 ⑥ - 사모폭포 ⑦ - 내궁기마을 ⑧ - 신선봉 ⑨ - 정상 ⑨ - 상선암 ⑩",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "도봉산",
+      "location_ko": "서울특별시 도봉구, 경기도 의정부시 호원동ㆍ양주시 장흥면",
+      "elevation_m_forest": 740.2,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.701277,
+        "lng": 127.015599
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 15분 - 도봉서원 ② - 25분 - 용어천계곡 아우라지 ③ - 40분 - 주봉샘터 야영장 ④ - 30분 - 만장 · 신선봉 새목 ⑤ - 40분 - 만월암 동쪽 전망바위 ⑥ - 50분 - 도봉서원 ② - 15분 - 매표소 ①",
+          "duration_text": "약 3시간 35분",
+          "duration_min": 215
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "주차장 ① - 도봉서원 ② - 도봉산장 ⑦ - 마당바위 ⑧ - 신선봉 ④ - 칼바위 - 우이암 ⑨ - 우이동 ⑩",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "망월사역 ⑪ - ( 원도봉 매표소 ) - 망월사 ⑬ - 신선봉 - 송추폭포 ⑭ - 송추계곡 ⑭ - 송추역 ⑯",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "회룡골 매표소 ⑰ - 회룡사 ⑱ - 포대능선 ⑲ - 신선봉 ④ - 마당바위 ⑧ - 도봉산장 ⑦ - 주차장 ①",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "두륜산",
+      "location_ko": "전라남도 해남군 삼산면ㆍ북일면ㆍ북평면ㆍ현산면",
+      "elevation_m_forest": 700,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.480172,
+        "lng": 126.619347
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 차량 이용시 15분 - 주차장 ② - 15분, 도보 - 대흥사 ③ - 20분 - 일지암 ④ - 50분 - 만일암터 ⑤ - 10분- 만일재 ⑥ - 10분 - 구름다리 - 10분 - 만일재 - 20분 - 가련봉 ⑦ - 25분 - 오심재 ⑧ - 20분 - 고계봉 ⑨ - 1시간 - 집단시설지구 ⑩",
+          "duration_text": "약 4시간 15분",
+          "duration_min": 255
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소 ① - 유선여관 ⑪ - 고계봉 ⑨ - 오심재 ⑧ - 가련봉 ⑦ - 두륜봉 ⑫ - 진불암 - 대흥사 ③ - 매표소 ①",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "매표소 ① - 향로봉 ⑬ - 오도치 ⑭ - 혈망봉 ⑮ - 연화봉 ⑯ - 남암 ⑰ - 대흥사 ③ - ( 왕벚나무 ) - 매표소 ①",
+          "duration_text": "약 5시간 50분",
+          "duration_min": 350
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "케이블카 승강장 ⑩ - 고계봉 ⑨ - 오심재 ⑧ - 가련봉 ⑦ - 만일재 ⑥ - 일지암 ④ - 대흥사 ③ - 매표소 ①",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        }
+      ]
+    },
+    {
+      "name_ko": "두타산",
+      "location_ko": "강원도 동해시 삼화동, 삼척시 미로면ㆍ하장면",
+      "elevation_m_forest": 1357,
+      "hike_time_range": "5시간이상",
+      "height_range": "1300m ~ 1400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.260853,
+        "lng": 129.100043
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "삼화사 ① - 40분 - 허공다리 ② - 30분 - 직관암터 ③ - 30분 - 절터 ④ - 1시간 40분 - 연칠성령 ⑤ - 40분 - 청옥산 ⑥ - 40분 - 박달재 ⑦ - 1시간 10분 - 두타산 ⑧ - 1시간 - 북릉 삼거리 ⑨- 1시간 10분 - ( 문지방산성 ) - 15분 - 허공다리 ② - 40분 - 매표소 ①",
+          "duration_text": "약 8시간 55분",
+          "duration_min": 535
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "삼화사 ① - 허공다리 ② - 직관암터 ③ - 절터 ④ - 망군대 ⑤ - 청옥산 ⑥ - 문바위 ⑦ - ( 박달골 ) - 삼화사 ①",
+          "duration_text": "약 8시간 5분",
+          "duration_min": 485
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "천은사 ⑩ - 쉰움산 ⑪ - 두타산 ⑧ - 북릉삼거리 ⑨ - 대궐터 ⑫ - 산성터 - 삼화사 ①",
+          "duration_text": "약 7시간 50분",
+          "duration_min": 470
+        }
+      ]
+    },
+    {
+      "name_ko": "마니산",
+      "location_ko": "인천광역시 강화군 화도면",
+      "elevation_m_forest": 472.1,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "400m ~ 500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.612384,
+        "lng": 126.434827
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "상방리 마니산 국민관광단지(관리사무소) ① - 5분 - 갈림길 ② - 50분, 단군로 ③ - 주능선 - 50분 - 참성단 ④ - 40분 - 정상 ⑤ - 20분 - 능선갈림길 ⑥ - 30분 - 정수사 ⑦",
+          "duration_text": "약 3시간 15분",
+          "duration_min": 195
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "정수사 ⑦ - 정상 ⑤ - 참성단 ④ - ( 계단길 ) - 상방리 마니산 국민관광단지 ①",
+          "duration_text": "약 2시간 15분",
+          "duration_min": 135
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "함허동천 ⑧ - ( 능선갈림길 ) - 정상 ⑤ - 능선갈림길 - 정수사 ⑦",
+          "duration_text": "약 1시간 40분",
+          "duration_min": 100
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "진개마을 ⑨ - 314봉 ⑩ - 정상 ⑤ - 참성단 ④ - 315봉 - 작은뫼넘이 ⑪ - ( 상봉 ) - 선수약수 ⑫",
+          "duration_text": "약 6시간",
+          "duration_min": 360
+        }
+      ]
+    },
+    {
+      "name_ko": "마이산",
+      "location_ko": "전라북도 진안군 진안읍ㆍ마령면",
+      "elevation_m_forest": 687.4,
+      "hike_time_range": "2시간~2시간30분미만",
+      "height_range": "600m ~ 700m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.763047,
+        "lng": 127.404768
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "남부주차장 ① - 30분 - 고금당 ② - 20분 - 비룡대 ③ - 20분 - 물탕골 갈림길 ④ - 20분 - 봉두봉 ⑤ - 20분 - 탑사 주차장 ⑥ - 5분 - 은수사 ⑦ - 25분 - 남부주차장 ①",
+          "duration_text": "약 2시간 20분",
+          "duration_min": 140
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "북부주차장 ⑧ - 천황문 ⑨ - 은수사 ⑦ - ( 탑사 ) - ( 탑영제 ) - ( 금당사 ) - 남부주차장 ①",
+          "duration_text": "약 2시간",
+          "duration_min": 120
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "북부주차장 ⑧ - 천황문 ⑨ - 은수사 ⑦ - ( 탑사 ) - ( 천황문 ) - 북부주차장 ⑧",
+          "duration_text": "약 2시간",
+          "duration_min": 120
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "한미산성 ⑩ - 광대봉 ② - ( 나옹대 ) - 비룡대 ③ - 봉두봉 ⑤ - 천황문 ⑨ - 은수사 ⑦ - ( 탑사 ) - 남부주차장 ①",
+          "duration_text": "약 7시간",
+          "duration_min": 420
+        }
+      ]
+    },
+    {
+      "name_ko": "명성산",
+      "location_ko": "강원도 철원군 갈말읍, 경기도 포천시 영북면ㆍ이동면",
+      "elevation_m_forest": 922,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 38.107784,
+        "lng": 127.337639
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "산정리 버스정류장 ① - 30분 - 자인사 ② - 50분 - 안부 ③ - 1시간 - 삼각봉 ④ - 30분 - 집터 ⑤ - 30분- 등룡폭포 ⑥ - 30분 - 산정리 버스정류장 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "산정호수 주차장 ⑦ - 비선폭포 ⑧ - ( 억새군락지 ) - 등룡폭포 ⑥ - ( 비선폭포 ) - 산정호수 주차장 ⑦",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "산정호수 주차장 ⑦ - 비선폭포 ⑧ - 등룡폭포 ⑥ - 삼각봉 ④ - 정상 ⑨ - 산안고개 ⑩ - 산정호수 주차장 ⑦",
+          "duration_text": "약 6시간",
+          "duration_min": 360
+        }
+      ]
+    },
+    {
+      "name_ko": "명지산",
+      "location_ko": "경기도 가평군 북면ㆍ하면",
+      "elevation_m_forest": 1252.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.942512,
+        "lng": 127.431902
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "익근리 ① - 1시간 10분 - 계곡 갈림길 ② - 1시간 - 사향봉 안부 ③ - 50분 - 정상 ④ - 40분 - 남봉 ⑤ - 40분 - 계곡 상부 ⑥ - 1시간 - 명지폭포 ② - 50분 - 익근리 ①",
+          "duration_text": "약 6시간 10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "익근리 ① - ( 강박봉 ) - ( 사향봉 ) - 정상 ④ - 남봉 ⑤ - 승천봉 안부 ⑦ - 백둔리 ⑧",
+          "duration_text": "약 6시간 10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "귀목리 ⑨ - 아재비고개 ⑩ - 1199봉 ⑪ - 정상 ④ - ( 사향봉 안부 ) - ( 계곡 삼거리 ) - 익근리 ①",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "익근리 ① - 명지폭포 ② - 계곡 상부 ⑥ - 정상 ④ - 1199봉 ⑪ - ( 귀목고개 ) - 귀목봉 ⑫ - 강씨봉고개 ⑬ - 일동 ⑭",
+          "duration_text": "약 8시간 40분",
+          "duration_min": 520
+        }
+      ]
+    },
+    {
+      "name_ko": "모악산",
+      "location_ko": "전라북도 김제시 금산면, 전주시 완산구, 완주군 구이면",
+      "elevation_m_forest": 795.2,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.730559,
+        "lng": 127.084284
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 20분 - 금산사 ② - 1시간 5분 - 삼거리 ③ - 30분 - 730봉 ④ - 20분 - 정상 ⑤ - 10분 - ( 무제봉 ) - 1시간 - 중인동 ⑥",
+          "duration_text": "약 3시간 25분",
+          "duration_min": 205
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소 ① - 금산사 ② - 용화사 ⑦ - 344.5봉 ⑧ - ( 주능선 ) - 730봉 ⑧ - 정상 ⑤ - 배재 ⑨ - 금산사 ② - 매표소 ①",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "구이면소 ⑩ - ( 선녀폭포 ) - 대원사 ⑪ - 정상 ⑤ - 금산사 ② - 매표소 ①",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "청도재 ⑫ - 730봉 ⑧ - 정상 ⑤ - 심원암 ⑬ - 금산사 ② - 매표소 ①",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "무등산",
+      "location_ko": "광주광역시 동구, 전라남도 담양군 남면ㆍ화순군 이서면",
+      "elevation_m_forest": 1186.8,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.13508,
+        "lng": 126.98867
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "무등산장 ① - 1시간 - 꼬막재 ② - 1시간 - 규봉암 ③ - 1시간 - ( 입석대 ) - 1시간 20분 - 중머리재 ③ - 40분 - 증심사 ⑤",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "원효사 ⑥ - 동화사터 ⑦ - 중봉 ⑧ - 서석대 ⑨ - 입석대 ⑩ - 장불재 ⑯ - 안양산 ⑪ - 둔병재 ⑫",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "영평리 ⑬ - 규봉암 ③ - 장불재 ⑯ - 입석대 ⑩ - 서석대 ⑨ - 중봉 ⑧ - ( 바람재 ) - 증심교 ⑭",
+          "duration_text": "약 5시간 30분",
+          "duration_min": 330
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "화순읍 신정암 ⑮ - 중머리재 ④ - 장불재 ⑯ - ( 꼬막재 ) - 무등산장 ①",
+          "duration_text": "약 7시간",
+          "duration_min": 420
+        }
+      ]
+    },
+    {
+      "name_ko": "무학산",
+      "location_ko": "경상남도 창원시 교방동ㆍ두척동ㆍ내서읍",
+      "elevation_m_forest": 761.4,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.211944,
+        "lng": 128.535689
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "서원곡 입구 ① - 1시간 20분 - ( 주차장 ) - 20분 - ( 무학폭포 갈림길 ) - 15분 - ( 걱정바위 ) - 20분 서마지기- 5분 - 청상 ② - 15분 - 안개샘 ③ - 45분 - 대곡산 ④ - 30분 - 만날고개 ⑤",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "중리역 ⑥ - 낙남정맥 갈림길 ⑦ - ( 시루봉 갈림길 ) - 정상 ② - 개나리동산 - 학봉 ⑨ - 서원곡 입구 ①",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "만날고개 ⑤ - 대곡산 ④ - 정상 ② - 걱정바위 ⑩ - 봉화산 ⑪ - 봉국사 ⑫",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        }
+      ]
+    },
+    {
+      "name_ko": "미륵산",
+      "location_ko": "경상남도 통영시 산양읍ㆍ봉평동",
+      "elevation_m_forest": 458.4,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "400m ~ 500m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 34.81113622,
+        "lng": 128.4161953
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "용화사 광장 ① - 10분 - 관음사 ② - 5분 - 도솔암 입구 ③ - 10분 - 능선갈림길 ④ - 35분 - 정상 ⑤ - 30분- 미래사 ⑦ - 20분 - 띠밭등 ⑥ - 20분 - 용화사 광장 ①",
+          "duration_text": "약 2시간 10분",
+          "duration_min": 130
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "용화사 광장 ① - 관음사 ② - 도솔암 ③ - 정상 ⑤ - 띠밭등 ⑥ - 용화사 ① - 용화사 광장 ①",
+          "duration_text": "약 1시간 40분",
+          "duration_min": 100
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "용화사 광장 ① - 관음사 ② - 도솔암 ③ - 정상 ⑤ - 미래사 ⑦ - 영운리 ⑧",
+          "duration_text": "약 2시간 20분",
+          "duration_min": 140
+        }
+      ]
+    },
+    {
+      "name_ko": "민주지산",
+      "location_ko": "충청북도 영동군, 전라북도 무주군, 경상북도 김천시",
+      "elevation_m_forest": 1241.7,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.040838,
+        "lng": 127.849052
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "물한리주차장 ① - 55분 - 음주암폭포 ② - 40분 - 삼마골재 ③ - 25분 - 삼도봉 ④ - 40분 - 석기봉 ⑤ - 1시간 10분 - 민주지산 ⑥ - 1시간 30분 - 삼거리 ⑦ - 30분 - 물한리주차장 ①",
+          "duration_text": "약 5시간 50분",
+          "duration_min": 350
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "물한리주차장 ① - 무지막골 ⑦ - 석기봉 갈림길 안부 ⑤ - 정상 ⑥ - 물한리주차장 ①",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "대불리 버스종점 ⑧ - 계곡 갈림길 ⑨ - 삼두마애불 ⑤ - 석기봉 - 정상 ⑥ - 대불리 ⑧",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        }
+      ]
+    },
+    {
+      "name_ko": "방장산",
+      "location_ko": "전라남도 장성군, 전라북도 고창군 신림면ㆍ정읍시 입암면",
+      "elevation_m_forest": 733.6,
+      "hike_time_range": "5시간이상",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": "초급",
+      "coords": {
+        "lat": 35.448686,
+        "lng": 126.759914
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "갈재 ① - 25분 - 507봉 ② - 35분 - 734봉 ③ - 1시간 - 봉수대 ④ - 20분 - 정상 ⑤ - 20분 - 고창고개 ⑥ - 20분 - 휴양림 ⑦",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "신평리 ⑧ - 용추폭포 ⑨ - 고창고개 ⑥ - 정상 ⑤ - 봉수대 ④ - 능선 삼거리 - 용추폭포 ⑨ - 신평리 ⑧",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "양고살재 ⑩ - 방장사 ⑪ - 579봉 - 벽오봉 ⑬ - 서릉 - 미륵사 ⑭ - 상월마을 ⑮",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "휴양림 ⑦ - 고창고개 ⑥ - 정상 ⑤ - 봉수대 ④ - 734봉 ③ - 소갈재 ⑯ - 연월리 ⑯",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        }
+      ]
+    },
+    {
+      "name_ko": "방태산",
+      "location_ko": "강원도 인제군 기린면ㆍ상남면, 홍천군 내면",
+      "elevation_m_forest": 1445.7,
+      "hike_time_range": "5시간이상",
+      "height_range": "1400m ~ 1500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.895801,
+        "lng": 128.356005
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "대개인동 ① - 40분 - 개인약수 ② - 1시간 - ( 능선 삼거리 ) - 1시간 - 정상 ③ - 1시간 10분 - 구룡덕봉 ④ - 1시간 30분 - 모덤 터⑪ - 1시간 - 대개인동 ①",
+          "duration_text": "약 6시간 20분",
+          "duration_min": 380
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "살둔 ⑥ - 숫돌봉 ⑦ - 개인산 ⑧ - 구룡덕봉 ④ - 정상 ③ - ( 능선삼거리 ) - 개인약수 ② - 대개인동 ①",
+          "duration_text": "약 9시간 10분",
+          "duration_min": 550
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "대개인동 ① - 개인약수 ② - 배달은석 ⑨ - 깃대봉 ⑩ - 매화동계곡 - 모덤터 ⑪ - 송어양식장 ⑫ - 매화동 ⑬",
+          "duration_text": "약 6시간 20분",
+          "duration_min": 380
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "방태산자연휴양림 ⑭ - 마당바위골 ⑮ - 구룡덕봉 ④ - 정상 ③ - 깃대봉 ⑩ - 1073봉 ⑯ - 계곡 아우라지 ⑰",
+          "duration_text": "약 8시간 20분",
+          "duration_min": 500
+        }
+      ]
+    },
+    {
+      "name_ko": "백덕산",
+      "location_ko": "강원도 평창군 방림면, 횡성군 안흥면, 영월군 수주면",
+      "elevation_m_forest": 1350.1,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1300m ~ 1400m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.397335,
+        "lng": 128.293402
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "문재 ① - 25분 - 923.6봉 ② - 45분 - 사자산 ③ - 40분 - 당재(운교 갈림길) ④ - 35분 - 작은당재 ⑤ - 35분 - 정상 ⑥ - 15분 - 백덕산 갈림길(1280봉) ⑥ - 45분 - 묵골 갈림길 ⑦ - 45분 - 묵골 ⑧",
+          "duration_text": "약 6시간 20분",
+          "duration_min": 380
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "관음사 ⑨ - 백련광산터 ⑩ - ( 주계곡길 )- 정상 ⑥ - 묵골 ⑧",
+          "duration_text": "약 9시간 10분",
+          "duration_min": 550
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "문재 ① - 사자산 ③ - 당재 ④ - 정상 ⑥ - 당재 ④ - 운교 ⑪",
+          "duration_text": "약 6시간 20분",
+          "duration_min": 380
+        }
+      ]
+    },
+    {
+      "name_ko": "백암산",
+      "location_ko": "전라북도 순창군 복흥면, 잔라남도 장성군 북하면",
+      "elevation_m_forest": 741.2,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": "초급",
+      "coords": {
+        "lat": 35.463721,
+        "lng": 126.850833
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "백양사 ① - 35분 - 약사암 ② - 50분 - 구암사갈림길 ③ - 20분 - 백학봉 ③ - 50분 - 상왕봉 ④ - 10분 - 사자봉 안부 ⑤ - 1시간 - 백양사 ①",
+          "duration_text": "약 3시간 45분",
+          "duration_min": 225
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "백양사 ① - 약사암 ② - ( 학바위 ) - 백학봉 ③ - 상왕봉 ④ - 사자봉 ⑥ - 청류암 ⑦ - 가인야영장 ⑧ - 매표소 ⑨",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "운문암 ⑤ - 사자봉 ⑥ - 청류 ⑦ - 가인야영장 ⑧ - 매표소 ⑨",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "백양사 ① - 운문암 ⑤ - 상왕봉 ④ - 백학봉 ③ - 약사암 ② - 백양사 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "백운산(광양)",
+      "location_ko": "전라남도 광양시 진상면ㆍ옥룡면ㆍ봉강면ㆍ다압면, 구례군 간전면",
+      "elevation_m_forest": 1222.2,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.107422,
+        "lng": 127.621933
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "진틀마을 ① - 1시간 5분 - 병암계곡 삼거리 ② - 40분 - ( 남릉 ) - 10분 - 정상 ③ - 50분 - 상백운암 ④ - 25분 - 백운사 ⑤ - 50분 - 먹방마을 ⑥",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "논실마을 ⑦ - 한재 ⑧ - 신선대 ⑨ - 정상 ③ - ( 남릉 삼거리 ) - 병암계곡 삼거리 ② - 진틀마을 ①",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "내회마을 ⑩ - 매봉 ⑪ - 정상 ③ - ( 남릉 삼거리 ) - 병암계곡 삼거리 ② - 진틀마을 ①",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        }
+      ]
+    },
+    {
+      "name_ko": "백운산(정선)",
+      "location_ko": "강원도 정선군 신동읍, 평창군 미탄면",
+      "elevation_m_forest": 883.5,
+      "hike_time_range": "5시간이상",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 37.280543,
+        "lng": 128.596154
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "점재마을 ① - 30분 - 용가능선 안부 ② - 1시간 30분 - 정상 ③ - 2시간 - 칠족령 ④ - 1시간 - 제장마을 ⑤",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "문희마을 ⑥ - 칠족령 ④ - 정상 ③ - 955봉 ⑦ - 푯대봉 ⑧ - 955봉 ⑦ - ( 서남릉 ) - 문희마을 ⑥",
+          "duration_text": "약 6시간 40분",
+          "duration_min": 400
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "점재마을 ① - 계곡길 - 정상 ③ - ( 구름재골 ) - 문희마을 ⑥",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        }
+      ]
+    },
+    {
+      "name_ko": "백운산(포천)",
+      "location_ko": "경기도 포천시 이동면, 강원도 화천군 사내면",
+      "elevation_m_forest": 903.1,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 38.074984,
+        "lng": 127.444934
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "광덕고개 ① - 1시간 - 860봉 ② - 15분 - 정상 ③ - 35분 - 능선삼거리 ④ - 20분 - 441봉 ⑤ - 25분 - 흥룡사, 백운동 ⑥",
+          "duration_text": "약 2시간 35분",
+          "duration_min": 155
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "백운동 ⑥ - 계곡사거리 ⑦ - 흥룡봉 ⑧ - 도마치봉 ⑨ - 정상 ③ - 능선삼거리 ④ - 계곡사거리 ⑦ - 흥룡사, 백운동 ⑥",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "백운동 ⑥ - 백운계곡 ⑦ - 백운산 ③ - ( 북릉 ) - 광덕고개 ①",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "변산",
+      "location_ko": "전라북도 부안군 변산면, 상서면, 진서면",
+      "elevation_m_forest": 508.6,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "500m ~ 600m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.681242,
+        "lng": 126.531267
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "원암마을 매표소 ① - 40분 - 재백이고개 ② - 50분 - 옥녀담 ③ - 15분 - ( 월명암 갈림길 ) - 1시간 - 월명암 ④ - 15분 - 낙조대 ⑤ - 10분 - ( 쌍선봉 ) - 25분 - 남여치매표소 ⑥",
+          "duration_text": "약 3시간 35분",
+          "duration_min": 215
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "내소사 매표소 ⑦ - 관음봉 ⑧ - 신선봉 ⑨ - 망포대 ⑩ - 분초대 ⑪ - 낙조대 ⑤ - 남여치매표소 ⑥",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "분초대 ⑪ - 낙조대 ⑤ - 남여치매표소 ⑥",
+          "duration_text": "",
+          "duration_min": null
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "내소사 매표소 ⑦ - 관음봉 ⑧ - 세봉 ⑫ - 내소사 매표소 ⑦",
+          "duration_text": "약 1시간 55분",
+          "duration_min": 115
+        },
+        {
+          "kind_ko": "기타코스4",
+          "section_ko": "내소사 매표소 ⑦ - 관음봉 ⑧ - 세봉 ⑫ - 제1가마소 ⑬ - 제2가마소 ⑭ - 청림리 ⑮",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        }
+      ]
+    },
+    {
+      "name_ko": "북한산",
+      "location_ko": "서울특별시 강북구ㆍ성북구ㆍ종로구ㆍ은평구, 경기도 고양시ㆍ양주시",
+      "elevation_m_forest": 835.6,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.660934,
+        "lng": 126.993333
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "우이동 ① - 40분 - 도선사 ② - 30분 - 하루재 ③ - 45분 - 백운산장 ④ - 20분 - 위문 ⑤ - 15분 - ( 백운대 ) - 10분 - 위문 ⑤ - 30분 - 용암문 ⑥ - 20분 - 태고사 ⑦ - 40분 - 대서문 ⑧ - 20분 - 북한산성 매표소 ⑨",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "구기동 ⑩ - 이북5도청 ⑪ - 금선사 ⑫ - 향로봉 ⑬ - 비봉 ⑭ - 승가봉 ⑮ - 문수봉 ⑯ - ( 대남문 ) - 구기동 ⑩",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "북한산성 매표소 ⑰ - 위문 ⑤ - 용암문 ⑥ - 대동문 ⑱ - 대성문 ⑲ - 대남문 ⑯ - 가사당암문 ⑲ - 북한산성 매표소 ⑰",
+          "duration_text": "약 7시간",
+          "duration_min": 420
+        }
+      ]
+    },
+    {
+      "name_ko": "비슬산",
+      "location_ko": "대구광역시 달성군 옥포면ㆍ유가면ㆍ가창면, 경상북도 청도군 각북면",
+      "elevation_m_forest": 1083.4,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 35.715763,
+        "lng": 128.52329
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "유가사 ① - 40분 - ( 도통바위 ) - 1시간 - 대견봉 ② - 1시간 30분 - 대견사터 ③ - 1시간 40분 - 비슬산자연휴양림 ④",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "비슬산자연휴양림 ④ - 1005봉 ⑤ - 대견봉 ② - ( 북릉 ) - 용연사 ⑥",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "오산리 ⑦ - 대동골 ⑧ - 사거리 안부 - 대견봉 ② - ( 병풍듬 ) - 유가사 ①",
+          "duration_text": "약 3시간 10분",
+          "duration_min": 190
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "용천사 ⑨ - 778봉 ⑩ - 대견봉 ② - 도성암 ⑪ - 유가사 ① - 중뫼 ⑫",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "삼악산",
+      "location_ko": "강원도 춘천시 서면",
+      "elevation_m_forest": 655.8,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "600m ~ 700m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.84041,
+        "lng": 127.660269
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "의암댐 매표소 ① - 15분 - 상원사 ② - 1시간 - 정상 ③ - 1시간 15분 - 등선폭포 매표소 ④",
+          "duration_text": "약 2시간 30분",
+          "duration_min": 150
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "강촌 ⑤ - 등선봉 ⑥ - ( 619봉 ) - 정상 ③ - 상원사 ② - 의암댐 매표소 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "서대산",
+      "location_ko": "충청남도 금산군 추부면ㆍ군북면, 충청북도 옥천군 군서면",
+      "elevation_m_forest": 905.3,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.231246,
+        "lng": 127.535715
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "개덕사 ① - 45분 - 약수터 ② - 1시간 10분 - 정상 ③ - 50분 - 구름다리 갈림길 ④ - 1시간 15분 - 드림리조트 ⑤",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "드림리조트 ⑤ - ( 계곡길 ) - 첫갈림길 ⑥ - ( 주능선 ) - ( 견우탄금대 ) - 정상 ③ - 옥녀직금대 ⑦ - 원흥사 ⑧",
+          "duration_text": "약 4시간 15분",
+          "duration_min": 255
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "장룡산자연휴양림 ⑨ - 546봉 - ( 도계삼거리 ) - 구름다리갈림길 ④ - ( 견우탄금대 ) - 정상 ③ - 직녀직금대 ⑦ - 서대산 청소년수련원 ⑩",
+          "duration_text": "약 5시간 45분",
+          "duration_min": 345
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "서대산청소년수련원 ⑩ - ( 닭벼슬바위 ) - 옥녀직금대 ⑦ - 정상 ③ - ( 견우탄금대 ) - 첫갈림길 ⑥ - 동남릉 - 안보광리 ⑪",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "선운산",
+      "location_ko": "전라북도 고창군 아산면ㆍ심원면ㆍ해리면",
+      "elevation_m_forest": 334.7,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "300m ~ 400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.508404,
+        "lng": 126.571111
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 5분 - 선운사 ② - 40분 - 마이재 ③ - 30분,도솔산 ④ - 참당암 안부 ⑤ - 30분 - 개이빨산 ⑥ - 15분- 소리재 ⑦ - 20분 - 낙조대 ⑧ - 15분 - 도솔암 ⑨ - 35분 - 선운사 ② - 5분 - 매표소 ①",
+          "duration_text": "약 3시간 15분",
+          "duration_min": 195
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소 ① - 선운사 ② - 도솔암 ⑨ - 천마봉 ⑧ - 소리재 ⑦ - 참당암 ⑤ - 매표소 ①",
+          "duration_text": "약 2시간 25분",
+          "duration_min": 145
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "삼인초교 ⑩ - 형제봉 ⑪ - 노적봉 ⑫ - 구황봉 ⑬ - ( 안부 ) - ( 희여재골 ) - 선운사 ② - 매표소 ①",
+          "duration_text": "약 2시간 50분",
+          "duration_min": 170
+        }
+      ]
+    },
+    {
+      "name_ko": "설악산",
+      "location_ko": "강원도 속초시 설악동, 인제군 북면ㆍ인제읍, 양양군 서면ㆍ강현면",
+      "elevation_m_forest": 1708.1,
+      "hike_time_range": "5시간이상",
+      "height_range": "1500m 이상",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 38.119921,
+        "lng": 128.465558
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "설악동 ① - 50분 - 비선대 ② - 1시간 - 귀면암 ③ - 1시간 30분 - 양폭 ④ - 1시간 30분 - ( 희운각 ) - 1시간 20분 - ( 소청 ) - 20분 - ( 중청 ) - 30분 - 대청 ⑤ - 3시간 30분 - 오색 ⑥",
+          "duration_text": "약 10시간 30분",
+          "duration_min": 630
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "용대리 ⑦ - 백담사 ⑧ - 수렴동대피소 ⑨ - 쌍폭 ⑩ - 봉정암 ⑪ - 소청 - 설악대피소 ⑫",
+          "duration_text": "약 8시간",
+          "duration_min": 480
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "남교리 ⑬ - 십이선녀탕계곡 ⑭ - 대승령 ⑮ - 귀청 ⑯ - 한계령 갈림길 ⑰ - 설악대피소 ⑫",
+          "duration_text": "약 13시간 30분",
+          "duration_min": 810
+        }
+      ]
+    },
+    {
+      "name_ko": "성인봉",
+      "location_ko": "경상북도 울릉군 울릉읍 서면ㆍ북면",
+      "elevation_m_forest": 986.5,
+      "hike_time_range": "5시간이상",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.503767,
+        "lng": 130.866196
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "대원사 ① - 40분 - 사다리골 삼거리 ② - 20분 - 까끼등 삼거리 ③ - 30분 - 팔각정 ④ - 20분 - 바람등대 ⑤ - 20분 - 정상 ⑥ - 1시간 - 말잔등 ⑦ - 40분 - 청석골 샘터 ⑧ - 30분 - 산림욕장 ⑨ - 40분 - 천연에어콘 ⑩ - 2분 - 봉래폭포 버스종점 ⑪",
+          "duration_text": "약 5시간 2분 소요",
+          "duration_min": 302
+        }
+      ]
+    },
+    {
+      "name_ko": "소백산",
+      "location_ko": "경상북도 영주시 풍기읍, 충청북도 단양군 단양읍",
+      "elevation_m_forest": 1439.7,
+      "hike_time_range": "5시간이상",
+      "height_range": "1400m ~ 1500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.951787,
+        "lng": 128.44608
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "희방사 입구 ① - 50분 - 희방사 ② - 1시간 30분 - 연화봉 ③ - 2시간 - 비로봉 ④ - 1시간 30분 - 삼가리 ⑤",
+          "duration_text": "약 5시간 50분",
+          "duration_min": 350
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "죽령 ⑥ - 제2연화봉 ⑦ - 천체관측소 ③ - 비로봉 ④ → 하산",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "삼가매표소 ⑤ - 비로사 ⑧ - 비로봉 ④ → 하산",
+          "duration_text": "약 2시간 40분",
+          "duration_min": 160
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "천동매표소 ⑨ - 다리안폭포 ⑨ - 대궐터 ⑩ - 민백이재 ⑪ - 비로봉 ④ → 하산",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "소요산",
+      "location_ko": "경기도 동두천시, 포천시 신북면",
+      "elevation_m_forest": 587.5,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "500m ~ 600m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.942764,
+        "lng": 127.087809
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "소요동 주차장 ① - 30분 - 자재암 ② - 40분 - 중백운대 ③ - 40분 - 상백운대 ④ - 1시간 - 정상 ⑤ - 40분 원효폭포 ② - 20분 - 소요동 주차장 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        }
+      ]
+    },
+    {
+      "name_ko": "속리산",
+      "location_ko": "경상북도 상주시 화북면, 충청북도 보은군 내속리면",
+      "elevation_m_forest": 1058.4,
+      "hike_time_range": "5시간이상",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.533504,
+        "lng": 127.9
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "법주사 ① - 1시간 - 세심정 삼거리 ② - 중사자암 ③ - 2시간 30분 - 문장대 ④ - 30분 - 신선대 ⑤ - 30분- 천황석문 ⑥ - 30분 - ( 천황봉 ) - 1시간 30분 - 세심정삼거리 ② - 1시간 - ( 법주사 ) ①",
+          "duration_text": "약 7시간 30분",
+          "duration_min": 450
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "법주사 ① - 삼거리 ② - 신선대 ⑤ - 비로봉 ⑥ - 상환암 ⑦ - 세심정 삼거리 ② - 법주사 ①",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "시어동매표소 ⑧ - 문장대 ④ - 중사자암 ③ - 법주사 ①",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "법주사 ① - 문장대 ④ - 신선대 ⑤ - 세심정 삼거리 ② - 법주사 ①",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        }
+      ]
+    },
+    {
+      "name_ko": "신불산",
+      "location_ko": "울산광역시 울주군 삼남면ㆍ상북면",
+      "elevation_m_forest": 1159.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.540444,
+        "lng": 129.056118
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "가천리 ① - 2시간 30분 - 신불재 ② - 20분 - 신불평원 ③ - 15분 - 신불재 ② - 25분 - 정상 ④ - 2시간 - 홍류산장 ⑤",
+          "duration_text": "약 5시간 30분",
+          "duration_min": 330
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "신불산자연휴양림 ⑥ - 백운암 ⑦ - 신불재 ② - 정상 ④ - 간월재 ⑧ - 왕봉골 ⑨ - 파래소폭포 ⑩ - 신불산휴양림 ⑥",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "홍류산장 ⑤ - 간월재 ⑧ - 정상 ④ - 홍류폭포 ⑪ - 홍류산장 ⑤",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "가천저수지 ⑫ - 동릉 - 정상 ④ - 서릉 ⑬ - 백운암 ⑦ - 신불산자연휴양림 ⑥",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        }
+      ]
+    },
+    {
+      "name_ko": "연화산",
+      "location_ko": "경상남도 고성군 개천면ㆍ영현면",
+      "elevation_m_forest": 524,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "500m ~ 600m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.073613,
+        "lng": 128.265246
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "주차장 ① - 15분 - 옥천사 ③ - 30분 - 연화봉 ③ - 20분 - 황새고개 ④ - 30분 - 정상 ⑤ - 25분 - 남산 ⑥ - 15분 - 옥천사 ③ - 15분 - 주차장 ①",
+          "duration_text": "약 2시간 30분",
+          "duration_min": 150
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "옥천사 ③ - 청련암 ② - 남산 ⑥ - 정상 ⑤ - 황새고개 ④ - 옥천사 ②",
+          "duration_text": "약 2시간 15분",
+          "duration_min": 135
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "연화교 ⑦ - 화촌 ⑧ - 정상 ⑤ - 잘루목 - 옥천사 ②",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "오대산",
+      "location_ko": "강원도 평창군 진부면, 홍천군 내면, 강릉시 연곡면",
+      "elevation_m_forest": 1565.4,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "1500m 이상",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.79862,
+        "lng": 128.543076
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "상원사 ① - 1시간 40분 - 비로봉 ② - 1시간 - 상왕봉 ③ - 1시간 30분 - 상원사 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "상원사 ① - 비로봉 ② - 상왕봉 ③ - 두로봉 ④ - 동대산 ⑤ - 진고개산장 ⑥",
+          "duration_text": "약 10시간 30분",
+          "duration_min": 630
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "상원사 ① - 적멸보궁 ⑧ - 비로봉 ② - 적멸보궁 ⑧ - 상원사 ①",
+          "duration_text": "약 2시간 55분",
+          "duration_min": 175
+        }
+      ]
+    },
+    {
+      "name_ko": "오봉산",
+      "location_ko": "강원도 춘천시 북산면, 화천군 간동면",
+      "elevation_m_forest": 777.9,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 38.001179,
+        "lng": 127.806098
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "배후령 ① - 20분 - 서남릉 삼거리 ② - 1시간 40분 - 정상 ③ - 50분 - 688봉 남쪽 능선삼거리 ④ - 1시간 - 청평 ⑥",
+          "duration_text": "약 4시간 15분",
+          "duration_min": 255
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "청평산장 ⑥ - 청평사 ⑤ - ( 쇠줄지역 ) - 688봉 ④ - 정상 ③ - 4·3·2·1봉 ⑦ - 서남릉 삼거리 ② - 배후령 ①",
+          "duration_text": "약 4시간 35분",
+          "duration_min": 275
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "배후령 ① - 서남릉 삼거리 ② - 정상 ③ - 백치고개 ⑧ - 부용산 ⑨ - ( 부용산 남릉 안부 ) - 하늘소민박 ⑩",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "백치고개 ⑧ - 거북바위 - 정상 ③ - 4·3·2·1봉 ⑦ - 선동계곡 ⑪ - 청평사 ⑤ - 청평산장 ⑥",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        }
+      ]
+    },
+    {
+      "name_ko": "용문산",
+      "location_ko": "경기도 양평군 용문면ㆍ옥천면",
+      "elevation_m_forest": 1157.1,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.562517,
+        "lng": 127.551815
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "상가촌 ① - 30분 - 용문사 ② - 30분 - 갈림길 ③ - 1시간 10분 - 석문 ④ - 40분 - 문례재 ⑤ - 2시간 - 갈현마을 ⑥ - 1시간 15분 - 가일리 ⑦",
+          "duration_text": "약 6시간 5분",
+          "duration_min": 365
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "용문사 ② - 상원사 ⑧ - 1064봉 ⑨ - 구름재 ⑩ - 백운봉 ⑪ - 연안마을 ⑫",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "용문사 ② - ( 중원산 ) - 단월봉 ⑬ - 문례봉 ⑭ - 문례재 ⑤ - 용문사 ②",
+          "duration_text": "약 7시간 25분",
+          "duration_min": 445
+        }
+      ]
+    },
+    {
+      "name_ko": "용화산",
+      "location_ko": "강원도 화천군 간동면ㆍ하남면, 춘천시 사북면",
+      "elevation_m_forest": 877.8,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 38.039508,
+        "lng": 127.743782
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "양통마을 ① - 1시간 - 큰고개 ② - 40분 - 정상 ③ - 30분 - 858봉 ④ - 1시간 - 양통마을 ①",
+          "duration_text": "약 3시간 10분",
+          "duration_min": 190
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "양통마을 ① - 큰고개 ② - 정상 ③ - 858봉 ④ - 깔딱고개 ⑥ - 양통 ⑤",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "큰고개 ② - 정상 ③ - 성불치 ⑦ - 파로호 ⑧",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "운문산",
+      "location_ko": "경상북도 청도군 운문면, 경상남도 밀양시 산내면",
+      "elevation_m_forest": 1195.1,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.676492,
+        "lng": 129.034167
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "원서리 ① - 30분 - 석골사 ② - 2시간 10분 - 상운암 ③ - 1시간 - 정상 ④ - 40분 - 아랫재 ⑤ - 1시간 10분 - ( 남명리 )",
+          "duration_text": "약 5시간 30분",
+          "duration_min": 330
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "원서리 ① - 석골사 ② - 서릉 - 정상 ④ - 딱밭재 ⑦ - 범봉 ⑧ - 팔풍재 ⑨ - 억산 ⑩ - 석골사 ② - 원서리 ①",
+          "duration_text": "약 6시간 30분",
+          "duration_min": 390
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "원서리 - 석골사 ② - 대비골 ⑪ - 팔풍재 ⑨ - 범봉 ⑧ - 딱밭재 ⑦ - 정상 ④ - 아랫재 ⑤ - ( 남명리 )",
+          "duration_text": "약 6시간10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "호박소 ⑫ - 구룡소폭포 ⑬ - 가지산 서남릉 ⑭ - 아랫재 ⑤ - 정상 ④ - 상운암 ③ - 석골사 ② - 원서리 ①",
+          "duration_text": "약 6시간",
+          "duration_min": 360
+        }
+      ]
+    },
+    {
+      "name_ko": "운악산",
+      "location_ko": "경기도 가평군 하면, 포천시 화현면",
+      "elevation_m_forest": 934.7,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": null,
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.878103,
+        "lng": 127.324856
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "운악교 ① - 15분 - 무우폭포 ② - 25분 - 눈썹바위 ③ - 30분 - 728봉 ④ - 30분 - 정상 ⑤ - 50분 - 궁예성터 ⑥ - 20분 - 청학사 ⑦ - 40분 - 운주사 ⑧",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "운주사 ⑧ - 신선대 ⑨ - 애기바위 ⑩ - 정상 ⑤ - 절고개 ⑪ - 현등사 ⑫ - 석거리 ⑬",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        }
+      ]
+    },
+    {
+      "name_ko": "운장산",
+      "location_ko": "전라북도 진안군 주천면, 부귀면, 정천면, 완주군 동상면",
+      "elevation_m_forest": 1125.8,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.911067,
+        "lng": 127.357241
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "운장산휴게소 ① - 55분 - 활목재 ② - 25분 - 운장산 서봉 ③ - 25분 - 정상 ④ - 30분 - 동봉 ⑤ - 50분 - 각우목재 ⑥ - 40분 - 1084봉 ⑦ - 2시간 - 복두봉 ⑧ - 50분 - ( 헬기장 ) - 1시간 35분 - 865봉 ⑨ - 1시간 10분 - 학선동 마을 ⑩",
+          "duration_text": "약 9시간 20분",
+          "duration_min": 560
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "운장산휴게소 ① - 활목재 ② - 정상 ④ - 동봉 ⑤ - ( 동봉 북릉 ) - 외처사동 ⑪",
+          "duration_text": "약 3시간 5분",
+          "duration_min": 185
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "정수암 ⑫ - 서봉 ③ - 정상 ④ - 동봉 ⑤ - 각우목재 ⑥ - 내처사동 ⑬ - 외처사동 ⑪",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "연석사 ⑭ - 연석산 ⑮ - 정상 ④ - 동봉 ⑤ - 내처사동 ⑬ - 외처사동 ⑪",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        }
+      ]
+    },
+    {
+      "name_ko": "월악산",
+      "location_ko": "충청북도 제천시 한수면, 덕산면",
+      "elevation_m_forest": 1095.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.889372,
+        "lng": 128.090879
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "덕주골 입구 ① - 1시간 - 마애불 ② - 1시간 - 960봉 ③ - 40분 - 송계삼거리 ④ - 40분 - 영봉 ⑤ - 40분 - 송계삼거리 ④ - 동창교매표소 ⑥",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "덕주골휴게소 ① - 마애불 ② - 송계삼거리 ④ - 영봉 ⑤ - 중봉 하봉 거쳐 보덕암 ⑧",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "월악리 덕산매표소 ⑨ - 신륵사 ⑩ - 절골 영봉 ⑤ - 송계리 동천교매표소 ⑥",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        }
+      ]
+    },
+    {
+      "name_ko": "월출산",
+      "location_ko": "전라남도 영암군 영암읍ㆍ군서면ㆍ학산면, 강진군 성전면",
+      "elevation_m_forest": 810.7,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.774408,
+        "lng": 126.710414
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "천황사 ① - 20분 - 바람폭포 갈림길 - 1시간 - 천황봉 ③ - 40분 - 바람재 ④ - 10분 - 구정봉 ⑤ - 40분 - ( 미왕재 ) - 1시간 - 도갑사 ⑦",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "도갑사 ⑦ - 미왕재 ⑥ - 구정봉 ⑤ - ( 정상 ) - 금룡경포대 ⑧ - 경포대 매표소 ⑨",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "천황사 ① - 구름다리 - ( 정상 ) - ( 바람폭포 ) - 천황사 ①",
+          "duration_text": "약 2시간 20분",
+          "duration_min": 140
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "불티재 ⑩ - 누릿재 ⑪ - 달구봉 ⑫ - ( 정상 ) - 구정봉 ⑤ - 마애여래좌상 ⑬ - 구정봉 ⑤ - 미왕재 ⑥ - 도갑사 ⑦",
+          "duration_text": "약 10시간 30분",
+          "duration_min": 630
+        }
+      ]
+    },
+    {
+      "name_ko": "유명산",
+      "location_ko": "경기도 가평군 설악면, 양평군 옥천면",
+      "elevation_m_forest": 864,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "초급",
+      "coords": {
+        "lat": 37.576298,
+        "lng": 127.487614
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "유명산자연휴양림 입구 주차장 ① - 40분 - 용소 ② - 30분 - 마당소 ③ - 20분 - ( 아우라지 삼거리 ) - 45분 - ( 정상 ) - 50분 - 선어치 ⑥",
+          "duration_text": "약 3시간 5분",
+          "duration_min": 185
+        }
+      ]
+    },
+    {
+      "name_ko": "응봉산",
+      "location_ko": "강원도 삼척시 가곡면ㆍ원덕읍, 경상북도 울진군 북면",
+      "elevation_m_forest": 999.7,
+      "hike_time_range": "5시간이상",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.077202,
+        "lng": 129.22989
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "덕구온천 ① - 1시간 - 원탕 ② - 2시간 - 정상 ③ - 2시간 - 덕구온천 ①",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "덕풍마을 ④ - 용소골 ⑤ - 작은당귀골 ⑥ - 정상 ③ - 덕구온천 ①",
+          "duration_text": "약 9시간 30분",
+          "duration_min": 570
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "사곡분교(폐교) ⑦ - 재량박골 ⑧ - ( 응봉지 남릉 ) - ( 응봉산 서북릉 ) - 정상 ③ - 덕구온천 ①",
+          "duration_text": "약 6시간 10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "( 보리교 ) - 보리골 ⑨ - 862봉 ⑩ - ( 응봉산 서북릉 ) - 정상 ③ - 덕구온천 ①",
+          "duration_text": "약 6시간",
+          "duration_min": 360
+        }
+      ]
+    },
+    {
+      "name_ko": "장안산",
+      "location_ko": "전라북도 장수군 장수읍, 계남면",
+      "elevation_m_forest": 1237.4,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.630085,
+        "lng": 127.595822
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "법년동 ① - 2시간 50분 - 장안산 정상 ② - 1시간 10분 - 샘터 ③ - 35분 - 무령고개 ④",
+          "duration_text": "약 4시간 35분",
+          "duration_min": 275
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "무령고개 ④ - 정상 ② - 중봉 ⑤ - 하봉 ⑥ - 어치재 ⑦ - 법년동 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "무령고개 ④ - 정상 ② - 중봉 ⑤ - 덕천 ⑧ - 합수지점 ⑨ - 연주 ⑩",
+          "duration_text": "약 4시간 55분",
+          "duration_min": 295
+        }
+      ]
+    },
+    {
+      "name_ko": "재약산",
+      "location_ko": "경상남도 밀양시 단장면ㆍ산내면, 울산광역시 울주군 상북면",
+      "elevation_m_forest": 1119.1,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.547668,
+        "lng": 128.979378
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "표충사 ① - 1시간 30분 - 고사리분교 터 ② - 50분 - 수미봉 ③ - 1시간 - 사자봉 ④ - 1시간 - 한계암 ⑤ - 30분 - 표충사 ①",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소, 매바위마을 ⑥ - 필봉 ⑦ - 상투봉 ⑧ - 사자봉 ④ - 수미봉 ③ - 층층폭포 ⑨ - 홍룡폭포 ⑩ - 표충사 ①",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "얼음골 ⑪ - 사자봉 ④ - 수미봉 ③ - 층층폭포 ⑨ - 홍룡폭포 ⑩ - 표충사 ①",
+          "duration_text": "약 4시간 45분",
+          "duration_min": 285
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "( 배내골 ) - ( 사자평고원 ) - 사자봉 ④ - 수미봉 ③ - 층층폭포 ⑨ - 홍룡폭포 ⑩ - 표충사 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "적상산",
+      "location_ko": "전라북도 무주군 적상면",
+      "elevation_m_forest": 1030.6,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.947729,
+        "lng": 127.689708
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "사천리 서창마을 ① - 1시간 10분 - 장도바위 ② - 20분 - 향로봉 ③ - 40분 - 정상 ④ - 10분 - 안국사, 안렴대 ⑤ - 1시간 40분 - 괴목리 ⑥",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "점봉산",
+      "location_ko": "강원도 양양군 서면, 인제군 인제읍ㆍ기린면",
+      "elevation_m_forest": 1426,
+      "hike_time_range": "5시간이상",
+      "height_range": "1400m ~ 1500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 38.049279,
+        "lng": 128.425259
+      },
+      "courses": [
+        {
+          "kind_ko": "코스1",
+          "section_ko": "점봉산 산림생태관리센터 ① - 중간 초소 ② - 나무다리 ③ - 곰배령 ④",
+          "duration_text": "(편도)약 1시간 50분",
+          "duration_min": 110
+        },
+        {
+          "kind_ko": "코스2(하산전용)",
+          "section_ko": "곰배령 ④ - 전망대 ⑤ - 주목 군락지 ⑥ - 철쭉 군락지 ⑦ - 점봉산 산림생태관리센터 ①",
+          "duration_text": "약 2시간",
+          "duration_min": 120
+        }
+      ]
+    },
+    {
+      "name_ko": "조계산",
+      "location_ko": "전라남도 순천시 승주읍ㆍ송광면",
+      "elevation_m_forest": 887.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.002569,
+        "lng": 127.313568
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "송광사 ① - 1시간 - 송광굴목이재 ② - 30분 - 연산사거리 ③ - 40분 - 787봉 - 1시간 - 정상 ⑤ - 40분- 선암굴목이재 ⑥ - 30분 - 송광굴목이재 ② - 30분 - 천자암 ⑦ - 50분 - 운구재 ⑧ - 30분 - 송광사 ①",
+          "duration_text": "약 6시간 10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "송광사 ① - 송광굴목이재 ② - 선암굴목이재 ⑥ - 정상 ⑤ - 선암사 ⑨",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "선암사 ⑨ - 정상 ⑤ - 선암굴목이재 ⑥ - 선암사집단시설지구 ⑩",
+          "duration_text": "약 2시간 40분",
+          "duration_min": 160
+        }
+      ]
+    },
+    {
+      "name_ko": "주왕산",
+      "location_ko": "경상북도 청송군 청송읍ㆍ부동면, 영덕군 지품면ㆍ달산면",
+      "elevation_m_forest": 722.1,
+      "hike_time_range": "3시간30분~4시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.388251,
+        "lng": 129.166513
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "대전사 ① - 25분 - 팔각정 매점 ② - 40분 - ( 제1폭포 ) - 30분 - 후리메기 ④ - 45분 - 칼등고개 ⑤ - 35분 - 정상 ⑥ - 50분 - 대전사 ①",
+          "duration_text": "약 3시간 45분",
+          "duration_min": 225
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "대전사 ① - ( 제1폭포 ) - 제3폭포 ⑦ - ( 금은광이교 ) - 금은광이 삼거리 ⑧ - 월미기 ⑨ - 장군봉 ⑩ - 대전사 ①",
+          "duration_text": "약 3시간 45분",
+          "duration_min": 225
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "대전사 ① - ( 제1폭포 ) - 제3폭포 ⑦ - 내원동 ⑪ - 가메봉 ⑫ - ( 철골 갈림길 ) - ( 사창골 ) - 제2폭포 ③ - 대전사 ①",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        }
+      ]
+    },
+    {
+      "name_ko": "주흘산",
+      "location_ko": "경상북도 문경시 문경읍",
+      "elevation_m_forest": 1108.4,
+      "hike_time_range": "4시간~4시간30분미만",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 36.788634,
+        "lng": 128.100605
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소, 제1관문 ① - 50분 - 혜국사 ② - 35분 - 대궐터 ③ - 45분 - 1075봉 ④ - 40분 - 주흘영봉 ⑤ - 45분 - 꽃밭서덜 ⑥ - 40분 - 제2관문 ⑦",
+          "duration_text": "약 4시간 15분",
+          "duration_min": 255
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "잣밭재 ⑧ - 남봉 ⑨ - 1075봉 ④ - 대궐터 ③ - 혜국사 ② - 제1관문 ①",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "월복사 ⑩ - 1075봉 ④ - 주흘영봉 ⑤ - 부봉 ⑪ - 동화원 ⑫",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "개그늘 ⑬ - 1075봉 ④ - 주흘영봉 ⑤ - 꽃밭서덜 ⑥ - 제2관문 ⑦",
+          "duration_text": "약 4시간 45분",
+          "duration_min": 285
+        }
+      ]
+    },
+    {
+      "name_ko": "지리산",
+      "location_ko": "전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군",
+      "elevation_m_forest": 1915.4,
+      "hike_time_range": "5시간이상",
+      "height_range": "1500m 이상",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.337048,
+        "lng": 127.73047
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "성삼재 ① - 40분 - 노고단 ② - 1시간 20분 - 임걸령 ③ - 30분 - 노루목 ④ - 30분 - 삼도봉 ⑤ - 30분 - 화개재 ⑥ - 30분 - 토끼봉 ⑦ - 1시간 - 명선봉 ⑧ - 30분 - 삼각고지 ⑨ - 1시간 - 벽소령 ⑩ - 1시간- ( 선비샘 ) - 2시간 - ( 세석평전 ) - 1시간 - 연하봉 ⑫ - 30분 - 장터목 - 1시간 - 천왕봉 ⑭ - 3시간 - 중산리",
+          "duration_text": "약 15시간",
+          "duration_min": 900
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "( 중산리 ) - 칼바위 ⑯ - 망바위 ⑰ - 법계사(로터리대피소) ⑱ - 천왕샘 ⑲ - 천왕봉 ⑭ - ( 중산리 )",
+          "duration_text": "약 8시간",
+          "duration_min": 480
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "성삼재 ① - 노고단 ② - 임걸령 ③ - 노루목 ④ - 반야봉 ⑳ - 화개재 ⑥ - 뱀사골 &#12881; - 반선 &#12882;",
+          "duration_text": "약 7시간 30분",
+          "duration_min": 450
+        }
+      ]
+    },
+    {
+      "name_ko": "지리산(통영)",
+      "location_ko": "경상남도 통영시 사량면",
+      "elevation_m_forest": 399.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "300m ~ 400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.84801832,
+        "lng": 128.1858295
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "돈지마을 ① - 1시간 - 이정표 ② - 40분 - 정상 ③ - 1시간 - 달바위 ④ - 1시간 - 가마봉 ⑤ - 50분 - 옥녀봉 ⑥ - 30분 - 진촌마을 ⑦",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "금북개 ⑧ - 지리산 ③ - 달바위 ④ - 가마봉 ⑤ - 옥녀봉 ⑥ - 진촌 ⑦",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "대항 ⑨ - 달바위 ④ - 가마봉 ⑤ - 옥녀봉 ⑥ - 진촌 ⑦",
+          "duration_text": "약 2시간 50분",
+          "duration_min": 170
+        }
+      ]
+    },
+    {
+      "name_ko": "천관산",
+      "location_ko": "전라남도 장흥군 관산읍, 대덕읍",
+      "elevation_m_forest": 724.3,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.532448,
+        "lng": 126.916015
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "장천재 ① - 50분 - 종봉 ② - 25분 - 환희대 ③ - 15분 - 연대봉 ④ - 1시간 - 장천재 ①",
+          "duration_text": "약 2시간 30분",
+          "duration_min": 150
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "장천재 ① - 양근암 ⑤ - 정원암 ⑥ - 연대봉 ④ - 환희대 ③ - 구정봉 ⑦ - 천관사 ⑧",
+          "duration_text": "약 2시간 35분",
+          "duration_min": 155
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "천관산자연휴양림 ⑨ - 지장봉 ⑩ - 환희대 ③ - 연대봉 ④ - 우두봉 ⑪ - 상촌 ⑫",
+          "duration_text": "약 2시간 55분",
+          "duration_min": 175
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "장천재 ① - 금수굴 ⑬ - 헬기장 ⑭ - 연대봉 ④ - 헬기장 ⑭ - 환희대 ③ - 탑산사 ⑮",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "천마산",
+      "location_ko": "경기도 남양주시 화도읍, 오남읍",
+      "elevation_m_forest": 810.3,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.680623,
+        "lng": 127.272692
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "천마산심신수련장 ① - 1시간 - 동릉 ② - 1시간 10분 - 정상 ③ - 40분 - 천마의 집 ④ - 30분 - 도원사 ⑤",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "가곡초교 ⑥ - 동릉 ② - 정상 ③ - 괘라리고개 ⑦ - 보광사 가곡초교 ⑧",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "천성산",
+      "location_ko": "경상남도 양산시 하북면, 상북면",
+      "elevation_m_forest": 920.2,
+      "hike_time_range": "5시간이상",
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.420283,
+        "lng": 129.112159
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 40분 - 내원사 ② - 1시간 30분 - 북봉 ③ - 30분 - 은수고개 ④ - 1시간 - 화엄늪 ⑤ - 1시간 30분 - 홍룡사 주차장 ⑥",
+          "duration_text": "약 5시간 10분",
+          "duration_min": 310
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "매표소 ① - 성불암계곡 입구 ⑦ - 공룡능선 ⑧ - 집북재 ⑨ - 북봉 ③ - 은수고개 ④ - 원효암 주차장 ⑩ - 무지개폭포 ⑪ - ( 장흥 )",
+          "duration_text": "약 6시간 20분",
+          "duration_min": 380
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "( 백동 ) - ( 법수원 ) - ( 북봉 ) - 은수고개 ④ - 원효암 ⑭ - 홍룡사 주차장 ⑥",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        }
+      ]
+    },
+    {
+      "name_ko": "천태산",
+      "location_ko": "충청북도 영동군 양산면, 충청남도 금산군 제원면",
+      "elevation_m_forest": 714.3,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.157403,
+        "lng": 127.613531
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "주차장, 삼단폭포 ②, 망탑삼거리 - 25분 - ( 영국사 ) - 1시간 30분 - A코스, 정상 ④ - 15분 - 헬기장, B코스갈림길 ⑤, C코스갈림길 - 20분 - 잠시쉼터 ⑥, 남고개 ⑦ - 25분 - 영국사 - 15분 - 망탑봉 - 20분 - 주차장",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "( 누교리 주차장 ) - ( 영국사 ) - A코스 - 정상 ④ - 확골 ⑧ - 신안사",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "청량산",
+      "location_ko": "경상북도 봉화군 명호면ㆍ재산면, 안동시 도산면ㆍ예안면",
+      "elevation_m_forest": 869.7,
+      "hike_time_range": "5시간이상",
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": "고급",
+      "coords": {
+        "lat": 36.796599,
+        "lng": 128.908346
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "청량마을 ① - 20분 - ( 두번째 안내판 ) - 25분 - 외청량사 ③ - 10분 - 김생굴 ④ - 50분 - 보살봉 ⑤ - 1시간 - 정상 ⑥ - 20분 - 795봉 ⑦ - 20분 - 내청량사 - 10분 - ( 첫번째 안내판 ) - 10분 - 청량마을 ①",
+          "duration_text": "약 3시간 45분",
+          "duration_min": 225
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "윗뒷실 ⑩ - 795봉 ⑦ - 정상 ⑥ - 795봉 ⑦ - 청량사 ⑧ - 청량마을 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "이름실 ⑪ - 물티재 ⑫ - 청량산휴게소 ⑬ - 축융봉 ⑭ - 청량산휴게소 ⑬ - 청량마을 ①",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "추월산",
+      "location_ko": "전라남도 담양군 용면, 전라북도 순창군 복흥면",
+      "elevation_m_forest": 731.2,
+      "hike_time_range": "2시간30분~3시간미만",
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.399282,
+        "lng": 126.975611
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "월계리 매표소 ① - 30분 - 보리암 ② - 30분 - 보리암 정상 ③ - 20분 - 정상 ④ - 1시간 30분 - 월계리 매표소 ①",
+          "duration_text": "약 2시간 50분",
+          "duration_min": 170
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "월계리 태웅산장 ⑤ - 북릉 안부 - 정상 - 697봉(보리암 정상) - 보리암 ② - 관리사무소 주차장 ⑦",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "( 밀재 ) - 정상 ④ - 보리암 ② - 굴암바위 ⑨ - 관리사무소 주차장 ⑦",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "( 쌍태리 ) - 697봉(보리암 정상) ③ - 정상 ④ - ( 북릉 안부 ) - 월계리 혹은 697봉(보리암 정상) ③ - 보리암 ② - 관리사무소 주차장 ⑦",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "축령산",
+      "location_ko": "경기도 남양주시 수동면, 가평군 상면",
+      "elevation_m_forest": 887.1,
+      "hike_time_range": null,
+      "height_range": "800m ~ 900m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.75298,
+        "lng": 127.333084
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "축령산자연휴양림 매표소 ① - 30분 - 서릉 쉼터 ② - 40분 - 수리바위 ③ - 30분 - 남이바위 ④ - 30분 - ( 정상 ) - 15분 - 절고개 ⑥ - 1시간 - 매표소 ①",
+          "duration_text": "약 3시간 25분",
+          "duration_min": 205
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "당재마을 ⑦ - 잣창고 ⑧ - ( 정상 ) - 절고개 ⑥ - 남이바위 ④ - 수리바위 ③ - 매표소 ①",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "수레넘이고개 ⑨ - 남이바위 ④ - ( 정상 ) - 절고개 ⑥ - 서리산 ⑩ - 질마재 ⑪ - 매표소 ①",
+          "duration_text": "약 3시간 5분",
+          "duration_min": 185
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "매표소 ① - 질마재 ⑪ - 서리산 ⑩ - 절고개 ⑥ - ( 정상 ) - ( 동북릉 ) - 287봉릉 ⑬ - 비령이 ⑭",
+          "duration_text": "약 3시간 10분",
+          "duration_min": 190
+        }
+      ]
+    },
+    {
+      "name_ko": "치악산",
+      "location_ko": "강원도 원주시, 횡성군, 영월군",
+      "elevation_m_forest": 1282,
+      "hike_time_range": "5시간이상",
+      "height_range": "1200m ~ 1300m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.37179,
+        "lng": 128.050553
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "구룡사 입구 ① - 1시간 - 세렴폭포 ② - 2시간 - 비로봉 ③ - 25분 - 입석사 삼거리 ④ - 1시간 45분 - 고둔치 ⑤ - 45분 - 향로봉 ⑥ - 1시간 40분 - 남대봉 ⑦ - 15분 - 상원사 ⑧ - 2시간 - 성남매표소 ⑨",
+          "duration_text": "약 9시간 50분",
+          "duration_min": 590
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "구룡사 ① - ( 계곡길 ) - 비로봉 ③ - 쥐너미고개 ⑩ - 범골 ⑪ - 법문사 ⑫",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "황골매표소 ⑬ - 입석대 ⑭ - 입석사 삼거리 ④ - 비로봉 ③ - 1003봉 ⑮ - 부곡매표소 ⑯",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "부곡리 - 고둔치 ⑤ - 향로봉 ⑥ - 남대봉 ⑦ - 쌍룡수 - 영원사 ⑰ - 금대분소 ⑱",
+          "duration_text": "약 6시간 40분",
+          "duration_min": 400
+        }
+      ]
+    },
+    {
+      "name_ko": "칠갑산",
+      "location_ko": "충청남도 청양군 대치면, 정산면, 장평면",
+      "elevation_m_forest": 559.7,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "500m ~ 600m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.413505,
+        "lng": 126.884245
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "장곡리 주차장 ① - 20분 - 장곡사 ② - 15분 - 서릉 삼거리 ③ - 50분 - 남릉 삼거리 ④ - 5분 - 정상 ⑤ - 30분 - 삼형제봉 ⑥ - 1시간 10분 - 장곡리 주차장 ①",
+          "duration_text": "약 3시간 10분",
+          "duration_min": 190
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "가리점 ⑦ - 마재고개 ⑧ - 삼형제봉 ⑥ - 정상 ⑤ - 냉천계곡 ⑨ - 칠갑산자연휴양림 ⑪",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "칠갑산자연휴양림 ⑪ - 395봉 ⑫ - 서릉 삼거리 ③ - 정상 ⑤ - 점심교 ⑬",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "한치고개 ⑭ - 정상 ⑤ - 465봉 ⑮ - 장곡사 ② - 장곡리 주차장 ①",
+          "duration_text": "약 2시간 10분",
+          "duration_min": 130
+        }
+      ]
+    },
+    {
+      "name_ko": "태백산",
+      "location_ko": "강원도 태백시, 경상북도 봉화군 석포면",
+      "elevation_m_forest": 1566.7,
+      "hike_time_range": "5시간이상",
+      "height_range": "1500m 이상",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 37.095772,
+        "lng": 128.91524
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "당골 ① - 50분 - 반재 ② - 40분 - 망경사 ③ - 5분 - 정상 ④ - 25분 - 부쇠봉 삼거리 ⑤ - 30분 - 문수봉 안부 ⑥ - 40분 - 정가바우골 아우라지 ⑦ - 40분 - 당골 ①",
+          "duration_text": "약 3시간 50분",
+          "duration_min": 230
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "당골 ① - 산제당골 ⑧ - 문수봉 ⑨ - 문수봉 안부 ⑥ - 부쇠봉 삼거리 ⑤ - 정상 ④ - 유일사 ⑩ - 유일사 매표소 ⑪",
+          "duration_text": "약 4시간 5분",
+          "duration_min": 245
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "백단사 매표소 ⑫ - 백단사 ⑬ - 정상 ④ - 부쇠봉 삼거리 ⑤ - 문수봉 ⑨ - 두리봉 ⑭ - 지지리골 ⑮ - 잣밭 ⑯",
+          "duration_text": "약 4시간 35분",
+          "duration_min": 275
+        }
+      ]
+    },
+    {
+      "name_ko": "태화산",
+      "location_ko": "강원도 영월군 영월읍, 충청북도 단양군 영춘면",
+      "elevation_m_forest": 1027.5,
+      "hike_time_range": "4시간30분~5시간미만",
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.136205,
+        "lng": 128.48548
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "영춘 ① - 55분 - 화장암 ② - 10분 - ( 주릉 ) - 30분 - 897봉 ③ - 10분 - 억새밭 ④ - 30분 - 정상 ⑤ - 1시간 30분 - 삼거리 ⑥ - 1시간 - 고씨동굴 ⑦",
+          "duration_text": "약 4시간 45분",
+          "duration_min": 285
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "팔괴리 ⑧ - 삼거리 안부 ⑥ - 정상 ⑤ - 영춘 ①",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        }
+      ]
+    },
+    {
+      "name_ko": "팔공산",
+      "location_ko": "경상북도 군위군 부계면, 영천시 신녕면, 대구광역시 동구",
+      "elevation_m_forest": 1192.3,
+      "hike_time_range": "5시간이상",
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": "중급",
+      "coords": {
+        "lat": 36.017151,
+        "lng": 128.695043
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "파계사 매표소 ① - 35분 - 파계사 ② - 45분 - 파계재 ③ - 1시간 10분 - 부인사 갈림길 ④ - 1시간 35분 - 서봉 ⑤ - 40분 - 염불암 ⑥ - 1시간 - 동화사 ⑦",
+          "duration_text": "약 5시간 45분",
+          "duration_min": 345
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "남산리 ⑧ - 파계재 ③ - 파계봉 - 서봉 ⑤ - 수태골 ⑨ - 동화사지구 ⑩",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "( 갓바위주차장 ) - 갓바위 ⑪ - 능성재 ⑫ - 신령재 ⑬ - 동봉 ⑭ - 염불암 ⑥ - 동화사 ⑦",
+          "duration_text": "약 6시간 10분",
+          "duration_min": 370
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "동화사 ⑦ - 염불암 ⑥ - 동봉 ⑭ - 수도사 ⑮ - 신시암 ⑯",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "팔봉산",
+      "location_ko": "강원도 홍천군 서면",
+      "elevation_m_forest": 328.2,
+      "hike_time_range": "3시간~3시간30분미만",
+      "height_range": "300m ~ 400m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.702777,
+        "lng": 127.753846
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "매표소 ① - 40분 - 1봉과 2봉 사이의 새목 ② - 10분 - 3봉 ③ - 30분 - 4봉 ④ - 15분 - 7봉과 8봉 사이의 새목 ⑤ - 1시간 - 8봉 너머 강변 ⑥ - 25분 - 매표소 ①",
+          "duration_text": "약 3시간 - 8봉을 생략할 경우 2시간",
+          "duration_min": 180
+        }
+      ]
+    },
+    {
+      "name_ko": "팔영산",
+      "location_ko": "전라남도 고흥군 점암면, 영남면",
+      "elevation_m_forest": 606.9,
+      "hike_time_range": null,
+      "height_range": "600m ~ 700m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 34.618308,
+        "lng": 127.434072
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "능가사 입구 ① - 10분 - 팔영산장 ② - 20분 - 흔들바위 ③ - 40분 - 1봉 ④ - 1시간 20분 - 8봉 ⑤ - 40분- 탑재 ⑥ - 40분 - 팔영산장 ② - 10분 - 능가사 입구 ①",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "능가사 입구 ① - 팔영산장 ② - 흔들바위 ③ - ( 1~8봉 ) - 깃대봉 ⑦ - 동남릉 ⑧ - 영남면소 ⑨",
+          "duration_text": "약 3시간 40분",
+          "duration_min": 220
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "우천리 매표소 ⑩ - 자연휴양림 ⑪ - 2봉 동릉 ⑫ - ( 2~8봉 ) - 팔영산자연휴양림 ⑪ - 우천리 매표소 ⑩",
+          "duration_text": "약 3시간 20분",
+          "duration_min": 200
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "강산리 ⑬ - 신선대 ⑭ - 2봉 동릉 ⑫ - ( 2~8봉 ) - 탑재 ⑥ - 팔영산장 ② - 능가사 입구 ①",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        }
+      ]
+    },
+    {
+      "name_ko": "한라산",
+      "location_ko": "제주특별자치도",
+      "elevation_m_forest": 1947.3,
+      "hike_time_range": null,
+      "height_range": "1500m 이상",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 33.361773,
+        "lng": 126.529081
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "성판악 입구 ① - 1시간 20분 - 솥밭 ② - 40분 - 사라악 ③ - 1시간 - 진달래밭 ④ - 1시간 30분 - 정상 ⑤ - 1시간 - 용진각 ⑥ - 45분 - 개미목 ⑦ - 1시간 10분 - 탐라계곡 ⑧ - 1시간 - 관음사 안내소 ⑨",
+          "duration_text": "약 8시간 25분",
+          "duration_min": 505
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "어리목광장 ⑩ - 사제비동산 ⑪ - 만세동산 ⑫ - 윗세오름 ⑬",
+          "duration_text": "약 2시간",
+          "duration_min": 120
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "1100도로 ⑭ - 영실매표소 ⑮ - 영실휴게소 ⑯ - 병풍바위 ⑰ - 윗세오름 ⑬",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "어리목광장 ⑩ - 어승생악 ⑱",
+          "duration_text": "약 1시간",
+          "duration_min": 60
+        }
+      ]
+    },
+    {
+      "name_ko": "화악산",
+      "location_ko": "경기도 가평군 북면, 강원도 화천군 사내면",
+      "elevation_m_forest": 1468.3,
+      "hike_time_range": null,
+      "height_range": "1400m ~ 1500m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 37.99512,
+        "lng": 127.503057
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "관청리 ① - 45분 - 가마소 아우라지 ② - 50분 - 샘터 아우라지 ③ - 50분 - 중봉 서릉 ④ - 50분 - 서릉 삼거리 ⑤ - 20분 - 중봉 ⑥ - 40분 - 1142봉 ⑦ - 25분 - 남릉 사거리 ⑧ - 40분 - 가마소 ② - 30분 - 관청리 ①",
+          "duration_text": "약 5시간 50분",
+          "duration_min": 350
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "천도교 화악산수도원 ⑨ - 오림계곡 ⑩ - 중봉 ⑥ - 1142 ⑦ - 애기봉 전 능선 ⑪ - 오동골 ⑫",
+          "duration_text": "약 5시간 40분",
+          "duration_min": 340
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "오동골 ⑫ - 주능선 - 중봉 ⑥ - 중봉 서릉 ④ - ( 갈림길 ) - ( 큰골 ) - 관청리 ①",
+          "duration_text": "약 5시간 20분",
+          "duration_min": 320
+        }
+      ]
+    },
+    {
+      "name_ko": "화왕산",
+      "location_ko": "경상남도 창녕군 창녕읍, 고암면",
+      "elevation_m_forest": 757.7,
+      "hike_time_range": null,
+      "height_range": "700m ~ 800m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.537221,
+        "lng": 128.56047
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "관룡사 ① - 25분 - 청룡암 ② - 30분 - 관룡산 정상 ③ - 30분 - 허준세트장 ④ - 10분 - 화왕산성 동문 ⑤ - 20분 - 화왕산 정상 ⑥ - 10분 - 서문 ⑦ - 15분 - 배바위 ⑧ - 5분 - 산불감시초소 ⑨ - 10분 - 755.8봉 ⑩ - 30분- 정자 ⑪ - 20분 - 매표소 ⑫",
+          "duration_text": "약 3시간 25분",
+          "duration_min": 205
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "( 창녕읍 ) - 도성암 ⑬ - 환장고개 ⑭ - 정상 ⑥ - 목마산성 ⑮ - 창녕여고 ⑯",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "( 창녕읍 ) - 도성암 ⑬ - 정상 ⑥ - 환장고개 ⑭ - 755.8봉 ⑩ - 정자 ⑪ - 매표소 ⑫",
+          "duration_text": "약 2시간 50분",
+          "duration_min": 170
+        }
+      ]
+    },
+    {
+      "name_ko": "황매산",
+      "location_ko": "경상남도 합천군 대병면ㆍ가회면, 산청군 차황면",
+      "elevation_m_forest": 1113.1,
+      "hike_time_range": null,
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.495972,
+        "lng": 127.974316
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "염암사지 ① - 30분 - 국사당 ② - 40분 - 모산재 ③ - 40분 - 철쭉제단 ④ - 20분 - 베틀봉 ⑤ - 15분 - 황매산제단 ⑥ - 1시간 - 정상 ⑦ - 25분 - 너백이 ⑧ - 20분 - 장구메기 ⑨ - 30분 - 영화주제공원 ⑩",
+          "duration_text": "약 4시간 40분",
+          "duration_min": 280
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "장박리 ⑪ - 떡갈재능선 삼거리 ⑫ - 너백이 ⑧ - 정상 ⑦ - 황매산제단 ⑥ - 베틀봉 ⑤ - 철쭉제단 ④ - ( 목장 ) - ( 덕만리 )",
+          "duration_text": "약 4시간 25분",
+          "duration_min": 265
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "하금야영장 ⑬ - 떡갈재 ⑫ - 너백이 ⑧ - 정상 ⑦ - 황매산제단 ⑥ - 베틀봉 ⑤ - 천황재 ⑭ - 감암산 ⑮ - 성지동천 ⑯ - ( 신촌리 )",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "덕만리 ⑰ - 삼봉 ⑱ - 하봉 ⑲ - 중봉 ⑳ - 황매봉 &#12881; - ( 서북릉 삼거리 ) - 영화주제공원 ⑩",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        }
+      ]
+    },
+    {
+      "name_ko": "황석산",
+      "location_ko": "경상남도 함양군 안의면, 서하면, 서상면",
+      "elevation_m_forest": 1192.5,
+      "hike_time_range": null,
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 35.656953,
+        "lng": 127.757333
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "유동마을 ① - 35분 - 쉼터 ② - 1시간 - 전망대 ③ - 35분 - 정상 ④ - 35분 - 뫼재 ⑤ - 1시간 15분 - 거망산 정상 ⑥ - 5분 - 사평하산분기점 ⑦ - 50분 - 사평마을 ⑧ - 20분 - 용추사 주차장 ⑨",
+          "duration_text": "약 5시간15분",
+          "duration_min": 315
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "우전마을 ⑩ - 시구목길 ⑪ - 황석산 ④ - 망월대 ⑫ - 유동마을 ①",
+          "duration_text": "약 4시간",
+          "duration_min": 240
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "삼거리 ⑬ - 탁고개 ⑭ - 산내골 ⑮ - 황석산 ④ - 서하교 ⑯",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "용추사 ⑨ - 지장골 ⑰ - 주능선 ⑱ - 거망산 정상 ⑥ - 1205 ⑲ - 황석산 정상 ④ - 우전 ⑩ - 봉전 거연정 ⑳",
+          "duration_text": "약 6시간 40분",
+          "duration_min": 400
+        }
+      ]
+    },
+    {
+      "name_ko": "황악산",
+      "location_ko": "경상북도 김천시 대항면",
+      "elevation_m_forest": 1111.4,
+      "hike_time_range": null,
+      "height_range": "1100m ~ 1200m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.119447,
+        "lng": 127.965947
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "직지사 ① - 40분 - 내원계곡갈림길 ② - 30분 - 운수암 ③ - 20분 - 능선안부 ④ - 20분 - 백운봉 ⑤ - 50분 - 비로봉(정상) ⑥ - 1시간 40분 - 직지사 ①",
+          "duration_text": "약 4시간 20분",
+          "duration_min": 260
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "직지사 ① - 운수암 ③ - 백운봉 ⑤ - 비로봉 ⑥ - 형제봉 ⑦ - 신선봉 ⑧ - 망봉 직전 안부 ⑨ - 능여계곡 ⑩ - 직지사 ①",
+          "duration_text": "약 4시간 25분",
+          "duration_min": 265
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "묘내 ⑪ - ( 운수봉 ) - 백운봉 ⑤ - 비로봉 ⑥ - 형제봉 ⑦ - 신선봉 ⑧ - 망봉 직전 안부 ⑨ - 능여계곡 ⑩ - 직지사 ①",
+          "duration_text": "약 4시간 30분",
+          "duration_min": 270
+        }
+      ]
+    },
+    {
+      "name_ko": "황장산",
+      "location_ko": "경상북도 문경시 동로면",
+      "elevation_m_forest": 1078.9,
+      "hike_time_range": null,
+      "height_range": "1000m ~ 1100m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.813158,
+        "lng": 128.276068
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "안산다리 ① - 1시간 - 작은 차갓재 ② - 1시간 10분 - 정상 ③ - 1시간 20분 - 안산다리 ①",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "안산다리 ① - 작은차갓재 ② - 멧등바위 ④ - 정상 ③ - 감투봉 ⑫ - 치마바위 ⑥ - 폐맥이재 ⑦ - 929봉 ⑧ - 벌재 ⑨",
+          "duration_text": "약 5시간",
+          "duration_min": 300
+        },
+        {
+          "kind_ko": "기타코스2",
+          "section_ko": "안산다리 ① - 지은광산 ⑩ - 베바위 ⑪ - 정상 ③ - 감투봉 ⑫ - 황장재 ⑬ - 문안골 반석 ⑭ - 작성 ⑮ - 방곡리 ⑯",
+          "duration_text": "약 4시간 50분",
+          "duration_min": 290
+        },
+        {
+          "kind_ko": "기타코스3",
+          "section_ko": "생달분교 ⑰ - 토시골 ⑱ - 황장재 ⑬ - 감투봉 ⑫ - 정상 ③ - 작은차갓재 ② - 베창골 ⑲ - 안산다리 ①",
+          "duration_text": "약 4시간 10분",
+          "duration_min": 250
+        }
+      ]
+    },
+    {
+      "name_ko": "희양산",
+      "location_ko": "경상북도 문경시 가은읍, 충청북도 괴산군 연풍면",
+      "elevation_m_forest": 996.4,
+      "hike_time_range": null,
+      "height_range": "900m ~ 1000m 미만",
+      "difficulty_ko": null,
+      "coords": {
+        "lat": 36.716064,
+        "lng": 128.0027
+      },
+      "courses": [
+        {
+          "kind_ko": "추천코스",
+          "section_ko": "은티마을 ① - 1시간 - 지름티재 ② - 20분 - 미로바위 ③ - 40분 - 정상 ④ - 20분 - 성터 ⑤ - 30분 - 폭포 ⑥ - 40분 - 은티마을 ①",
+          "duration_text": "약 3시간 30분",
+          "duration_min": 210
+        },
+        {
+          "kind_ko": "기타코스1",
+          "section_ko": "은티마을 ① - 시루봉 안부 ⑦ - 성터 ⑤ - 정상 ④",
+          "duration_text": "약 3시간",
+          "duration_min": 180
+        }
+      ]
+    }
+  ]
+}

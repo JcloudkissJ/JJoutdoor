@@ -32,11 +32,17 @@ const durationValue = t(timeFormatKey).replace('{h}', String(hours)).replace('{m
 // sourced 는 기관 데이터라 별도 표시가 필요 없다 — 출처는 아래 ProvenanceBlock 이 밝힌다.
 type MetricKey = keyof typeof place.metrics_origin;
 const originNote = (key: MetricKey): string | undefined => {
-  const kind = place.metrics_origin[key].kind;
-  if (kind === 'estimated') return t('metric.estimated');
-  if (kind === 'manual') return t('metric.unverified');
+  const origin = place.metrics_origin[key];
+  // 출처가 null 이면 값도 null 이다(스키마가 짝을 강제한다). 없는 값의 출처를 말할 수는
+  // 없으므로, 대신 왜 비었는지를 말한다.
+  if (origin === null) return t('metric.unknown');
+  if (origin.kind === 'estimated') return t('metric.estimated');
+  if (origin.kind === 'manual') return t('metric.unverified');
   return undefined;
 };
+
+// 출처가 거리를 주지 않은 코스가 있다. 빈칸을 숫자로 메우지 않는다.
+const distanceValue = place.metrics.distance_km === null ? '—' : `${place.metrics.distance_km} km`;
 ---
 
 <Base lang={lang!} title={name} description={text.summary} path={`/mountain/${slug}`}>
@@ -48,7 +54,7 @@ const originNote = (key: MetricKey): string | undefined => {
     <MetricRow
       items={[
         { label: t('metric.elevation'), value: `${place.metrics.elevation_m} m`, note: originNote('elevation_m') },
-        { label: t('metric.distance'), value: `${place.metrics.distance_km} km`, note: originNote('distance_km') },
+        { label: t('metric.distance'), value: distanceValue, note: originNote('distance_km') },
         { label: t('metric.duration'), value: durationValue, note: originNote('duration_min') },
       ]}
     />

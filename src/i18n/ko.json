@@ -42,5 +42,6 @@
   "safety.category.seasonal": "계절별 주의",
   "safety.category.emergency": "응급 절차",
   "metric.estimated": "실측이 아닌 계산값",
-  "metric.unverified": "검증되지 않음"
+  "metric.unverified": "검증되지 않음",
+  "metric.unknown": "출처에 없는 값"
 }

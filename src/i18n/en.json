@@ -42,5 +42,6 @@
   "safety.category.seasonal": "Seasonal alerts",
   "safety.category.emergency": "Emergency procedures",
   "metric.estimated": "Estimated, not measured",
-  "metric.unverified": "Not verified"
+  "metric.unverified": "Not verified",
+  "metric.unknown": "Not given by the source"
 }

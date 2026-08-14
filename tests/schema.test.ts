@@ -96,6 +96,29 @@ describe('placeSchema', () => {
     expect(placeSchema.safeParse({ ...valid, metrics_origin: partial }).success).toBe(false);
   });
 
+  it('거리가 있는데 출처가 없으면 거부한다', () => {
+    const orphanValue = {
+      ...valid,
+      metrics_origin: { ...valid.metrics_origin, distance_km: null },
+    };
+    expect(placeSchema.safeParse(orphanValue).success).toBe(false);
+  });
+
+  it('거리가 없는데 출처만 있으면 거부한다', () => {
+    const orphanOrigin = { ...valid, metrics: { ...valid.metrics, distance_km: null } };
+    expect(placeSchema.safeParse(orphanOrigin).success).toBe(false);
+  });
+
+  it('출처가 거리를 주지 않은 코스는 값과 출처를 함께 null 로 둘 수 있다', () => {
+    // 숲나들e 100대명산은 추천코스와 소요시간을 주면서 거리는 100건 전부 주지 않는다.
+    const noDistance = {
+      ...valid,
+      metrics: { ...valid.metrics, distance_km: null },
+      metrics_origin: { ...valid.metrics_origin, distance_km: null },
+    };
+    expect(placeSchema.safeParse(noDistance).success).toBe(true);
+  });
+
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {
     expect(placeSchema.safeParse({ ...valid, type: 'island' }).success).toBe(true);
   });

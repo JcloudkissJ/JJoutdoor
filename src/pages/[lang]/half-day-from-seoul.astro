@@ -55,7 +55,8 @@ const placeCards = filteredPlaces.map((place) => {
     stationName,
     walkMin,
     metrics: [
-      { label: t('metric.distance'), value: `${place.data.metrics.distance_km} km` },
+      // 출처가 거리를 주지 않은 코스가 있다. 빈칸을 숫자로 메우지 않는다.
+      { label: t('metric.distance'), value: place.data.metrics.distance_km === null ? '—' : `${place.data.metrics.distance_km} km` },
       { label: t('metric.elevation'), value: `${place.data.metrics.elevation_m} m` },
       { label: t('metric.duration'), value: durationValue },
     ],

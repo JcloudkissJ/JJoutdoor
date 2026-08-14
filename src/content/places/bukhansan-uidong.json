@@ -1,0 +1,88 @@
+{
+  "id": "bukhansan-uidong",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Bukhansan Recommended Course",
+    "ko": "북한산 추천코스"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11305"
+  },
+  "coords": {
+    "lat": 37.660934,
+    "lng": 126.993333
+  },
+  "metrics": {
+    "elevation_m": 837,
+    "distance_km": null,
+    "duration_min": 270,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": 0
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The Forest Service's recommended route across Bukhansan: Ui-dong, Doseonsa, Harujae, Baegundae Hut, Wimun and Baegundae, then down past Yongammun, Taegosa and Daeseomun to the Bukhansanseong ticket office. The published time is 4 hours 30 minutes.",
+      "caution1": "This is a traverse, not an out-and-back. You finish on the far side of the mountain from where you started, so work out how you will get home from Bukhansanseong before you set out.",
+      "caution2": "The stretch around Baegundae is bare granite with steel stairs and handrails. Avoid it in rain, ice, or strong wind, and turn back rather than push on."
+    },
+    "ko": {
+      "summary": "산림청이 안내하는 북한산 추천코스. 우이동–도선사–하루재–백운산장–위문–백운대를 거쳐 용암문·태고사·대서문을 지나 북한산성 매표소로 내려온다. 공식 소요시간은 4시간 30분이다.",
+      "caution1": "왕복이 아니라 횡단이다. 출발한 곳과 반대편으로 내려오므로 북한산성에서 돌아갈 방법을 미리 정해 두고 출발할 것.",
+      "caution2": "백운대 구간은 철계단과 난간이 놓인 암릉이다. 비·결빙·강풍에는 오르지 말고, 무리해서 진행하지 말고 되돌아설 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 북한산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 북한산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 두 기관이 837m(한국등산·트레킹지원센터)와 835.6m(산림청)로 0.17% 차이 안에서 일치한다. 소요시간은 산림청 한 곳뿐이므로 장소 단위 상태는 약한 쪽에 맞춰 single_source 로 둔다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

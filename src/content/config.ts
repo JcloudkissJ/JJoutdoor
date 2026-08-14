@@ -45,7 +45,12 @@ export const placeSchema = z.object({
   }),
   metrics: z.object({
     elevation_m: z.number().positive(),
-    distance_km: z.number().positive(),
+    // null = 출처가 거리를 주지 않았다. 추측해서 채우지 않는다.
+    //
+    // 산림청 숲나들e 100대명산은 추천코스와 소요시간을 주면서 거리는 100건 전부 주지 않는다.
+    // 거리를 필수로 두면 그 자료를 한 건도 쓸 수 없고, 다른 데서 끌어오려면 이름 조인을
+    // 해야 하는데 그 경로는 동명이산 오염이 확인되었다.
+    distance_km: z.number().positive().nullable(),
     duration_min: z.number().positive(),
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]),
   }),
@@ -56,7 +61,8 @@ export const placeSchema = z.object({
   // 출처를 정하지 않은 채 넘어갈 수 없다.
   metrics_origin: z.object({
     elevation_m: metricOrigin,
-    distance_km: metricOrigin,
+    // 값이 null 이면 출처도 null 이다. 아래 refine 이 둘을 묶는다.
+    distance_km: metricOrigin.nullable(),
     duration_min: metricOrigin,
     difficulty: metricOrigin,
   }),
@@ -98,7 +104,13 @@ export const placeSchema = z.object({
       note: z.string().optional(),
     }),
   }),
-});
+})
+  // 값과 출처는 함께 있거나 함께 없어야 한다. 값만 있으면 어디서 왔는지 알 수 없고,
+  // 출처만 있으면 무엇의 출처인지 알 수 없다.
+  .refine((d) => (d.metrics.distance_km === null) === (d.metrics_origin.distance_km === null), {
+    message: 'distance_km 은 값과 출처가 함께 있거나 함께 없어야 한다',
+    path: ['metrics_origin', 'distance_km'],
+  });
 
 export const safetySchema = z.object({
   id: z.string().min(1),

@@ -1,0 +1,88 @@
+{
+  "id": "dobongsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Dobongsan",
+    "ko": "도봉산"
+  },
+  "region": {
+    "sido": "11",
+    "sigungu": "11320"
+  },
+  "coords": {
+    "lat": 37.701277,
+    "lng": 127.015599
+  },
+  "metrics": {
+    "elevation_m": 740,
+    "distance_km": null,
+    "duration_min": 215,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": 0
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The Forest Service's recommended loop on Dobongsan: the ticket office, Dobong Seowon, the Auraji stream junction, the Jubong spring campsite, the Manjang–Sinseonbong saddle and the lookout rock east of Manworam, then back down to Dobong Seowon. The published time is 3 hours 35 minutes.",
+      "caution1": "This one returns to where it started, so getting home is simple. The descent from the lookout rock is the longest single stretch at 50 minutes — leave that much daylight for it.",
+      "caution2": "Dobongsan's upper ridge is granite slab. Avoid it in rain, ice, or strong wind."
+    },
+    "ko": {
+      "summary": "산림청이 안내하는 도봉산 추천코스. 매표소–도봉서원–용어천계곡 아우라지–주봉샘터 야영장–만장·신선봉 새목–만월암 동쪽 전망바위를 거쳐 도봉서원으로 되돌아온다. 공식 소요시간은 3시간 35분이다.",
+      "caution1": "출발지로 되돌아오는 순환 코스라 귀가 동선이 단순하다. 전망바위에서 내려오는 50분 구간이 가장 기니 그만큼의 밝은 시간을 남겨 둘 것.",
+      "caution2": "도봉산 상부 능선은 화강암 슬랩이다. 비·결빙·강풍에는 오르지 말 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 도봉산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 도봉산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 두 기관이 740m(한국등산·트레킹지원센터)와 740.2m(산림청)로 0.03% 차이 안에서 일치한다. 소요시간은 산림청 한 곳뿐이므로 장소 단위 상태는 약한 쪽에 맞춰 single_source 로 둔다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}
