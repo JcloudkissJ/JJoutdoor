@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { describe, it, expect } from 'vitest';
 import { placeSchema, safetySchema } from '../src/content/config';
 
@@ -7,7 +9,7 @@ const valid = {
   name_i18n: { en: 'Inwangsan', ko: '인왕산' },
   region: { sido: '11', sigungu: '11110' },
   coords: { lat: 37.58, lng: 126.9585 },
-  metrics: { elevation_m: 338, distance_km: 3.2, duration_min: 90, difficulty: 1, ascent_m: 200 },
+  metrics: { elevation_m: 338, distance_km: 3.2, duration_min: 90, difficulty: 1 },
   access: {
     transit: { subway: true, walk_min: 10 },
     signage_langs: ['ko', 'en'],
@@ -21,7 +23,6 @@ const valid = {
     distance_km: { kind: 'sourced', org: 'forest_service' },
     duration_min: { kind: 'estimated', method: 'naismith_v1' },
     difficulty: { kind: 'manual' },
-    ascent_m: { kind: 'estimated', method: 'srtm30m_net_v1' },
   },
   safety: { hazards: ['steep_stair'], sunset_caution: true },
   text: { en: { summary: 's', caution1: 'c1', caution2: 'c2' } },
@@ -95,46 +96,6 @@ describe('placeSchema', () => {
     expect(placeSchema.safeParse({ ...valid, metrics_origin: partial }).success).toBe(false);
   });
 
-  it('상승값이 있는데 출처가 없으면 거부한다', () => {
-    const orphanValue = {
-      ...valid,
-      metrics_origin: { ...valid.metrics_origin, ascent_m: null },
-    };
-    expect(placeSchema.safeParse(orphanValue).success).toBe(false);
-  });
-
-  it('상승값이 없는데 출처만 있으면 거부한다', () => {
-    const orphanOrigin = {
-      ...valid,
-      metrics: { ...valid.metrics, ascent_m: null },
-      metrics_origin: { ...valid.metrics_origin, duration_min: { kind: 'manual' } },
-    };
-    expect(placeSchema.safeParse(orphanOrigin).success).toBe(false);
-  });
-
-  it('상승을 모르는 장소는 값과 출처를 함께 null 로 둘 수 있다', () => {
-    const unknownAscent = {
-      ...valid,
-      metrics: { ...valid.metrics, ascent_m: null },
-      metrics_origin: {
-        ...valid.metrics_origin,
-        // 추정이 아니어야 한다 — 추정에는 입력이 필요하다
-        duration_min: { kind: 'sourced', org: 'knps' },
-        ascent_m: null,
-      },
-    };
-    expect(placeSchema.safeParse(unknownAscent).success).toBe(true);
-  });
-
-  it('추정한 소요시간에 상승값이 없으면 거부한다 — 입력 없이는 재현할 수 없다', () => {
-    const noInput = {
-      ...valid,
-      metrics: { ...valid.metrics, ascent_m: null },
-      metrics_origin: { ...valid.metrics_origin, ascent_m: null },
-    };
-    expect(placeSchema.safeParse(noInput).success).toBe(false);
-  });
-
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {
     expect(placeSchema.safeParse({ ...valid, type: 'island' }).success).toBe(true);
   });
@@ -154,6 +115,30 @@ describe('placeSchema', () => {
     };
     expect(placeSchema.safeParse(bad).success).toBe(false);
   });
+});
+
+/**
+ * 소요시간은 계산하지 않고 공식 등산로의 값을 인용한다.
+ *
+ * 스키마는 `estimated` 를 여전히 허용한다 — 다른 지표에는 쓸 수 있기 때문이다.
+ * 그래서 "소요시간만은 계산값을 쓰지 않는다"는 결정은 스키마가 아니라 여기서 지킨다.
+ */
+describe('콘텐츠 정책 — 소요시간에 계산값을 쓰지 않는다', () => {
+  const dir = path.resolve(__dirname, '../src/content/places');
+  const places = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => ({ file: f, data: JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) }));
+
+  it('장소를 실제로 읽었다 — 빈 목록이면 이 검사가 헛돈다', () => {
+    expect(places.length).toBeGreaterThan(0);
+  });
+
+  for (const { file, data } of places) {
+    it(`${file} — duration_min 은 sourced 이거나 manual 이다`, () => {
+      expect(['sourced', 'manual']).toContain(data.metrics_origin.duration_min.kind);
+    });
+  }
 });
 
 describe('safetySchema', () => {

@@ -17,8 +17,7 @@
     "elevation_m": 837,
     "distance_km": 1.9,
     "duration_min": 90,
-    "difficulty": 2,
-    "ascent_m": null
+    "difficulty": 2
   },
   "metrics_origin": {
     "elevation_m": {
@@ -36,8 +35,7 @@
     "difficulty": {
       "kind": "sourced",
       "org": "knps"
-    },
-    "ascent_m": null
+    }
   },
   "access": {
     "transit": {

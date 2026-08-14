@@ -17,8 +17,7 @@
     "elevation_m": 180,
     "distance_km": 4.5,
     "duration_min": 120,
-    "difficulty": 1,
-    "ascent_m": null
+    "difficulty": 1
   },
   "metrics_origin": {
     "elevation_m": {
@@ -32,8 +31,7 @@
     },
     "difficulty": {
       "kind": "manual"
-    },
-    "ascent_m": null
+    }
   },
   "access": {
     "transit": {

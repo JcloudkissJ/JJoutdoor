@@ -16,9 +16,8 @@
   "metrics": {
     "elevation_m": 338,
     "distance_km": 3.2,
-    "duration_min": 65,
-    "difficulty": 1,
-    "ascent_m": 253
+    "duration_min": 90,
+    "difficulty": 1
   },
   "metrics_origin": {
     "elevation_m": {
@@ -28,15 +27,10 @@
       "kind": "manual"
     },
     "duration_min": {
-      "kind": "estimated",
-      "method": "naismith_net_ascent_srtm30m_v1"
+      "kind": "manual"
     },
     "difficulty": {
       "kind": "manual"
-    },
-    "ascent_m": {
-      "kind": "estimated",
-      "method": "srtm30m_net_v1"
     }
   },
   "access": {
@@ -81,17 +75,6 @@
         "org": "seoul",
         "dataset": "서울시 등산로 정보",
         "fetched_at": "2026-08-10"
-      },
-      {
-        "org": "forest_service",
-        "dataset": "산림청 등산로 노선(PMNTN) 폴리라인 — 순 상승 계산의 지점 출처",
-        "fetched_at": "2026-08-13"
-      },
-      {
-        "org": "opentopodata",
-        "dataset": "SRTM 30m DEM — 순 상승 표고 판독",
-        "url": "https://api.opentopodata.org/v1/srtm30m",
-        "fetched_at": "2026-08-14"
       }
     ],
     "verification": {

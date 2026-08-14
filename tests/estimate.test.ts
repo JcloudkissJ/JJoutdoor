@@ -1,13 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import fs from 'node:fs';
-import path from 'node:path';
-import {
-  estimateDurationMin,
-  NAISMITH_V1,
-  NAISMITH_NET_ASCENT_SRTM30M_V1,
-  SRTM30M_NET_V1,
-  ROUND_TO_MIN,
-} from '../src/lib/estimate';
+import { estimateDurationMin, NAISMITH_V1, ROUND_TO_MIN } from '../src/lib/estimate';
 
 describe('estimateDurationMin — Naismith 규칙', () => {
   it('평지 5km는 1시간이다 — 규칙의 기준선', () => {
@@ -50,43 +42,5 @@ describe('estimateDurationMin — Naismith 규칙', () => {
 
   it('method 식별자를 함께 내보낸다 — 데이터와 코드가 어긋나지 않게', () => {
     expect(NAISMITH_V1).toBe('naismith_v1');
-    expect(NAISMITH_NET_ASCENT_SRTM30M_V1).toBe('naismith_net_ascent_srtm30m_v1');
-    expect(SRTM30M_NET_V1).toBe('srtm30m_net_v1');
   });
-});
-
-/**
- * 빌드는 스키마만 본다 — 기록된 입력이 정말 그 숫자를 만드는지는 검사하지 않는다.
- * 거리나 상승을 고치고 소요시간을 안 고치면 "재현 가능한 추정"이 조용히 거짓이 된다.
- */
-describe('콘텐츠 계약 — 추정한 소요시간은 기록된 입력으로 재현된다', () => {
-  const dir = path.resolve(__dirname, '../src/content/places');
-  const places = fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith('.json'))
-    .map((f) => ({ file: f, data: JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) }));
-
-  const estimated = places.filter((p) => p.data.metrics_origin.duration_min.kind === 'estimated');
-
-  it('추정으로 표시된 장소가 실제로 있다 — 없으면 이 검사가 헛돈다', () => {
-    expect(estimated.length).toBeGreaterThan(0);
-  });
-
-  for (const { file, data } of estimated) {
-    it(`${file} — duration_min 이 distance_km · ascent_m 에서 재현된다`, () => {
-      expect(data.metrics.ascent_m).not.toBeNull();
-      expect(
-        estimateDurationMin({
-          distanceKm: data.metrics.distance_km,
-          ascentM: data.metrics.ascent_m,
-        }),
-      ).toBe(data.metrics.duration_min);
-    });
-
-    it(`${file} — method 가 코드의 식별자와 일치한다`, () => {
-      expect([NAISMITH_V1, NAISMITH_NET_ASCENT_SRTM30M_V1]).toContain(
-        data.metrics_origin.duration_min.method,
-      );
-    });
-  }
 });
