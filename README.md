@@ -24,7 +24,7 @@
 
 ## 현재 상태
 
-> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: [docs/notebooklm/2026-08-14-korea-outdoor-knowledge-base.md](docs/notebooklm/2026-08-14-korea-outdoor-knowledge-base.md)
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: [docs/notebooklm/2026-08-20-korea-outdoor-knowledge-base.md](docs/notebooklm/2026-08-20-korea-outdoor-knowledge-base.md)
 
 Phase 1 구현 14/15 완료 (브랜치 `phase-1`). 영어·한국어 출시분이 동작한다.
 

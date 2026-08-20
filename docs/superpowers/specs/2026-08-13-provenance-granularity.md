@@ -1,4 +1,4 @@
-> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-14-korea-outdoor-knowledge-base.md`
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-20-korea-outdoor-knowledge-base.md`
 
 # 미결 쟁점 — provenance의 단위와 교차검증 전제
 
