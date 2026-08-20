@@ -4,12 +4,13 @@
 
 # korea-outdoor 지식 베이스 — 2026-08-20
 
-**08-14 판과의 차이**: 08-14 에 확보한 숲나들e 자료를 **끝까지 짜냈다**(`8f6a01d`).
+**08-14 판과의 차이**: 08-14 에 확보한 숲나들e 자료를 **끝까지 짜냈다**(`8f6a01d`, `eba2788`).
 
 1. **대중교통 공백을 닫았다** — 같은 CSV 의 `교통정보` 열이 100/100 채워져 있었다. 열을 안 봤을 뿐이다(2-5)
 2. **난이도가 sourced 3건이 되었다** — 유명산 초급이 산림청 값이다
 3. **북한산 편중을 풀었다** — 유명산·마니산을 넣어 10건 중 3건으로 낮췄다
-4. 덤으로 **한국어 페이지 라틴 산문이 처음으로 0건**이 되었다
+4. **짧은 코스 5건을 더해 Phase 1 Task 13(15건)을 끝냈다** — 그 과정에서 표고 불일치가 드러나 `conflict` 를 처음 썼다
+5. 덤으로 **한국어 페이지 라틴 산문이 처음으로 0건**이 되었다
 
 > **방침은 그대로: 소요시간을 계산하지 않는다. 공식 등산로가 공개한 값을 인용한다.**
 
@@ -24,7 +25,7 @@
 
 한국의 야외 레저 장소를 **8개 언어로** 소개하는 정적 웹사이트. 산에서 시작해 섬, 낚시로 확장 예정.
 
-레포: `C:\Users\cartr\korea-outdoor` · 브랜치 `phase-1` · **47 커밋** · 원격 미연결
+레포: `C:\Users\cartr\korea-outdoor` · 브랜치 `phase-1` · **50 커밋** · 원격 미연결
 
 ## 왜 만드는가
 
@@ -41,7 +42,7 @@
 
 | 목적 | 상태 |
 |---|---|
-| **정확성** | 빈칸을 계산으로 메우지 않는다. 공식값을 인용하거나 비워둔다. 10건 중 7건의 소요시간, 3건의 난이도가 `sourced` 다 |
+| **정확성** | 빈칸을 계산으로 메우지 않는다. 공식값을 인용하거나 비워둔다. 15건 중 12건의 소요시간, 5건의 난이도가 `sourced` 다 |
 | **안전성** | 구조 완성, 안전 콘텐츠 3건 |
 | **접근성** | en/ko 동작, 6개 언어 확장 준비 완료. **한국어 페이지에 영어 산문 0건** |
 
@@ -58,12 +59,13 @@ WebFetch 에 403(봇 차단). 코스를 추출하지 않고 숫자를 인용하�
 ## 2-1. 실행 결과 (2026-08-20)
 
 ```
-npm run build     →  41 page(s)           (08-14: 35)
-npm test          →  7 files, 81 tests    (08-14: 78)
+npm run build     →  57 page(s)           (08-14: 35)
+npm test          →  7 files, 86 tests    (08-14: 78)
 npm run test:e2e  →  31 passed  (WCAG 2A/2AA 위반 0)
 npx tsc --noEmit  →  (무출력)
-i18n 키            →  en 48 / ko 48, 차집합 없음
-장소               →  10 건 (소요시간 sourced 7 · 접근 안내 7)
+i18n 키            →  en 51 / ko 51, 차집합 없음
+장소               →  15 건 · 지역 6개 (11 서울 · 28 인천 · 41 경기 · 44 충남 · 47 경북 · 51 강원)
+                     소요시간 sourced 12 · 난이도 sourced 5 · 접근 안내 12
 ```
 
 ## 2-2. 데이터 지형 요약 (08-13 판 2-3 ~ 2-11 의 결론)
@@ -164,11 +166,20 @@ i18n 키            →  en 48 / ko 48, 차집합 없음
 
 숲나들e 가 두 번째 출처가 되면서, 같은 수치를 두 기관이 각각 공개한 상황이 처음 생겼다.
 
+인용한 산 10곳의 판독값은 `data/extracted/elevation-crosscheck.json` 에 있다.
+
 | 산 | 한국등산·트레킹지원센터 | 산림청 숲나들e | 차이 |
 |---|---:|---:|---:|
-| 북한산 | 837 | 835.6 | 0.17% |
-| 관악산 | 629 | 632.2 | 0.51% |
+| 감악산 | 675 | 674.9 | 0.01% |
 | 도봉산 | 740 | 740.2 | 0.03% |
+| 덕숭산 | 495 | 495.2 | 0.04% |
+| 백운산(포천) | 904 | 903.1 | 0.10% |
+| 북한산 | 837 | 835.6 | 0.17% |
+| 유명산 | 862 | 864 | 0.23% |
+| 삼악산 | 654 | 655.8 | 0.28% |
+| 관악산 | 629 | 632.2 | 0.51% |
+| 마니산 | 469 | 472.1 | 0.66% |
+| **경주 남산** | **468** | **495.1** | **5.79%** ← 불일치 |
 
 `reconcile()` 의 `TOLERANCE = 0.1`(10%) 안에 전부 들어와 판정은 `verified` 가 된다.
 
@@ -176,7 +187,14 @@ i18n 키            →  en 48 / ko 48, 차집합 없음
 장소 전체를 "2건 이상 공식 정보로 교차 확인"이라 표시하면 규칙 5를 어긴다.
 무엇이 교차 확인되었는지는 `verification.note` 에 적었다. 4-5 참조.
 
-유명산 862 vs 864(0.23%), 마니산 469 vs 472.1(0.66%)도 같은 방식으로 확인했다.
+**경주 남산만 자릿수가 다르다.** `reconcile()` 의 10% 허용 안이라 기계 판정은 `verified` 지만
+그건 허용치가 느슨한 탓이고 실제로는 불일치다. `status: 'conflict'` 로 두어 화면에
+"공식 정보 간 수치 불일치"가 뜬다 — 이 상태가 콘텐츠에 쓰인 것은 처음이다.
+값은 추천코스가 실제로 오르는 금오산 정상에 해당하는 468m 를 썼다. 남산은 봉우리가
+여럿이라 두 기관이 다른 지점을 잰 것으로 보이나 **확인되지 않았다.**
+
+> ⚠️ **10% 허용치는 표고에 너무 느슨하다.** 0.01% 와 5.79% 를 같은 `verified` 로 판정한다.
+> `reconcile()` 을 실제로 배선할 때 지표별 허용치를 다시 정해야 한다.
 
 ## 2-7. 기각된 접근 — 순 상승 계산 (`315e722` → `b0d983f`)
 
@@ -282,25 +300,33 @@ tests/schema.test.ts  describe('콘텐츠 정책 — 소요시간에 계산값�
 
 # 4부 · 현재 상태와 로드맵
 
-## 4-1. 콘텐츠 10건
+## 4-1. 콘텐츠 15건 — Task 13 완료
 
-| place_id | 소요시간 | 출처 | 거리 | 난이도 | 접근 안내 | sido |
-|---|---:|---|---|---|:---:|---|
-| `achasan` | 80분 | manual | 2.8km | manual | — | 11 |
-| `bukhansan-baegundae` | 90분 | knps | 1.9km | **sourced** | O | 11 |
-| `inwangsan` | 90분 | manual | 3.2km | manual | — | 11 |
-| `bukhansan-dulle-1` | 120분 | manual | 4.5km | manual | — | 11 |
-| `bukhansan-fortress` | 160분 | knps | 3.4km | **sourced** | O | 41 |
-| `yumyeongsan` | 185분 | forest_service | — | **sourced** | O | 41 |
-| `manisan` | 195분 | forest_service | — | manual | O | 28 |
-| `gwanaksan` | 210분 | forest_service | — | manual | O | 11 |
-| `dobongsan` | 215분 | forest_service | — | manual | O | 11 |
-| `bukhansan-uidong` | 270분 | forest_service | — | manual | O | 11 |
+| place_id | 소요시간 | 출처 | 거리 | 난이도 | 접근 안내 | sido | 상태 |
+|---|---:|---|---|---|:---:|---|---|
+| `achasan` | 80분 | manual | 2.8km | manual | — | 11 | single |
+| `bukhansan-baegundae` | 90분 | knps | 1.9km | **sourced** | O | 11 | single |
+| `inwangsan` | 90분 | manual | 3.2km | manual | — | 11 | single |
+| `deoksungsan` | 105분 | forest_service | — | **sourced** | O | 44 | single |
+| `gyeongju-namsan` | 115분 | forest_service | — | manual | O | 47 | **conflict** |
+| `bukhansan-dulle-1` | 120분 | manual | 4.5km | manual | — | 11 | single |
+| `samaksan` | 150분 | forest_service | — | **sourced** | O | 51 | single |
+| `baegunsan-pocheon` | 155분 | forest_service | — | manual | O | 41 | single |
+| `bukhansan-fortress` | 160분 | knps | 3.4km | **sourced** | O | 41 | single |
+| `gamaksan` | 175분 | forest_service | — | manual | O | 41 | single |
+| `yumyeongsan` | 185분 | forest_service | — | **sourced** | O | 41 | single |
+| `manisan` | 195분 | forest_service | — | manual | O | 28 | single |
+| `gwanaksan` | 210분 | forest_service | — | manual | O | 11 | single |
+| `dobongsan` | 215분 | forest_service | — | manual | O | 11 | single |
+| `bukhansan-uidong` | 270분 | forest_service | — | manual | O | 11 | single |
 
-**소요시간 7/10, 난이도 3/10, 접근 안내 7/10 이 공식 출처다.** Phase 1 Task 13(15건)까지 5건 남았다.
+**소요시간 12/15, 난이도 5/15, 접근 안내 12/15 가 공식 출처다.** Phase 1 Task 13 완료.
 
-북한산은 10건 중 3건으로 내려왔다. 남은 편중은 **소요시간 분포**다 — 3시간 초과가 5건이라
-"서울에서 반나절" 진입점에 걸리는 것은 4건뿐이다. 다음 확장은 짧은 코스를 먼저 찾는 것이 낫다.
+**남은 구조적 문제는 관광객 진입점이다.** `half-day-from-seoul` 은 `sido === '11'` 조건이라
+여전히 4건뿐이다. **서울 안 100대명산은 북한산·관악산·도봉산 셋뿐이고 전부 3시간을 넘는다.**
+짧은 코스는 전부 서울 밖이라 체류 외국인 진입점(`near/{지역}`)만 두꺼워졌다.
+관광객 쪽을 채우려면 진입점 조건을 넓히거나(경기·인천 포함) 100대명산 밖 근교 산을
+`manual` 로 넣는 수밖에 없다 — 어느 쪽도 공짜가 아니다.
 
 ## 4-2. 공공데이터 연동 — 현재 위치
 
@@ -322,12 +348,13 @@ tests/schema.test.ts  describe('콘텐츠 정책 — 소요시간에 계산값�
 
 | 우선 | 항목 | 내용 |
 |---|---|---|
-| **1** | **숲나들e 나머지 94건** | 추천코스가 있는 99건 중 5건을 썼다. `node scripts/forest100.mjs` 로 판독은 끝나 있고 콘텐츠로 옮기기만 하면 된다 |
-| **2** | **KNPS 11건** | 사람이 브라우저로 직접 연다. 거리까지 주는 유일한 출처 |
-| 3 | 다른 국립공원 | `parkId` 만 바꾸면 같은 형식 |
-| 4 | 짧은 코스 확보 | 반나절권(≤150분)이 4건뿐이다. 판독본에서 짧은 추천코스를 골라 넣는다 |
+| **1** | **관광객 진입점 확장** | `half-day-from-seoul` 이 4건뿐이다(4-1 참조). 진입점 조건을 넓힐지 근교 산을 넣을지 결정이 필요하다 |
+| **2** | **숲나들e 나머지 89건** | 추천코스가 있는 99건 중 10건을 썼다. `node scripts/forest100.mjs` 로 판독은 끝나 있다 |
+| **3** | **KNPS 11건** | 사람이 브라우저로 직접 연다. 거리까지 주는 유일한 출처 |
+| 4 | 다른 국립공원 | `parkId` 만 바꾸면 같은 형식 |
 | 5 | `achasan.coords` 교정 | 출처 있는 좌표 확보 시 (2-9) |
-| 6 | provenance 단위 결정 | **실데이터가 생겼다.** 4-5 참조 |
+| 6 | `reconcile()` 배선 + 지표별 허용치 | 2-6 참조. 10% 는 표고에 너무 느슨하다 |
+| 7 | provenance 단위 결정 | **실데이터가 생겼다.** 4-5 참조 |
 | — | 계획서 버그 2건 | `.pathname` → `fileURLToPath`, `from 'zod'` → `from 'astro/zod'` |
 | — | 원격 저장소 연결 | 사용자 계정 작업 |
 
@@ -348,8 +375,16 @@ tests/schema.test.ts  describe('콘텐츠 정책 — 소요시간에 계산값�
 소요시간은 한 곳뿐**인데, 스키마는 장소 단위 상태 하나만 갖는다. 지금은 약한 쪽에 맞춰
 `single_source` + `note` 로 두었지만, 그 결과 **교차 확인된 사실이 화면에 드러나지 않는다.**
 
-`reconcile()` 은 여전히 호출부가 없다. 이제 넣을 재료가 있으므로, 넣거나 아니면
-`provenance.verified` 문자열을 지우는 쪽으로 결론을 내야 한다.
+`reconcile()` 은 여전히 호출부가 없다. `conflict` 는 손으로 넣었다. 넣을 재료가
+`data/extracted/elevation-crosscheck.json` 에 생겼으므로 배선하거나 함수를 지워야 한다.
+
+**`verified` 를 쓰는 장소가 이제 0건이다.** `bukhansan-dulle-1` 이 유일하게 `verified` 였는데,
+네 지표가 전부 `manual` 이라 지표는 "검증되지 않음"을 세 번 말하면서 출처 블록은
+"2건 이상으로 교차 확인"을 말하는 **같은 페이지 안의 모순**이었다. 나열된 두 출처에는
+URL 도 조회 기록도 없는 Phase 1 초기 시드값이다. `single_source` 로 내리고 이유를 `note` 에 적었다.
+
+> 교훈: **장소 단위 상태는 가장 약한 지표에 맞춘다.** 지표가 말하는 것과 출처 블록이
+> 말하는 것이 어긋나면 독자는 어느 쪽도 믿지 않는다.
 
 **영어 페이지에 한국어 데이터셋명이 그대로 뜬다.** `ProvenanceBlock` 이 `dataset` 원문을
 출력하므로 영어 페이지에도 "산림청 국립자연휴양림관리소 숲나들e …"가 보인다. 8개 언어로 가면 커진다.
@@ -399,8 +434,8 @@ vitest ^4.1.10 · @playwright/test ^1.62.1 · @axe-core/playwright ^4.13.0
 ## 5-3. 명령
 
 ```bash
-npm run build                    # 41 페이지
-npm test                         # vitest 81
+npm run build                    # 57 페이지
+npm test                         # vitest 86
 npm run test:e2e                 # playwright 31
 npx tsc --noEmit -p tsconfig.json
 
@@ -435,6 +470,7 @@ tests/e2e/a11y.spec.ts                     기간 필터 기대 개수 4 / 1 / 3
 data/extracted/
   knps-courses.json                        국립공원 코스 2/13 + 수집 절차
   forest100-courses.json                   숲나들e 100개 산 전체 판독값 (추천코스 99건)
+  elevation-crosscheck.json                인용한 10개 산의 두 기관 표고 판독값 (conflict 근거)
 
 삭제됨 (b0d983f): scripts/net-ascent.mjs · srtm30m-net-ascent.json · ascent_m · duration.minimum
 ```
@@ -451,6 +487,9 @@ data/extracted/
 20. **새 `sido` 를 쓰는 장소를 추가하면 `region.<코드>` i18n 키가 필요하다.** `near/[region]` 이 콘텐츠에서 지역을 유도한다.
 21. **nullable 지표를 추가하면 상세 페이지뿐 아니라 목록 카드 3곳도 고쳐야 한다.** 안 고치면 `null km` 이 찍힌다.
 22. **인증키를 `data/Down/` 에 평문 txt 로 두지 않는다.** `.env` 한 곳에만 둔다.
+23. **`verification.status` 와 `metrics_origin` 이 어긋나지 않게 하라.** 지표가 전부 `manual` 인데
+    장소가 `verified` 면 한 페이지가 스스로를 반박한다(4-5).
+24. **동명이산에 주의.** CSV 키가 그냥 "남산"이고 서울 남산이 아니다 — id 는 `gyeongju-namsan` 으로 두었다.
 23. **자료를 받으면 쓸 열만 보지 말고 열 목록 전체를 훑는다.** `교통정보` 를 6일 놓쳤다(2-5).
 24. **`walk_min` 은 nullable 이다.** 0 은 "역 앞"이고 null 은 "모른다"다.
 25. **역 이름만 싣지 않는다.** 버스 환승을 모르면 독자가 역에서 선다 — `note_i18n` 을 함께 쓴다.

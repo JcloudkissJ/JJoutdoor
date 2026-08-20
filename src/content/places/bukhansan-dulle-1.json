@@ -78,12 +78,13 @@
       }
     ],
     "verification": {
-      "status": "verified",
+      "status": "single_source",
       "checked_fields": [
         "distance_km",
         "elevation_m",
         "duration_min"
-      ]
+      ],
+      "note": "Phase 1 초기 시드값이다. 나열된 두 출처에는 URL도 조회 기록도 없고, 이 장소의 네 지표가 전부 manual 이라 교차 확인을 주장할 근거가 없다. 지표가 \"검증되지 않음\"이라고 말하는 페이지에서 출처 블록이 \"2건 이상으로 교차 확인\"이라고 말하던 모순을 바로잡았다(규칙 5). 실제 조회 기록을 확보하면 그때 올린다."
     }
   }
 }
