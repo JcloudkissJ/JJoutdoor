@@ -46,5 +46,8 @@
   "metric.unknown": "Not given by the source",
   "access.transit": "Getting there",
   "transit.walk_from": "{min} min walk from {station}",
-  "region.28": "Incheon"
+  "region.28": "Incheon",
+  "region.44": "South Chungcheong",
+  "region.47": "North Gyeongsang",
+  "region.51": "Gangwon"
 }

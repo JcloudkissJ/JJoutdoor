@@ -1,0 +1,90 @@
+{
+  "id": "baegunsan-pocheon",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Baegunsan (Pocheon)",
+    "ko": "백운산 (포천)"
+  },
+  "region": {
+    "sido": "41",
+    "sigungu": "41650"
+  },
+  "coords": {
+    "lat": 38.074984,
+    "lng": 127.444934
+  },
+  "metrics": {
+    "elevation_m": 904,
+    "distance_km": null,
+    "duration_min": 155,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. Take a Sachang-ri bus from Seoul via Idong and get off at Gwangdeok Pass. The source notes you must tell the driver in advance, as it is not a scheduled stop. There are 11 services a day.",
+        "ko": "지하철로 닿지 않는다. 서울에서 이동 경유 사창리행 버스를 타고 광덕고개에서 내린다. 출처는 정규 정차가 아니라 운전기사에게 사전 양해가 필요하다고 적고 있다. 하루 11회 운행한다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "A 900 m peak done in 2 hours 35 minutes because the course starts high, at Gwangdeok Pass on the Gyeonggi border. From there it is an hour to peak 860, then the summit, and down the ridge to Heungnyongsa.",
+      "caution1": "Getting off the bus is the hard part. Gwangdeok Pass is not a scheduled stop, so the source says to arrange it with the driver in advance. Do not count on flagging down the return bus either.",
+      "caution2": "The start is already near 800 m and the ridge is exposed. Weather here turns colder and windier than in Seoul, so carry a layer even in mild seasons."
+    },
+    "ko": {
+      "summary": "900m 봉우리를 2시간 35분에 오르는 것은 들머리가 높기 때문이다. 경기도 경계인 광덕고개에서 출발해 한 시간 만에 860봉, 이어 정상에 닿고 능선을 따라 흥룡사로 내려온다.",
+      "caution1": "버스에서 내리는 것이 관문이다. 광덕고개는 정규 정차가 아니라 출처가 운전기사에게 미리 말해 두라고 적고 있다. 돌아오는 버스도 손만 들어 세울 수 있다고 기대하지 말 것.",
+      "caution2": "출발점이 이미 800m 가깝고 능선이 트여 있다. 서울보다 춥고 바람이 세니 포근한 계절에도 겉옷을 챙길 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 백운산(포천) 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 백운산 (포천) 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 904m(한국등산·트레킹지원센터)와 903.1m(산림청)로 0.10% 차이 안에서 일치한다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

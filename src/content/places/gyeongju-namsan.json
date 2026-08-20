@@ -1,0 +1,90 @@
+{
+  "id": "gyeongju-namsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Gyeongju Namsan",
+    "ko": "경주 남산"
+  },
+  "region": {
+    "sido": "47",
+    "sigungu": "47130"
+  },
+  "coords": {
+    "lat": 35.76885606,
+    "lng": 129.2256847
+  },
+  "metrics": {
+    "elevation_m": 468,
+    "distance_km": null,
+    "duration_min": 115,
+    "difficulty": 1
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. Gyeongju city buses serve both ends of the course, Samneung at the start and Yongjang-ri at the finish.",
+        "ko": "지하철로 닿지 않는다. 코스 양 끝인 삼릉과 용장리 모두 경주 시내버스가 다닌다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [],
+    "sunset_caution": false
+  },
+  "text": {
+    "en": {
+      "summary": "A UNESCO World Heritage hillside walked as a hiking course: from the Samneung car park past the carved Buddha reliefs and Sangseonam to the Geumosan summit, then down by the Yongjangsagok three-storey pagoda to Yongjang-ri. Published time is 1 hour 55 minutes.",
+      "caution1": "This is an archaeological site as much as a mountain. Stay on the marked path and do not climb on the tombs, pagodas or rock carvings.",
+      "caution2": "Our two official sources disagree on how high Namsan is, by 27 m. The figure shown is the one that matches the peak this course actually reaches."
+    },
+    "ko": {
+      "summary": "세계유산 유적지를 등산 코스로 걷는다. 삼릉주차장에서 선각육존불과 상선암을 지나 금오산 정상에 오른 뒤 용장사곡 삼층석탑을 거쳐 용장리로 내려온다. 공식 소요시간은 1시간 55분이다.",
+      "caution1": "산이자 유적지다. 표시된 길에서 벗어나지 말고 능묘·석탑·마애불에 올라서지 말 것.",
+      "caution2": "남산의 높이를 두고 두 공식 출처가 27m 어긋난다. 표시된 값은 이 코스가 실제로 오르는 봉우리에 맞춘 쪽이다."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 경주 남산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 경주 남산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "conflict",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고가 468m(한국등산·트레킹지원센터)와 495.1m(산림청)로 5.79% 어긋난다. 다른 산들이 0.01~0.66% 안에서 일치한 것과 자릿수가 다르다. 남산은 봉우리가 여럿이라 두 기관이 서로 다른 지점을 잰 것으로 보이나 확인되지 않았다. 화면에 불일치를 그대로 표시하고, 값은 추천코스가 실제로 오르는 금오산 정상에 해당하는 468m 를 쓴다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

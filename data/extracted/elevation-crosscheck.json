@@ -1,0 +1,189 @@
+{
+  "note": "콘텐츠에 인용한 산의 표고를 두 기관에서 각각 읽은 값. verification.status 의 근거다. reconcile() 의 TOLERANCE 는 10% 라 아래 전부를 verified 로 판정하지만, 5.79% 는 나머지(0.01~0.66%)와 자릿수가 달라 conflict 로 표시했다.",
+  "sources": [
+    {
+      "org": "hiking_support_center",
+      "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 (aslAltide)",
+      "fetched_at": "2026-08-13"
+    },
+    {
+      "org": "forest_service",
+      "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 (명산_높이)",
+      "url": "https://www.data.go.kr/data/15112801/fileData.do",
+      "fetched_at": "2026-08-14"
+    }
+  ],
+  "compared_at": "2026-08-20",
+  "mountains": [
+    {
+      "name_ko": "북한산",
+      "place_id": "bukhansan-uidong / bukhansan-baegundae / bukhansan-fortress",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 837
+        },
+        {
+          "org": "forest_service",
+          "value_m": 835.6
+        }
+      ],
+      "spread_pct": 0.17,
+      "verdict": "일치",
+      "used_m": 837
+    },
+    {
+      "name_ko": "관악산",
+      "place_id": "gwanaksan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 629
+        },
+        {
+          "org": "forest_service",
+          "value_m": 632.2
+        }
+      ],
+      "spread_pct": 0.51,
+      "verdict": "일치",
+      "used_m": 629
+    },
+    {
+      "name_ko": "도봉산",
+      "place_id": "dobongsan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 740
+        },
+        {
+          "org": "forest_service",
+          "value_m": 740.2
+        }
+      ],
+      "spread_pct": 0.03,
+      "verdict": "일치",
+      "used_m": 740
+    },
+    {
+      "name_ko": "유명산",
+      "place_id": "yumyeongsan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 862
+        },
+        {
+          "org": "forest_service",
+          "value_m": 864
+        }
+      ],
+      "spread_pct": 0.23,
+      "verdict": "일치",
+      "used_m": 862
+    },
+    {
+      "name_ko": "마니산",
+      "place_id": "manisan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 469
+        },
+        {
+          "org": "forest_service",
+          "value_m": 472.1
+        }
+      ],
+      "spread_pct": 0.66,
+      "verdict": "일치",
+      "used_m": 469
+    },
+    {
+      "name_ko": "덕숭산",
+      "place_id": "deoksungsan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 495
+        },
+        {
+          "org": "forest_service",
+          "value_m": 495.2
+        }
+      ],
+      "spread_pct": 0.04,
+      "verdict": "일치",
+      "used_m": 495
+    },
+    {
+      "name_ko": "남산",
+      "place_id": "gyeongju-namsan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 468
+        },
+        {
+          "org": "forest_service",
+          "value_m": 495.1
+        }
+      ],
+      "spread_pct": 5.79,
+      "verdict": "불일치",
+      "used_m": 468
+    },
+    {
+      "name_ko": "삼악산",
+      "place_id": "samaksan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 654
+        },
+        {
+          "org": "forest_service",
+          "value_m": 655.8
+        }
+      ],
+      "spread_pct": 0.28,
+      "verdict": "일치",
+      "used_m": 654
+    },
+    {
+      "name_ko": "백운산(포천)",
+      "place_id": "baegunsan-pocheon",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 904
+        },
+        {
+          "org": "forest_service",
+          "value_m": 903.1
+        }
+      ],
+      "spread_pct": 0.1,
+      "verdict": "일치",
+      "used_m": 904
+    },
+    {
+      "name_ko": "감악산",
+      "place_id": "gamaksan",
+      "readings": [
+        {
+          "org": "hiking_support_center",
+          "value_m": 675
+        },
+        {
+          "org": "forest_service",
+          "value_m": 674.9
+        }
+      ],
+      "spread_pct": 0.01,
+      "verdict": "일치",
+      "used_m": 675
+    }
+  ]
+}

@@ -46,5 +46,8 @@
   "metric.unknown": "출처에 없는 값",
   "access.transit": "가는 방법",
   "transit.walk_from": "{station}에서 도보 {min}분",
-  "region.28": "인천"
+  "region.28": "인천",
+  "region.44": "충청남도",
+  "region.47": "경상북도",
+  "region.51": "강원특별자치도"
 }

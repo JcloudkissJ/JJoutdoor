@@ -1,0 +1,94 @@
+{
+  "id": "samaksan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Samaksan",
+    "ko": "삼악산"
+  },
+  "region": {
+    "sido": "51",
+    "sigungu": "51110"
+  },
+  "coords": {
+    "lat": 37.84041,
+    "lng": 127.660269
+  },
+  "metrics": {
+    "elevation_m": 654,
+    "distance_km": null,
+    "duration_min": 150,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "forest_service"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "The course starts from Gangchon. Trains to Gangchon leave Cheongnyangni in Seoul, and buses from Gangchon station to Samaksan and Deungseon Falls run about every 20 minutes.",
+        "ko": "기점은 강촌역이다. 청량리역에서 강촌행 열차가 있고, 강촌역에서 삼악산·등선폭포로 가는 버스가 20분 간격으로 다닌다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The closest short course to Seoul by rail: from the Uiam dam ticket office past Sangwonsa to the summit in about 75 minutes, then 1 hour 15 minutes down to the Deungseon Falls gate. Published time is 2 hours 30 minutes.",
+      "caution1": "The Forest Service grades this intermediate. The hour from Sangwonsa to the summit is continuous stairs and rock steps with little flat ground.",
+      "caution2": "You come down at Deungseon Falls, not back at the dam. Both ends are on the bus route from Gangchon, but check the last one before you start."
+    },
+    "ko": {
+      "summary": "서울에서 열차로 닿는 짧은 코스 중 가장 가깝다. 의암댐 매표소에서 상원사를 지나 약 75분 만에 정상에 오른 뒤 1시간 15분 내려가 등선폭포 매표소에서 끝난다. 공식 소요시간은 2시간 30분이다.",
+      "caution1": "산림청 난이도가 중급이다. 상원사에서 정상까지 한 시간은 계단과 바위턱이 이어져 평지가 거의 없다.",
+      "caution2": "의암댐으로 되돌아오지 않고 등선폭포로 내려온다. 양쪽 모두 강촌 버스 노선에 있지만 막차를 미리 확인할 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 삼악산 추천코스·소요시간·난이도",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 삼악산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "difficulty",
+        "elevation_m"
+      ],
+      "note": "표고는 654m(한국등산·트레킹지원센터)와 655.8m(산림청)로 0.28% 차이 안에서 일치한다. 난이도 중급은 산림청이 매긴 값이다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

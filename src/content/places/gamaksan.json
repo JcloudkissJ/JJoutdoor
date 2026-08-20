@@ -1,0 +1,92 @@
+{
+  "id": "gamaksan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Gamaksan",
+    "ko": "감악산"
+  },
+  "region": {
+    "sido": "41",
+    "sigungu": "41480"
+  },
+  "coords": {
+    "lat": 37.94255,
+    "lng": 126.969003
+  },
+  "metrics": {
+    "elevation_m": 675,
+    "distance_km": null,
+    "duration_min": 175,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. The course starts from Uijeongbu: city bus 25 toward Jeokseong runs about every 15 minutes.",
+        "ko": "지하철로 닿지 않는다. 기점은 의정부다. 적성행 25번 시내버스가 15분 간격으로 다닌다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "A loop that starts and finishes at the Ungye Falls car park, going up by Beomnyunsa and the Kkachibong ridge to the summit and Imkkeokjeongbong, then back down the way it came. Published time is 2 hours 55 minutes.",
+      "caution1": "This one returns to where it started, which makes the trip home simple. It is one of only two courses on this site that does.",
+      "caution2": "The stretch between Kkachibong and Imkkeokjeongbong is rock with fixed stairs. Avoid it in rain, ice or strong wind."
+    },
+    "ko": {
+      "summary": "운계폭포 입구 주차장에서 출발해 범륜사와 까치봉 능선으로 정상과 임꺽정봉에 오른 뒤 왔던 길로 되돌아오는 순환 코스다. 공식 소요시간은 2시간 55분이다.",
+      "caution1": "출발지로 되돌아오는 코스라 귀가 동선이 단순하다. 이 사이트에서 그런 코스는 도봉산과 여기 둘뿐이다.",
+      "caution2": "까치봉에서 임꺽정봉 사이는 철계단이 놓인 암릉이다. 비·결빙·강풍에는 피할 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 감악산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 감악산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 675m(한국등산·트레킹지원센터)와 674.9m(산림청)로 0.01% 차이 안에서 일치한다 — 지금까지 확인한 산 중 가장 작은 차이다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}
