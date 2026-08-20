@@ -35,8 +35,16 @@
   },
   "access": {
     "transit": {
-      "subway": false,
-      "walk_min": 0
+      "subway": true,
+      "station_i18n": {
+        "en": "Dobongsan",
+        "ko": "도봉산"
+      },
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Dobongsan Station (Lines 1 and 7) serves this trailhead directly. For the Songchu side, take bus 7023 or 704 from Gupabal Station (Line 3), or bus 34 or 36 toward Uijeongbu.",
+        "ko": "1호선·7호선 도봉산역에서 바로 접근한다. 송추 방면은 3호선 구파발역에서 7023·704번 버스를, 의정부 방면은 34·36번 버스를 탄다."
+      }
     },
     "signage_langs": null,
     "restroom": null,

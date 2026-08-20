@@ -35,8 +35,16 @@
   },
   "access": {
     "transit": {
-      "subway": false,
-      "walk_min": 0
+      "subway": true,
+      "station_i18n": {
+        "en": "Seoul National University",
+        "ko": "서울대입구"
+      },
+      "walk_min": null,
+      "note_i18n": {
+        "en": "From Seoul National University Station (Line 2) take bus 750, or bus 5613 or 6514 from Sillim Station, to reach the ticket office. The course ends on the Gwacheon side, nearest to Government Complex Gwacheon Station (Line 4).",
+        "ko": "2호선 서울대입구역에서 750번 버스, 또는 신림역에서 5613·6514번 버스로 매표소 방면에 간다. 하산 지점인 과천 방면은 4호선 정부청사역이 가깝다."
+      }
     },
     "signage_langs": null,
     "restroom": null,

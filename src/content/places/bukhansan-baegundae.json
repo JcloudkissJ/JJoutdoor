@@ -39,8 +39,16 @@
   },
   "access": {
     "transit": {
-      "subway": false,
-      "walk_min": 0
+      "subway": true,
+      "station_i18n": {
+        "en": "Suyu",
+        "ko": "수유"
+      },
+      "walk_min": null,
+      "note_i18n": {
+        "en": "From Suyu Station (Line 4) take bus 101 or 1217 to Ui-dong, where the Baegundae trailhead centre is. The source says they run about every 5 minutes.",
+        "ko": "4호선 수유역에서 101번·1217번 버스로 백운대탐방지원센터가 있는 우이동까지 간다. 출처는 5분 간격 운행이라고 적고 있다."
+      }
     },
     "signage_langs": null,
     "restroom": null,
@@ -78,6 +86,12 @@
         "org": "hiking_support_center",
         "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 북한산 표고·좌표",
         "fetched_at": "2026-08-13"
+      },
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 북한산 교통정보",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
       }
     ],
     "verification": {

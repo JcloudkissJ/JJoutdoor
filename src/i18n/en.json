@@ -43,5 +43,8 @@
   "safety.category.emergency": "Emergency procedures",
   "metric.estimated": "Estimated, not measured",
   "metric.unverified": "Not verified",
-  "metric.unknown": "Not given by the source"
+  "metric.unknown": "Not given by the source",
+  "access.transit": "Getting there",
+  "transit.walk_from": "{min} min walk from {station}",
+  "region.28": "Incheon"
 }

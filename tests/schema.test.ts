@@ -119,6 +119,15 @@ describe('placeSchema', () => {
     expect(placeSchema.safeParse(noDistance).success).toBe(true);
   });
 
+  it('출처가 도보 시간을 주지 않으면 walk_min 을 null 로 둘 수 있다', () => {
+    // 숲나들e 교통정보는 역과 버스 노선을 주지만 도보 분은 주지 않는다.
+    const noWalk = {
+      ...valid,
+      access: { ...valid.access, transit: { subway: true, walk_min: null } },
+    };
+    expect(placeSchema.safeParse(noWalk).success).toBe(true);
+  });
+
   it('섬·낚시 타입을 스키마 수준에서 미리 허용한다', () => {
     expect(placeSchema.safeParse({ ...valid, type: 'island' }).success).toBe(true);
   });

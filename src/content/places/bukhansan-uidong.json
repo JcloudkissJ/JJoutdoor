@@ -35,8 +35,16 @@
   },
   "access": {
     "transit": {
-      "subway": false,
-      "walk_min": 0
+      "subway": true,
+      "station_i18n": {
+        "en": "Suyu",
+        "ko": "수유"
+      },
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Start from Suyu Station (Line 4) and take bus 101 or 1217 to Ui-dong, about every 5 minutes. This course ends at Bukhansanseong on the far side, which is served by bus 704 to Gupabal Station (Line 3).",
+        "ko": "4호선 수유역에서 101번·1217번 버스로 우이동까지 간다(5분 간격). 반대편 하산 지점인 북한산성은 704번 버스로 3호선 구파발역과 이어진다."
+      }
     },
     "signage_langs": null,
     "restroom": null,

@@ -76,7 +76,7 @@ const description = `Mountain trails accessible within half a day from Seoul`;
         <div class="result-item">
           {pc.stationName && pc.walkMin !== null && (
             <p class="transit-info">
-              {pc.walkMin} minutes' walk from {pc.stationName}
+              {t('transit.walk_from').replace('{min}', String(pc.walkMin)).replace('{station}', pc.stationName)}
             </p>
           )}
           <PlaceCard

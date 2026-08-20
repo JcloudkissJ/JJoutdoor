@@ -1,0 +1,92 @@
+{
+  "id": "yumyeongsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Yumyeongsan",
+    "ko": "유명산"
+  },
+  "region": {
+    "sido": "41",
+    "sigungu": "41820"
+  },
+  "coords": {
+    "lat": 37.576298,
+    "lng": 127.487614
+  },
+  "metrics": {
+    "elevation_m": 862,
+    "distance_km": null,
+    "duration_min": 185,
+    "difficulty": 1
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "forest_service"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. Buses to Yumyeongsan run six times a day from Sangbong Terminal in Seoul via Cheongpyeong and Seorak.",
+        "ko": "지하철로 닿지 않는다. 상봉터미널에서 청평·설악을 거쳐 하루 6회 운행하는 유명산행 버스를 이용한다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "The Forest Service grades this one beginner level, the only mountain within reach of Seoul it grades that way. The recommended route leaves the Yumyeongsan Recreational Forest car park, follows the valley past Yongso and Madangso to the Auraji junction and the summit, then drops to Seoneochi. Published time is 3 hours 5 minutes.",
+      "caution1": "Beginner level does not mean short. The published time is over three hours, and the route ends at Seoneochi rather than back at the car park, so check the return bus before you start.",
+      "caution2": "Most of the climb follows a stream. Rock beside the water stays wet and slippery long after rain, so take the valley section slowly."
+    },
+    "ko": {
+      "summary": "산림청이 난이도를 초급으로 매긴 산으로, 서울에서 닿는 100대명산 중 유일하다. 추천코스는 유명산자연휴양림 입구 주차장에서 용소·마당소를 지나 아우라지 삼거리를 거쳐 정상에 오른 뒤 선어치로 내려온다. 공식 소요시간은 3시간 5분이다.",
+      "caution1": "초급이라고 짧지 않다. 공식 소요시간이 세 시간을 넘고, 주차장으로 되돌아오지 않고 선어치로 내려오므로 돌아올 버스를 미리 확인할 것.",
+      "caution2": "오름길 대부분이 계곡을 따른다. 물가 바위는 비 온 뒤 오래 젖어 미끄러우니 계곡 구간은 천천히 갈 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 유명산 추천코스·소요시간·난이도",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 유명산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "difficulty",
+        "elevation_m"
+      ],
+      "note": "난이도 초급은 산림청이 매긴 값이다 — 100대명산 중 난이도가 채워진 29건에 속하며 수도권에서는 유일하다. 표고는 862m(한국등산·트레킹지원센터)와 864m(산림청)로 0.23% 차이 안에서 일치한다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

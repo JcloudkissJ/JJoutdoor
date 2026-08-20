@@ -1,0 +1,92 @@
+{
+  "id": "manisan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Manisan",
+    "ko": "마니산"
+  },
+  "region": {
+    "sido": "28",
+    "sigungu": "28710"
+  },
+  "coords": {
+    "lat": 37.612384,
+    "lng": 126.434827
+  },
+  "metrics": {
+    "elevation_m": 469,
+    "distance_km": null,
+    "duration_min": 195,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Start from Ganghwa-eup. Buses to Ganghwa leave Sinchon in Seoul about every 10 minutes, Yeongdeungpo every 15 and Incheon every 20. From Ganghwa-eup terminal, buses to Sangbang-ri run every 30 to 40 minutes between 06:00 and 21:30.",
+        "ko": "기점은 강화읍이다. 서울 신촌에서 10분, 영등포에서 15분, 인천에서 20분 간격으로 강화행 버스가 있고, 강화읍 터미널에서 상방리행 버스가 30~40분 간격으로 06:00~21:30 운행한다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "At 469 m this is the lowest of the hundred named mountains within reach of Seoul, out on Ganghwa Island. The recommended route climbs the Dangun-ro ridge from the Sangbang-ri visitor area to Chamseongdan and the summit, then descends to Jeongsusa. Published time is 3 hours 15 minutes.",
+      "caution1": "Low does not mean quick. The published time is 3 hours 15 minutes, and the ridge is long and open with very little shade, so carry water and sun cover.",
+      "caution2": "The Dangun-ro approach is largely stairs and exposed rock ridge, and wind off the sea can be strong up there. Avoid it in rain or ice."
+    },
+    "ko": {
+      "summary": "강화도에 있는 469m 산으로, 서울에서 닿는 100대명산 중 가장 낮다. 추천코스는 상방리 국민관광단지에서 단군로 능선을 따라 참성단과 정상에 오른 뒤 정수사로 내려온다. 공식 소요시간은 3시간 15분이다.",
+      "caution1": "낮다고 빨리 끝나지 않는다. 공식 소요시간이 3시간 15분이고 능선이 길고 트여 있어 그늘이 거의 없다. 물과 햇빛 가릴 것을 챙길 것.",
+      "caution2": "단군로는 대부분 계단과 노출된 암릉이고 바다에서 부는 바람이 능선에서 거세다. 비·결빙에는 오르지 말 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 마니산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 마니산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 469m(한국등산·트레킹지원센터)와 472.1m(산림청)로 0.66% 차이 안에서 일치한다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

@@ -70,7 +70,10 @@ export const placeSchema = z.object({
     transit: z.object({
       subway: z.boolean(),
       station_i18n: z.record(z.string()).optional(),
-      walk_min: z.number().nonnegative(),
+      // null = 출처가 도보 시간을 주지 않았다. 0분과 다르다(규칙 14).
+      walk_min: z.number().nonnegative().nullable(),
+      // 기관이 공개한 접근 안내. 역 이름만 주면 버스 환승을 모르는 독자가 중간에 선다.
+      note_i18n: z.record(z.string()).optional(),
     }),
     // 다음 필드들은 null = 미확인. 추측해서 채우지 않는다:
     // signage_langs, restroom, water_refill, cell_coverage

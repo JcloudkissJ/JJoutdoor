@@ -115,7 +115,7 @@ test('미확인 편의시설 - restroom 필터 적용 시 결과 없음', async 
 // 기대 개수는 콘텐츠에서 온다. 장소를 추가하면 여기도 함께 고친다.
 //   ≤2h  아차산 80 · 인왕산 90 · 백운대코스 90 · 둘레길 1구간 120
 //   2-3h 북한산성코스 160
-//   >3h  관악산 210 · 도봉산 215 · 북한산 추천코스 270
+//   >3h  유명산 185 · 마니산 195 · 관악산 210 · 도봉산 215 · 북한산 추천코스 270
 test('기간 필터 — 2시간 이하 선택 시 4개 카드 표시', async ({ page }) => {
   await page.goto('/en/mountain/');
 
@@ -142,7 +142,7 @@ test('기간 필터 — 2-3시간 선택 시 1개 카드 표시', async ({ page 
   expect(count).toBe(1);
 });
 
-test('기간 필터 — 3시간 이상 선택 시 3개 카드 표시', async ({ page }) => {
+test('기간 필터 — 3시간 이상 선택 시 5개 카드 표시', async ({ page }) => {
   await page.goto('/en/mountain/');
 
   // >3h 필터 선택 (value="long")
@@ -152,7 +152,7 @@ test('기간 필터 — 3시간 이상 선택 시 3개 카드 표시', async ({ 
 
   const cards = page.locator('article.card:not(.hidden)');
   const count = await cards.count();
-  expect(count).toBe(3);
+  expect(count).toBe(5);
 });
 
 // No-JavaScript rendering test

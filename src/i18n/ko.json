@@ -43,5 +43,8 @@
   "safety.category.emergency": "응급 절차",
   "metric.estimated": "실측이 아닌 계산값",
   "metric.unverified": "검증되지 않음",
-  "metric.unknown": "출처에 없는 값"
+  "metric.unknown": "출처에 없는 값",
+  "access.transit": "가는 방법",
+  "transit.walk_from": "{station}에서 도보 {min}분",
+  "region.28": "인천"
 }
