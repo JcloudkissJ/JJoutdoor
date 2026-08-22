@@ -89,71 +89,46 @@ test('서명 언어 확인됨 - inwangsan은 공지를 표시하지 않는다', 
   }
 });
 
-// Unverified amenities filter test
-test('미확인 편의시설 - restroom 필터 적용 시 결과 없음', async ({ page }) => {
-  await page.goto('/en/mountain/');
-
-  // 필터를 클릭 — restroom 체크박스
-  const restroomCheckbox = page.locator('input[name="restroom"]');
-  await restroomCheckbox.check();
-
-  // 필터가 적용될 때까지 대기 - 빈 메시지가 보여질 때까지
-  const emptyMessage = page.locator('#empty');
-  await expect(emptyMessage).toBeVisible();
-
-  // 보이는 카드 개수 확인 (hidden 클래스가 없는 카드만 세기)
-  const allCards = page.locator('article.card');
-  const hiddenCards = page.locator('article.card.hidden');
-  const hiddenCount = await hiddenCards.count();
-  const totalCount = await allCards.count();
-  const visibleCount = totalCount - hiddenCount;
-
-  expect(visibleCount).toBe(0);
-});
-
-// Duration filter test
+// ── 필터 — 두 언어에서 동일하게 동작해야 한다 (스펙 §12 출시 조건) ──────────
+//
+// 필터 컨트롤의 id 와 option value 는 언어 독립이고 라벨만 번역되므로
+// 같은 선택자로 두 언어를 돌린다. 한쪽 언어만 검사하면 번역이 선택자를
+// 건드렸을 때 조용히 깨진다.
+//
 // 기대 개수는 콘텐츠에서 온다. 장소를 추가하면 여기도 함께 고친다.
 //   ≤2h  아차산 80 · 인왕산 90 · 백운대코스 90 · 덕숭산 105 · 경주 남산 115 · 둘레길 1구간 120
 //   2-3h 삼악산 150 · 백운산(포천) 155 · 북한산성코스 160 · 감악산 175
 //   >3h  유명산 185 · 마니산 195 · 관악산 210 · 도봉산 215 · 북한산 추천코스 270
-test('기간 필터 — 2시간 이하 선택 시 6개 카드 표시', async ({ page }) => {
-  await page.goto('/en/mountain/');
+const DURATION_BUCKETS = [
+  { value: 'short', label: '2시간 이하', expected: 6 },
+  { value: 'mid', label: '2-3시간', expected: 4 },
+  { value: 'long', label: '3시간 이상', expected: 5 },
+];
 
-  // ≤2h 필터 선택 (value="short")
-  await page.selectOption('#duration-select', 'short');
+const FILTER_LANGS = ['en', 'ko'];
 
-  await page.waitForTimeout(300);
+for (const lang of FILTER_LANGS) {
+  test(`/${lang}/ 미확인 편의시설 — restroom 필터 적용 시 결과 없음`, async ({ page }) => {
+    await page.goto(`/${lang}/mountain/`);
 
-  const cards = page.locator('article.card:not(.hidden)');
-  const count = await cards.count();
-  expect(count).toBe(6);
-});
+    await page.locator('input[name="restroom"]').check();
 
-test('기간 필터 — 2-3시간 선택 시 4개 카드 표시', async ({ page }) => {
-  await page.goto('/en/mountain/');
+    // 편의시설은 15건 전부 null 이라 하나도 남지 않아야 한다.
+    await expect(page.locator('#empty')).toBeVisible();
+    expect(await page.locator('article.card:not(.hidden)').count()).toBe(0);
+  });
 
-  // 2-3h 필터 선택 (value="mid")
-  await page.selectOption('#duration-select', 'mid');
+  for (const bucket of DURATION_BUCKETS) {
+    test(`/${lang}/ 기간 필터 — ${bucket.label} 선택 시 ${bucket.expected}개 카드`, async ({ page }) => {
+      await page.goto(`/${lang}/mountain/`);
 
-  await page.waitForTimeout(300);
+      await page.selectOption('#duration-select', bucket.value);
+      await page.waitForTimeout(300);
 
-  const cards = page.locator('article.card:not(.hidden)');
-  const count = await cards.count();
-  expect(count).toBe(4);
-});
-
-test('기간 필터 — 3시간 이상 선택 시 5개 카드 표시', async ({ page }) => {
-  await page.goto('/en/mountain/');
-
-  // >3h 필터 선택 (value="long")
-  await page.selectOption('#duration-select', 'long');
-
-  await page.waitForTimeout(300);
-
-  const cards = page.locator('article.card:not(.hidden)');
-  const count = await cards.count();
-  expect(count).toBe(5);
-});
+      expect(await page.locator('article.card:not(.hidden)').count()).toBe(bucket.expected);
+    });
+  }
+}
 
 // No-JavaScript rendering test
 test('목록은 JavaScript 없이도 표시된다', async ({ browser }) => {

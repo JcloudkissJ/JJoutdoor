@@ -1,8 +1,20 @@
 > 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-20-korea-outdoor-knowledge-base.md`
 >
-> ⚠️ 이 계획서에는 실행 중 발견된 버그 2건이 **아직 정정되지 않았습니다.** 지식 베이스 §2-6 참조 —
+> ✅ 실행 중 발견된 버그 2건을 **본문에 반영했습니다**(2026-08-22) —
 > `vitest.config.ts`의 `new URL(...).pathname` → `fileURLToPath(...)`, 스텁의 `from 'zod'` → `from 'astro/zod'`.
-> 구현된 코드는 이미 올바르며, 계획서 본문만 옛 형태로 남아 있습니다.
+> 구현된 코드는 처음부터 올바랐고, 이제 계획서 본문도 같은 형태입니다.
+>
+> ## 진행 현황 (2026-08-22)
+>
+> | Task | 상태 |
+> |---|---|
+> | 1~13 | ✅ 완료 |
+> | 14 접근성·성능 검증 | ✅ 완료 — e2e 35건 통과, WCAG 2A/2AA 위반 0. 아래 체크박스는 당시 표시하지 않았습니다 |
+> | **15 배포** | ⬜ **유일한 미완.** Step 1(site URL)은 완료, Step 2~4 는 사용자 계정 작업(GitHub 원격·Cloudflare Pages) |
+>
+> **스펙 §12 출시 조건 7건 중 5건 충족.** Lighthouse 는 2026-08-22 에 5개 페이지 유형을 모바일로 측정해
+> 접근성·SEO·Best Practices 전부 100 이었습니다(chrome-devtools MCP `lighthouse_audit`, navigation 모드).
+> 남은 2건은 **A등급 안전 콘텐츠 사람 검수**와 **배포 후 검색엔진 인덱싱 확인**이며 둘 다 사람 작업입니다.
 
 # Phase 1 Implementation Plan
 
@@ -157,6 +169,7 @@ npx astro add sitemap --yes
 
 ```ts
 import { defineConfig } from 'vitest/config';
+import { fileURLToPath } from 'node:url';
 
 export default defineConfig({
   test: {
@@ -166,7 +179,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Astro 런타임 밖에서 스키마를 테스트하기 위한 스텁
-      'astro:content': new URL('./tests/stubs/astro-content.ts', import.meta.url).pathname,
+      'astro:content': fileURLToPath(new URL('./tests/stubs/astro-content.ts', import.meta.url)),
     },
   },
 });
@@ -687,7 +700,7 @@ Zod 스키마가 잘못된 콘텐츠를 빌드 시점에 막는다.
 `tests/stubs/astro-content.ts`:
 
 ```ts
-export { z } from 'zod';
+export { z } from 'astro/zod';
 export const defineCollection = (config: unknown) => config;
 ```
 
@@ -1923,7 +1936,7 @@ git commit -m "test: WCAG AA + 375px 오버플로 + 폰트 분리 로딩 + hrefl
 **Files:**
 - Modify: `astro.config.mjs`
 
-- [ ] **Step 1: site URL 설정**
+- [x] **Step 1: site URL 설정** — 완료. `astro.config.mjs` 에 `https://korea-outdoor.pages.dev` 설정됨
 
 `astro.config.mjs`에 `site`를 추가한다. hreflang과 sitemap이 이 값을 쓴다.
 
