@@ -45,7 +45,8 @@ const placeCards = filteredPlaces.map((place) => {
     place,
     name,
     summary: text.summary,
-    href: `/mountain/${place.data.id}`,
+    // 규칙 9 — URL 은 /{lang}/{type}/{slug} 다. 접두어를 빼면 404 가 난다.
+    href: `/${lang}/mountain/${place.data.id}`,
     difficulty: place.data.metrics.difficulty,
     difficultyLabel: t(`difficulty.${place.data.metrics.difficulty}`),
     region: place.data.region.sido,

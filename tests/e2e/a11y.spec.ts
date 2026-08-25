@@ -131,6 +131,33 @@ for (const lang of FILTER_LANGS) {
   }
 }
 
+// ── 카드 링크가 실제로 열리는가 ────────────────────────────────────────────
+//
+// 목록·지역·반나절 세 페이지가 각자 href 를 만든다. 세 곳 모두 언어 접두어를
+// 빼먹어 **모든 카드가 404 로 가고 있었다** — 75d8f80 이후 줄곧, 배포된 뒤에야
+// 사람이 눌러보고 발견했다.
+//
+// 페이지가 200 이고 카드가 보이는 것만 검사하면 이 버그를 못 잡는다.
+// 링크를 실제로 따라가 봐야 한다.
+const LIST_PAGES = ['mountain/', 'near/11/', 'half-day-from-seoul/'];
+
+for (const lang of FILTER_LANGS) {
+  for (const listPath of LIST_PAGES) {
+    test(`/${lang}/${listPath} 첫 카드 링크가 열린다`, async ({ page }) => {
+      await page.goto(`/${lang}/${listPath}`);
+
+      const href = await page.locator('article.card a.card-link').first().getAttribute('href');
+
+      // 규칙 9 — /{lang}/{type}/{slug}. 접두어가 빠지면 여기서 걸린다.
+      expect(href).toMatch(new RegExp(`^/${lang}/mountain/`));
+
+      const response = await page.goto(href!);
+      expect(response?.status()).toBe(200);
+      await expect(page.locator('h1')).toBeVisible();
+    });
+  }
+}
+
 // No-JavaScript rendering test
 test('목록은 JavaScript 없이도 표시된다', async ({ browser }) => {
   const context = await browser.newContext({
