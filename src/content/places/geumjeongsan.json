@@ -1,0 +1,98 @@
+{
+  "id": "geumjeongsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Geumjeongsan",
+    "ko": "금정산"
+  },
+  "region": {
+    "sido": "26",
+    "sigungu": "26410"
+  },
+  "coords": {
+    "lat": 35.28398695,
+    "lng": 129.0555168
+  },
+  "metrics": {
+    "elevation_m": 802,
+    "distance_km": null,
+    "duration_min": 335,
+    "difficulty": 3
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "forest_service"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": true,
+      "station_i18n": {
+        "en": "Beomeosa",
+        "ko": "범어사"
+      },
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Busan Metro reaches both ends. For Beomeosa, leave Beomeosa Station by exit 5, walk about 5 minutes to the Samsin bus terminus and take bus 90. For Geumgang Park, take bus 8 or the 203 fortress bus from Oncheonjang Station.",
+        "ko": "부산 지하철이 양 끝에 닿는다. 범어사는 범어사역 5번 출구로 나와 5분쯤 걸어 삼신교통 종점에서 90번 버스를 탄다. 금강공원은 온천장역에서 8번이나 203번 산성버스를 탄다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "Busan's home mountain, and the Forest Service grades it advanced. The route runs from Geumgang Park along the fortress wall through the East Gate and North Gate to Godangbong, then down to Beomeosa. Published time is 5 hours 35 minutes.",
+      "caution1": "Advanced is the source's own grade, not ours. The first stretch alone is 1 hour 40 minutes of climbing, and the whole route is over five and a half hours.",
+      "caution2": "The route follows the Geumjeongsanseong fortress wall for much of its length, exposed with little shade. Carry water and sun cover, and turn back rather than push on in heat."
+    },
+    "ko": {
+      "summary": "부산의 앞산이고 산림청 난이도는 고급이다. 금강공원에서 산성을 따라 동문과 북문을 지나 고당봉에 오른 뒤 범어사로 내려온다. 공식 소요시간은 5시간 35분이다.",
+      "caution1": "고급은 우리가 아니라 출처가 매긴 등급이다. 첫 구간만 1시간 40분 오름이고 전체가 다섯 시간 반을 넘는다.",
+      "caution2": "상당 구간이 금정산성 성벽을 따라가는 트인 길이라 그늘이 적다. 물과 햇빛 가릴 것을 챙기고, 더울 때는 무리하지 말고 되돌아설 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 금정산 추천코스·소요시간·난이도",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 금정산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "difficulty",
+        "elevation_m"
+      ],
+      "note": "난이도 고급은 산림청이 매긴 값이다 — 이 사이트에서 난이도 3(고급)이 출처에서 온 첫 사례다. 표고는 802m(한국등산·트레킹지원센터)와 800.8m(산림청)로 0.15% 차이 안에서 일치한다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "biseulsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Biseulsan",
+    "ko": "비슬산"
+  },
+  "region": {
+    "sido": "27",
+    "sigungu": "27710"
+  },
+  "coords": {
+    "lat": 35.715763,
+    "lng": 128.52329
+  },
+  "metrics": {
+    "elevation_m": 1084,
+    "distance_km": null,
+    "duration_min": 290,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "forest_service"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. From Daegu, take a Hyeonpung bus from the West Bus Terminal — every 10 to 20 minutes, about 40 minutes, 1,600 won. From Hyeonpung terminal, buses to Yugasa run 7 times a day.",
+        "ko": "지하철로 닿지 않는다. 대구서부시외버스정류장에서 현풍행 버스를 탄다 — 10~20분 간격, 약 40분, 요금 1,600원. 현풍 시외버스정류장에서 유가사행 버스가 하루 7회 있다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "Daegu's high ground: from Yugasa temple past Dotongbawi to Daegyeonbong, then across to the Daegyeonsa temple site and down to the Biseulsan recreational forest. Published time is 4 hours 50 minutes, graded intermediate by the Forest Service.",
+      "caution1": "The route does not return to Yugasa. It finishes at the recreational forest, and the last stretch alone is 1 hour 40 minutes — check the bus back from Hyeonpung before you start.",
+      "caution2": "This is a 1,084 m mountain and the published time is nearly five hours. Start early enough that the descent is not in the dark."
+    },
+    "ko": {
+      "summary": "대구의 높은 산. 유가사에서 도통바위를 지나 대견봉에 오른 뒤 대견사터를 거쳐 비슬산자연휴양림으로 내려온다. 공식 소요시간은 4시간 50분이고 산림청 난이도는 중급이다.",
+      "caution1": "유가사로 되돌아오지 않는다. 휴양림에서 끝나고 마지막 구간만 1시간 40분이니, 현풍에서 돌아갈 버스를 미리 확인할 것.",
+      "caution2": "1,084m 산이고 공식 소요시간이 다섯 시간에 가깝다. 하산이 어둠 속이 되지 않도록 충분히 일찍 출발할 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 비슬산 추천코스·소요시간·난이도",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 비슬산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "difficulty",
+        "elevation_m"
+      ],
+      "note": "난이도 중급은 산림청이 매긴 값이다. 표고는 1084m(한국등산·트레킹지원센터)와 1083.4m(산림청)로 0.06% 차이 안에서 일치한다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

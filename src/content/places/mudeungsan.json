@@ -1,0 +1,92 @@
+{
+  "id": "mudeungsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Mudeungsan",
+    "ko": "무등산"
+  },
+  "region": {
+    "sido": "29",
+    "sigungu": "29110"
+  },
+  "coords": {
+    "lat": 35.13508,
+    "lng": 126.98867
+  },
+  "metrics": {
+    "elevation_m": 1187,
+    "distance_km": null,
+    "duration_min": 300,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway, but Gwangju city buses serve the mountain well. For the Jeungsimsa side, take bus 17 or 222 from Gwangju Station to the Provincial Office and change to 15 or 555. For the Wonhyosa side, take 1187.",
+        "ko": "지하철로 닿지 않지만 광주 시내버스가 잘 다닌다. 증심사 방면은 광주역에서 17·222번을 타고 도청에서 내려 15·555번으로 환승한다. 원효사 방면은 1187번을 탄다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "Gwangju's own mountain, a national park traverse from Mudeung Sanjang over Kkomakjae and Gyubongam past the Ipseokdae columnar joints, then down by Jungmeorijae to Jeungsimsa. Published time is 5 hours.",
+      "caution1": "Five hours, and the route ends on the opposite side from where it starts. Work out the bus back from Jeungsimsa before you set off.",
+      "caution2": "The columnar rock formations near the top are a protected natural monument. Do not climb on them, and be aware the summit ridge itself is closed to the public."
+    },
+    "ko": {
+      "summary": "광주의 산이자 국립공원. 무등산장에서 꼬막재와 규봉암을 지나 입석대 주상절리를 거쳐 중머리재로 내려와 증심사에서 끝난다. 공식 소요시간은 5시간이다.",
+      "caution1": "다섯 시간이고 출발한 곳과 반대편으로 내려온다. 증심사에서 돌아갈 버스를 미리 확인하고 출발할 것.",
+      "caution2": "정상부 주상절리는 천연기념물이다. 올라서지 말 것. 정상 능선 자체는 일반에 개방되지 않는다는 점도 알아둘 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 무등산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 무등산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 1187m(한국등산·트레킹지원센터)와 1186.8m(산림청)로 0.02% 차이 안에서 일치한다 — 지금까지 확인한 산 중 가장 작은 차이에 속한다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

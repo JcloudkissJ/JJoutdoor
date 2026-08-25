@@ -97,12 +97,13 @@ test('서명 언어 확인됨 - inwangsan은 공지를 표시하지 않는다', 
 //
 // 기대 개수는 콘텐츠에서 온다. 장소를 추가하면 여기도 함께 고친다.
 //   ≤2h  아차산 80 · 인왕산 90 · 백운대코스 90 · 덕숭산 105 · 경주 남산 115 · 둘레길 1구간 120
-//   2-3h 삼악산 150 · 백운산(포천) 155 · 북한산성코스 160 · 감악산 175
-//   >3h  유명산 185 · 마니산 195 · 관악산 210 · 도봉산 215 · 북한산 추천코스 270
+//   2-3h 삼악산 150 · 백운산(포천) 155 · 북한산성코스 160 · 감악산 175 · 방장산 180
+//   >3h  유명산 185 · 마니산 195 · 관악산 210 · 도봉산 215 · 계룡산 230 · 북한산 추천코스 270
+//        비슬산 290 · 무등산 300 · 신불산 330 · 금정산 335
 const DURATION_BUCKETS = [
   { value: 'short', label: '2시간 이하', expected: 6 },
-  { value: 'mid', label: '2-3시간', expected: 4 },
-  { value: 'long', label: '3시간 이상', expected: 5 },
+  { value: 'mid', label: '2-3시간', expected: 5 },
+  { value: 'long', label: '3시간 이상', expected: 10 },
 ];
 
 const FILTER_LANGS = ['en', 'ko'];
@@ -113,7 +114,7 @@ for (const lang of FILTER_LANGS) {
 
     await page.locator('input[name="restroom"]').check();
 
-    // 편의시설은 15건 전부 null 이라 하나도 남지 않아야 한다.
+    // 편의시설은 전 장소가 null 이라 하나도 남지 않아야 한다.
     await expect(page.locator('#empty')).toBeVisible();
     expect(await page.locator('article.card:not(.hidden)').count()).toBe(0);
   });

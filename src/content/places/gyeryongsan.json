@@ -1,0 +1,92 @@
+{
+  "id": "gyeryongsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Gyeryongsan",
+    "ko": "계룡산"
+  },
+  "region": {
+    "sido": "30",
+    "sigungu": "30200"
+  },
+  "coords": {
+    "lat": 36.343363,
+    "lng": 127.205747
+  },
+  "metrics": {
+    "elevation_m": 845,
+    "distance_km": null,
+    "duration_min": 230,
+    "difficulty": 2
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Not reachable by subway. Buses to Donghaksa and Gapsa run frequently from Daejeon and Gongju. Gongju is served from Seoul by buses every 30 minutes from East Seoul Terminal and 52 times a day from Nambu Terminal.",
+        "ko": "지하철로 닿지 않는다. 대전과 공주에서 동학사·갑사행 버스가 수시로 다닌다. 공주까지는 동서울터미널에서 30분 간격, 남부터미널에서 하루 52회 버스가 있다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "A national park loop within reach of Daejeon: from the car park past Donghaksa to the Nammaetap pagodas, over Geumjandi Pass and down by Yongmun Falls to Gapsa, then back to the start. Published time is 3 hours 50 minutes.",
+      "caution1": "The 80 minutes from Donghaksa to Nammaetap is the sustained climb of the day, most of it on stone steps. Pace it — the loop is nearly four hours and the descent comes after.",
+      "caution2": "This is a national park with two temple complexes on the route. Stay on the marked path and follow posted closures, which change with the season."
+    },
+    "ko": {
+      "summary": "대전에서 닿는 국립공원 순환 코스. 주차장에서 동학사를 지나 남매탑에 오르고, 금잔디고개를 넘어 용문폭포·갑사를 거쳐 주차장으로 되돌아온다. 공식 소요시간은 3시간 50분이다.",
+      "caution1": "동학사에서 남매탑까지 1시간 20분이 이날의 본 오름이고 대부분 돌계단이다. 순환 전체가 네 시간에 가깝고 하산이 뒤에 남았으니 속도를 아껴 쓸 것.",
+      "caution2": "국립공원이고 코스에 사찰 두 곳이 있다. 표시된 길에서 벗어나지 말고 계절마다 바뀌는 통제 안내를 따를 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 계룡산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 계룡산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고는 845m(한국등산·트레킹지원센터)와 846.5m(산림청)로 0.18% 차이 안에서 일치한다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

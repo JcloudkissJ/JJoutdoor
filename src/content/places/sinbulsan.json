@@ -1,0 +1,92 @@
+{
+  "id": "sinbulsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Sinbulsan",
+    "ko": "신불산"
+  },
+  "region": {
+    "sido": "31",
+    "sigungu": "31710"
+  },
+  "coords": {
+    "lat": 35.540444,
+    "lng": 129.056118
+  },
+  "metrics": {
+    "elevation_m": 1159,
+    "distance_km": null,
+    "duration_min": 330,
+    "difficulty": 3
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "manual"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Eonyang is the gateway. Local buses toward Yangsan run 9 times a day and stop anywhere on the east side; the west side is served by 3 daily express buses toward Cheongdo. Eonyang is reached from Seoul by 4 express buses each from East Seoul and Nambu terminals, and very frequently from Ulsan and Busan.",
+        "ko": "언양이 기점이다. 양산행 완행버스가 하루 9회 있어 산 동쪽 어디서든 내릴 수 있고, 서쪽은 청도행 직행 3회를 이용한다. 언양까지는 동서울·남부터미널에서 각 4회 고속버스가 있고, 울산과 부산에서는 수시로 다닌다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [
+      "steep_stair"
+    ],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "A ridge walk in the Yeongnam Alps above Ulsan: from Gacheon-ri up to Sinbuljae, out onto the Sinbul plateau and back, over the summit and down to Hongnyu Sanjang. Published time is 5 hours 30 minutes.",
+      "caution1": "The climb to Sinbuljae is 2 hours 30 minutes in one push, and the descent is another 2 hours. There is no short way off the ridge once you are on it.",
+      "caution2": "Our two official sources disagree on how high Sinbulsan is, by 50 m. The figure shown is the one matching the summit this course reaches."
+    },
+    "ko": {
+      "summary": "울산 위 영남알프스의 능선 산행. 가천리에서 신불재로 올라 신불평원을 다녀온 뒤 정상을 넘어 홍류산장으로 내려온다. 공식 소요시간은 5시간 30분이다.",
+      "caution1": "신불재까지 2시간 30분을 한 번에 오르고 하산에 다시 두 시간이 걸린다. 능선에 올라선 뒤에는 중간에 빠질 짧은 길이 없다.",
+      "caution2": "신불산의 높이를 두고 두 공식 출처가 50m 어긋난다. 표시된 값은 이 코스가 오르는 정상에 맞춘 쪽이다."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 신불산 추천코스·소요시간",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 신불산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "conflict",
+      "checked_fields": [
+        "duration_min",
+        "elevation_m"
+      ],
+      "note": "표고가 1209m(한국등산·트레킹지원센터)와 1159.3m(산림청)로 4.29%, 절대값으로 50m 어긋난다. 다른 산들이 0.02~1.28% 인 것과 크게 다르고, 50m 는 측량 오차라기보다 두 기관이 서로 다른 봉우리를 잰 것으로 보이나 확인되지 않았다. 화면에 불일치를 그대로 표시하고, 값은 이 코스가 오르는 신불산 정상 표기에 해당하는 1159m 를 쓴다. 난이도는 출처가 비워 두어 사람이 정했다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}

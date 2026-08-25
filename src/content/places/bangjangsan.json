@@ -1,0 +1,92 @@
+{
+  "id": "bangjangsan",
+  "type": "mountain",
+  "name_i18n": {
+    "en": "Bangjangsan",
+    "ko": "방장산"
+  },
+  "region": {
+    "sido": "46",
+    "sigungu": "46880"
+  },
+  "coords": {
+    "lat": 35.448686,
+    "lng": 126.759914
+  },
+  "metrics": {
+    "elevation_m": 743,
+    "distance_km": null,
+    "duration_min": 180,
+    "difficulty": 1
+  },
+  "metrics_origin": {
+    "elevation_m": {
+      "kind": "sourced",
+      "org": "hiking_support_center"
+    },
+    "distance_km": null,
+    "duration_min": {
+      "kind": "sourced",
+      "org": "forest_service"
+    },
+    "difficulty": {
+      "kind": "sourced",
+      "org": "forest_service"
+    }
+  },
+  "access": {
+    "transit": {
+      "subway": false,
+      "walk_min": null,
+      "note_i18n": {
+        "en": "Gochang is the gateway. Buses from Gochang toward Sangwol, Woram and Seokjeong hot spring run every 30 minutes. Gochang is served from Seoul by 16 express buses a day from Gangnam Terminal, and by buses from Gwangju and Mokpo. A taxi from Baegyangsa station reaches the recreational forest; from Jeongeup, the Galjae trailhead.",
+        "ko": "고창이 기점이다. 고창에서 상월·월암·석정온천행 버스가 30분 간격으로 있다. 고창까지는 서울 강남터미널에서 고속버스가 하루 16회 있고 광주·목포에서도 버스가 다닌다. 휴양림은 호남선 백양사역에서, 갈재 들머리는 정읍에서 택시를 이용한다."
+      }
+    },
+    "signage_langs": null,
+    "restroom": null,
+    "water_refill": null,
+    "entry_fee_krw": 0,
+    "cell_coverage": null
+  },
+  "safety": {
+    "hazards": [],
+    "sunset_caution": true
+  },
+  "text": {
+    "en": {
+      "summary": "A beginner-graded ridge on the Jeonnam–Jeonbuk border: from Galje over peaks 507 and 734 to the old beacon site and the summit, then down by Gochang Pass to the recreational forest. Published time is 3 hours.",
+      "caution1": "Beginner grade and three hours, which makes this one of the gentler routes on this site. It still crosses several tops, so the climbing comes in repeated short pulls rather than one long one.",
+      "caution2": "The start and finish are far apart and neither is on a bus route — the source says to take a taxi from Jeongeup or Baegyangsa station. Arrange the return before you set off."
+    },
+    "ko": {
+      "summary": "전남·전북 경계의 초급 능선 코스. 갈재에서 507봉과 734봉을 넘어 봉수대와 정상에 오른 뒤 고창고개를 지나 휴양림으로 내려온다. 공식 소요시간은 3시간이다.",
+      "caution1": "초급에 세 시간이라 이 사이트에서 완만한 축에 든다. 다만 봉우리를 여럿 넘으므로 한 번에 길게 오르기보다 짧은 오름이 반복된다.",
+      "caution2": "들머리와 날머리가 멀고 둘 다 버스 노선이 아니다. 출처는 정읍이나 백양사역에서 택시를 이용하라고 적고 있다. 돌아올 방법을 미리 정해 둘 것."
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "org": "forest_service",
+        "dataset": "산림청 국립자연휴양림관리소 숲나들e 숲길 100대명산 정보 — 방장산 추천코스·소요시간·난이도",
+        "url": "https://www.data.go.kr/data/15112801/fileData.do",
+        "fetched_at": "2026-08-14"
+      },
+      {
+        "org": "hiking_support_center",
+        "dataset": "한국등산·트레킹지원센터 100대명산 목록정보 — 방장산 표고",
+        "fetched_at": "2026-08-13"
+      }
+    ],
+    "verification": {
+      "status": "single_source",
+      "checked_fields": [
+        "duration_min",
+        "difficulty",
+        "elevation_m"
+      ],
+      "note": "난이도 초급은 산림청이 매긴 값이다 — 100대명산 중 난이도가 채워진 29건에 속한다. 표고는 743m(한국등산·트레킹지원센터)와 733.6m(산림청)로 1.28%, 절대값 9m 차이다. 지금까지 확인한 산 중 가장 큰 편이나 봉우리를 달리 잰 수준(수십 m)은 아니라 일치로 본다. 거리는 어느 출처도 주지 않았다."
+    }
+  }
+}
