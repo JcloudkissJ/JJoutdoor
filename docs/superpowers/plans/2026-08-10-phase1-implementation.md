@@ -1,4 +1,4 @@
-> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-25-korea-outdoor-knowledge-base.md`
+> 📓 **노트북 LM 보관소부터 찾아주세요** — 종합 지식 베이스: `docs/notebooklm/2026-08-26-korea-outdoor-knowledge-base.md`
 >
 > ✅ 실행 중 발견된 버그 2건을 **본문에 반영했습니다**(2026-08-22) —
 > `vitest.config.ts`의 `new URL(...).pathname` → `fileURLToPath(...)`, 스텁의 `from 'zod'` → `from 'astro/zod'`.
