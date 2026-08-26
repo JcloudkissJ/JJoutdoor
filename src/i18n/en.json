@@ -11,7 +11,7 @@
   "home.cta_resident": "Trails near you",
   "home.cta_resident_desc": "Routes organized by region for regular visitors",
   "half_day.title": "Half-day from Seoul",
-  "near.title": "Trails in Seoul",
+  "near.title": "Trails in {region}",
   "region.11": "Seoul",
   "region.41": "Gyeonggi",
   "filter.region": "Region",
@@ -55,5 +55,12 @@
   "region.29": "Gwangju",
   "region.30": "Daejeon",
   "region.31": "Ulsan",
-  "region.46": "South Jeolla"
+  "region.46": "South Jeolla",
+  "filter.all": "All",
+  "duration.short": "2 hours or less",
+  "duration.mid": "2 to 3 hours",
+  "duration.long": "Over 3 hours",
+  "mountain.description": "Hiking routes across Korea, with official trail data and safety notes.",
+  "half_day.description": "Mountain trails you can reach from Seoul and return the same day by public transit.",
+  "near.description": "Mountain trails in {region}, organized for regular visitors."
 }

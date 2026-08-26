@@ -62,8 +62,9 @@ const placeCards = regionPlaces.map((place: any) => {
 // Look up region display name; if not in dictionary, makeTranslator returns the code itself
 const regionKey = `region.${region}`;
 const regionDisplay = t(regionKey);
-const title = lang === 'ko' ? `${regionDisplay} 인근 트레일` : `Trails in ${regionDisplay}`;
-const description = `Mountain trails in ${regionDisplay}`;
+// 언어를 코드에서 분기하지 않는다 — 8개 언어로 늘릴 때 ko 만 특별대우하면 나머지가 영어로 샌다.
+const title = t('near.title').replace('{region}', regionDisplay);
+const description = t('near.description').replace('{region}', regionDisplay);
 ---
 
 <Base lang={lang!} title={title} description={description} path={`/near/${region}/`}>

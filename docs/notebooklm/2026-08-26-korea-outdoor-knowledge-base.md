@@ -399,8 +399,13 @@ src/pages/[lang]/half-day-from-seoul.astro:48
 
 meta description 은 SEO 에 직접 걸린다 — 한국어 검색 결과에 영어 설명이 뜬다.
 
-> ⚠️ **왜 놓쳤나**: 라틴 산문 검사가 `<head>` 를 제외하고 **3단어 이상**만 봤다.
-> `All`·`≤ 2h` 는 짧고 description 은 head 에 있다. **검사의 사각지대가 정확히 이 둘이었다.**
+> ⚠️ **왜 놓쳤나 — 검사가 사각지대를 가진 게 아니라 아예 없었다.**
+> 한국어 페이지에 영문이 남아 있는지 보는 자동 검사가 레포에 **하나도 없다**
+> (`grep -rn "[A-Za-z]" tests/ scripts/ src/lib/` 로 라틴 문자 검사 0건, `tests/e2e/` 는
+> `a11y.spec.ts` 하나뿐). 처음에 "검사가 body 만·3단어 이상만 봐서 놓쳤다"고 적었는데
+> 그건 **점검할 때 임시로 돌린 스윕의 조건**이었지 커밋된 테스트가 아니다. 바로잡는다.
+>
+> 그래서 1단계의 가드는 **확대가 아니라 신규 작성**이다.
 
 ### B. 확보한 데이터가 화면에 나오지 않는다
 
@@ -556,8 +561,9 @@ tests/schema.test.ts  describe('콘텐츠 정책 — 소요시간에 계산값�
 | 같은 파일 | 소요시간 `≤ 2h`/`2h – 3h`/`> 3h` → `duration.short`/`.mid`/`.long` 키 신설 |
 | `mountain/index.astro`·`half-day-from-seoul.astro`·`near/[region].astro` | 하드코딩 `description` 을 i18n 키로 |
 
-**함께 넣을 가드(이것이 핵심)**: 한국어 페이지 검사를 **`<head>` 포함·1단어부터**로 넓힌다.
-지금 검사는 body 만·3단어 이상이라 이번 4건을 전부 통과시켰다. 넓히지 않으면 같은 일이 반복된다.
+**함께 넣을 가드(이것이 핵심)**: 한국어 페이지에 영문이 남았는지 보는 검사를 **새로 만든다.**
+그런 검사가 레포에 하나도 없어서 이번 4건이 전부 통과했다(2-15 A). **`<head>` 를 포함하고
+`All`·`≤ 2h` 같은 1~2단어도 잡아야 한다** — 짧은 문자열과 head 가 정확히 이번에 새어 나간 곳이다.
 
 검증: `npm test` · `npm run build` · `npx playwright test` · 산출 HTML 의 `option` 과 `meta description` 직접 확인.
 

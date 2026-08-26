@@ -59,7 +59,7 @@ const placeCards = places.map((place) => {
 });
 
 const title = t('nav.mountains');
-const description = `Mountain hiking routes in Korea`;
+const description = t('mountain.description');
 ---
 
 <Base lang={lang!} title={title} description={description} path="/mountain/">
@@ -70,9 +70,10 @@ const description = `Mountain hiking routes in Korea`;
       <div class="filter-group">
         <label for="region-select">{t('filter.region')}</label>
         <select id="region-select" name="region">
-          <option value="all">All</option>
+          <option value="all">{t('filter.all')}</option>
+          {/* value 는 시도 코드(필터 로직이 쓴다), 보이는 글자는 번역이다. 코드를 그대로 뿌리면 27 이 대구인 줄 알 수 없다. */}
           {regions.map((r) => (
-            <option value={r}>{r}</option>
+            <option value={r}>{t(`region.${r}`)}</option>
           ))}
         </select>
       </div>
@@ -80,7 +81,7 @@ const description = `Mountain hiking routes in Korea`;
       <div class="filter-group">
         <label for="difficulty-select">{t('filter.difficulty')}</label>
         <select id="difficulty-select" name="difficulty">
-          <option value="all">All</option>
+          <option value="all">{t('filter.all')}</option>
           <option value="1">{t('difficulty.1')}</option>
           <option value="2">{t('difficulty.2')}</option>
           <option value="3">{t('difficulty.3')}</option>
@@ -90,10 +91,10 @@ const description = `Mountain hiking routes in Korea`;
       <div class="filter-group">
         <label for="duration-select">{t('filter.duration')}</label>
         <select id="duration-select" name="duration">
-          <option value="all">All</option>
-          <option value="short">≤ 2h</option>
-          <option value="mid">2h – 3h</option>
-          <option value="long">&gt; 3h</option>
+          <option value="all">{t('filter.all')}</option>
+          <option value="short">{t('duration.short')}</option>
+          <option value="mid">{t('duration.mid')}</option>
+          <option value="long">{t('duration.long')}</option>
         </select>
       </div>
 

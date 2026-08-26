@@ -11,7 +11,7 @@
   "home.cta_resident": "내 지역 근처 트레일",
   "home.cta_resident_desc": "정기적으로 찾는 방문객을 위해 지역별로 정리된 트레일",
   "half_day.title": "서울에서 반나절",
-  "near.title": "서울 인근 트레일",
+  "near.title": "{region} 인근 트레일",
   "region.11": "서울",
   "region.41": "경기도",
   "filter.region": "지역",
@@ -55,5 +55,12 @@
   "region.29": "광주",
   "region.30": "대전",
   "region.31": "울산",
-  "region.46": "전라남도"
+  "region.46": "전라남도",
+  "filter.all": "전체",
+  "duration.short": "2시간 이하",
+  "duration.mid": "2~3시간",
+  "duration.long": "3시간 이상",
+  "mountain.description": "공식 등산로 정보와 안전 안내를 담은 전국 등산 코스.",
+  "half_day.description": "서울에서 대중교통으로 당일에 다녀올 수 있는 산.",
+  "near.description": "{region}의 등산 코스 — 가까운 곳을 자주 찾는 사람을 위해 정리했다."
 }
